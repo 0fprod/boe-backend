@@ -2,11 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Jest selected file",
+      "name": "Test selected file",
       "type": "node",
       "request": "launch",
       "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
       "args": ["${fileBasenameNoExtension}", "-i", "--no-cache"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "Watch selected file",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": ["${fileBasenameNoExtension}", "-i", "--no-cache", "--watchAll"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
     }
