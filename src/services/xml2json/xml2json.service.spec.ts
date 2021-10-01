@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { Xml2jsonService } from './xml2json.service';
 import { readFileSync } from 'fs';
+import { Anuncio, Sumario } from '../models';
+import { Xml2jsonService } from './xml2json.service';
 
 describe('Xml2jsonService', () => {
   let service: Xml2jsonService;
@@ -13,7 +14,7 @@ describe('Xml2jsonService', () => {
     service = module.get<Xml2jsonService>(Xml2jsonService);
   });
 
-  xit('Debería lanzar un error si el fichero es inválido', async () => {
+  it('Debería lanzar un error si el fichero es inválido', async () => {
     const invalidXmlFile = readFileSync(
       './test/mocks/xml/fichero-invalido.xml',
       { encoding: 'utf-8' },
@@ -24,13 +25,26 @@ describe('Xml2jsonService', () => {
     await expect(fn()).rejects.toThrow('Fichero inválido');
   });
 
-  it('Debería transformar un XML a un JSON', async () => {
+  it('Debería transformar un XML del BOE a un JSON', async () => {
     const invalidXmlFile = readFileSync('./test/mocks/xml/boe.xml', {
       encoding: 'utf-8',
     });
 
-    const content = await service.parse(invalidXmlFile);
+    const contenido: Sumario = await service.parse(invalidXmlFile);
 
-    expect(content).toBeTruthy();
+    expect(contenido).toBeTruthy();
+  });
+
+  it('Debería transformar un XML de un anuncio del BOE a un JSON', async () => {
+    const invalidXmlFile = readFileSync(
+      './test/mocks/xml/anuncio-licitacion-1.xml',
+      {
+        encoding: 'utf-8',
+      },
+    );
+
+    const contenido: Anuncio = await service.parse(invalidXmlFile);
+
+    expect(contenido).toBeTruthy();
   });
 });

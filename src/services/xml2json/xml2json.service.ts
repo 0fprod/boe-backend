@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { parseStringPromise, ParserOptions } from 'xml2js';
+import { ParserOptions, parseStringPromise } from 'xml2js';
 
 @Injectable()
 export class Xml2jsonService {
@@ -17,12 +17,15 @@ export class Xml2jsonService {
   }
 
   async parse(xml: string) {
-    const { error, sumario } = await parseStringPromise(xml, this.opciones);
+    const { error, documento, sumario } = await parseStringPromise(
+      xml,
+      this.opciones,
+    );
 
     if (error) {
       throw new Error('Fichero inválido');
     }
 
-    return sumario;
+    return documento || sumario;
   }
 }

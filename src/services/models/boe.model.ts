@@ -37,7 +37,7 @@ export interface Meta {
   pubdate: string;
 }
 
-export interface Sumarioo {
+export interface Sumario {
   diario: Diario;
   meta: Meta;
 }
