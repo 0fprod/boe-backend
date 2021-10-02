@@ -10,7 +10,7 @@ const FORMALIZACION_CONTRATOS = 'Anuncio de formalización de contratos';
 
 const esValida = (entrada: Sumario) => entrada && Object.keys(entrada).length > 0;
 const extraerSeccionAnuncios = (entrada: Sumario) => entrada.diario.seccion.find(({ num }) => num === SECCION_5A);
-const extaerItemsDeDepartamentos = (secciones?: Seccion) => (secciones ? secciones.departamento.map(({ item }) => item).flat() : []);
+const extaerItemsDeDepartamentos = (seccion?: Seccion) => (seccion ? seccion.departamento.map(({ item }) => item).flat() : []);
 const esFormalizacion = (titulo: string) => titulo.includes(FORMALIZACION_CONTRATOS);
 
 export const boeMapper = (entrada: Sumario): Boe => {
