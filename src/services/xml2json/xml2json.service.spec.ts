@@ -15,35 +15,34 @@ describe('Xml2jsonService', () => {
   });
 
   it('Debería lanzar un error si el fichero es inválido', async () => {
-    const invalidXmlFile = readFileSync(
-      './test/mocks/xml/fichero-invalido.xml',
-      { encoding: 'utf-8' },
-    );
+    const xmlInvalido = readFileSync('./test/mocks/xml/fichero-invalido.xml', {
+      encoding: 'utf-8',
+    });
 
-    const fn = async () => await service.parse(invalidXmlFile);
+    const fn = async () => await service.parse(xmlInvalido);
 
     await expect(fn()).rejects.toThrow('Fichero inválido');
   });
 
   it('Debería transformar un XML del BOE a un JSON', async () => {
-    const invalidXmlFile = readFileSync('./test/mocks/xml/boe.xml', {
+    const sumario = readFileSync('./test/mocks/xml/boe.xml', {
       encoding: 'utf-8',
     });
 
-    const contenido: Sumario = await service.parse(invalidXmlFile);
+    const contenido: Sumario = await service.parse(sumario);
 
     expect(contenido).toBeTruthy();
   });
 
   it('Debería transformar un XML de un anuncio del BOE a un JSON', async () => {
-    const invalidXmlFile = readFileSync(
+    const anuncioLicitaction = readFileSync(
       './test/mocks/xml/anuncio-licitacion-1.xml',
       {
         encoding: 'utf-8',
       },
     );
 
-    const contenido: Anuncio = await service.parse(invalidXmlFile);
+    const contenido: Anuncio = await service.parse(anuncioLicitaction);
 
     expect(contenido).toBeTruthy();
   });
