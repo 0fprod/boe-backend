@@ -2,4 +2,4 @@ export interface Boe {
   idContratos: string[];
 }
 
-export const buildBoe = (idContratos: string[] = []): Boe => ({ idContratos });
+export const construirBoe = (idContratos: string[] = []): Boe => ({ idContratos });
