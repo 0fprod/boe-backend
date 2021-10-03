@@ -1,5 +1,5 @@
-export type Termino = string[];
-export type Descripcion = ListaDeDefinicion | Termino;
+export type Termino = string;
+export type Descripcion = Texto | Termino;
 
 export interface ListaDeDefinicion {
   dd: Descripcion[];
@@ -14,9 +14,13 @@ export interface Metadatos {
   url_pdf: string;
 }
 
+export interface Texto {
+  dl: ListaDeDefinicion;
+}
+
 export interface Documento {
   metadatos: Metadatos;
-  texto: ListaDeDefinicion;
+  texto: Texto;
 }
 
 export interface Anuncio {
