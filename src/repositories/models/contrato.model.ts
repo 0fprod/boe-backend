@@ -32,6 +32,19 @@ export interface Contrato {
   detalles: DetallesDeContrato;
 }
 
+export interface Lote {
+  id: string;
+  descripcion: string;
+}
+
+export const constuirLote = (texto: string): Lote => {
+  const [id, descripcion] = texto.split(/(?<=Lote\s\d:)/gi);
+  return {
+    id: id.replace(':', '').trim(),
+    descripcion: descripcion.replace(/\.$/, '').trim(),
+  };
+};
+
 export const constuirInstitucion = ({
   tipoActividad = '',
   actividad = '',

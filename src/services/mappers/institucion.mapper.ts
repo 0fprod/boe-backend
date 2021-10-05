@@ -26,11 +26,11 @@ export const institucionMapper = (lista: ListaDeDefinicion): Institucion => {
 
   if (indiceDelPoderAdjudicador !== -1) {
     const { dl } = descripciones[indiceDelPoderAdjudicador] as Texto;
-    const nombre = extraerDescripcionPorTermino(dl, NOMBRE);
-    const nif = extraerDescripcionPorTermino(dl, NIF);
-    const telefono = extraerDescripcionPorTermino(dl, TELEFONO);
-    const email = extraerDescripcionPorTermino(dl, EMAIL);
-    const web = extraerDescripcionPorTermino(dl, WEB);
+    const nombre = <string>extraerDescripcionPorTermino(dl, NOMBRE);
+    const nif = <string>extraerDescripcionPorTermino(dl, NIF);
+    const telefono = <string>extraerDescripcionPorTermino(dl, TELEFONO);
+    const email = <string>extraerDescripcionPorTermino(dl, EMAIL);
+    const web = <string>extraerDescripcionPorTermino(dl, WEB);
 
     institucion = constuirInstitucion({
       nombre,
@@ -43,8 +43,8 @@ export const institucionMapper = (lista: ListaDeDefinicion): Institucion => {
 
   if (indiceDelTipoActividad !== -1) {
     const { dl } = descripciones[indiceDelTipoActividad] as Texto;
-    const tipoActividad = extraerDescripcionPorTermino(dl, TIPO);
-    const actividad = extraerDescripcionPorTermino(dl, ACTIVIDAD);
+    const tipoActividad = <string>extraerDescripcionPorTermino(dl, TIPO);
+    const actividad = <string>extraerDescripcionPorTermino(dl, ACTIVIDAD);
 
     institucion = constuirInstitucion({
       ...institucion,
