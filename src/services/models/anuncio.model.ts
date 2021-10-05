@@ -2,8 +2,8 @@ export type Termino = string;
 export type Descripcion = Texto | Termino;
 
 export interface ListaDeDefinicion {
-  dd: Descripcion[];
-  dt: Termino[];
+  dd: Descripcion[] | Termino;
+  dt: Termino[] | Termino;
 }
 
 export interface Metadatos {

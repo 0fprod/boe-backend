@@ -11,20 +11,17 @@ export interface Institucion {
 export interface Beneficiario {
   nombre: string;
   nif: string;
-  direccion: string;
-  localidad: string;
-  codigoPostal: number;
-  pais: string;
   esPyme: boolean;
-  lote: number;
+  lote: string;
   coste: number;
+  descripcion: string;
 }
 
 export interface DetallesDeContrato {
   fecha?: Date;
   institucion: Institucion;
   beneficiarios: Beneficiario[];
-  descripcion: string[];
+  descripcion: string;
 }
 
 export interface Contrato {
@@ -54,30 +51,24 @@ export const constuirInstitucion = ({
 });
 
 export const construirBeneficiario = ({
-  codigoPostal = -1,
   nif = '',
   nombre = '',
   coste = -1,
-  direccion = '',
   esPyme = false,
-  localidad = '',
-  lote = -1,
-  pais = '',
+  descripcion = '',
+  lote = '',
 }: Partial<Beneficiario>): Beneficiario => ({
-  codigoPostal,
   nif,
   nombre,
   coste,
-  direccion,
   esPyme,
-  localidad,
   lote,
-  pais,
+  descripcion,
 });
 
 export const construirDetallesDeContrato = ({
   beneficiarios = [],
-  descripcion = [],
+  descripcion = '',
   institucion = constuirInstitucion({}),
   fecha = new Date(),
 }: Partial<DetallesDeContrato>): DetallesDeContrato => ({
