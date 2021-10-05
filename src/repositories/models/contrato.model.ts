@@ -18,7 +18,6 @@ export interface Beneficiario {
 }
 
 export interface DetallesDeContrato {
-  fecha?: Date;
   institucion: Institucion;
   beneficiarios: Beneficiario[];
   descripcion: string;
@@ -83,11 +82,9 @@ export const construirDetallesDeContrato = ({
   beneficiarios = [],
   descripcion = '',
   institucion = constuirInstitucion({}),
-  fecha = new Date(),
 }: Partial<DetallesDeContrato>): DetallesDeContrato => ({
   beneficiarios,
   descripcion,
-  fecha,
   institucion,
 });
 

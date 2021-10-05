@@ -8,7 +8,7 @@ export interface ListaDeDefinicion {
 
 export interface Metadatos {
   identificador: string;
-  fecha_pubilcacion: string;
+  fecha_publicacion: string;
   numero_anuncio: string;
   titulo: string;
   url_pdf: string;

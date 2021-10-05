@@ -78,3 +78,17 @@ export const costeMapper = (coste: string) => {
   // quitamos la moneda
   return Number(coste.split(' ')[0]);
 };
+
+// Formato: Prefijo : Titulo. Sufijo
+export const tituloMapper = (titulo: string): string => {
+  // "Anuncio de formalización de contratos de: Jefatura de Intendencia de Asuntos Económicos Este. Objeto: Selección de empresas para el suministro de material de ferretería, eléctrico, construcción, fontanería y repuestos de automoción a las BAE,S ubicadas dentro del ámbito de la JIAE ESTE. Expediente: 2032719008000."
+  const indicePrefijo = titulo.indexOf(':') + 1;
+  const indiceSufijo = titulo.indexOf('.');
+  return titulo.substring(indicePrefijo, indiceSufijo).trim();
+};
+
+// Formato AAAAMMDD
+export const fechaPublicacionMapper = (fecha: string): string => {
+  const fechaConSeparador = fecha.replace(/(\d{4})(\d{2})/g, '$1-$2-');
+  return new Date(fechaConSeparador).toISOString();
+};
