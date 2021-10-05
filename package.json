@@ -68,9 +68,10 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
-    "moduleNameMapper":{
-      "@repositories/(.*)":"<rootDir>/repositories/$1",
-      "@services/(.*)":"<rootDir>/services/$1"
+    "moduleNameMapper": {
+      "@repositories/(.*)": "<rootDir>/repositories/$1",
+      "@services/(.*)": "<rootDir>/services/$1",
+      "@test/(.*)": "<rootDir>/../test/$1"
     }
   }
 }

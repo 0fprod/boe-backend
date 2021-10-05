@@ -19,7 +19,8 @@
     "baseUrl": "./",
     "paths": {
       "@repositories/*": ["src/repositories/*"],
-      "@services/*": ["src/services/*"]
+      "@services/*": ["src/services/*"],
+      "@test/*": ["test/*"]
     }
   }
 }
