@@ -10,7 +10,7 @@ describe('Anuncio Mapper specs', () => {
     expect(anuncioMapper(parametroInvalido as Documento)).toStrictEqual(contratoVacio);
   });
 
-  it.only('Transforma un Documento en un Contrato', () => {
+  it('Transforma un Documento en un Contrato', () => {
     const boe = readFileSync('./test/mocks/json/anuncio-licitacion-1.json', { encoding: 'utf-8' });
     const contrato: Contrato = anuncioMapper(JSON.parse(boe));
     expect(contrato).toStrictEqual(contratoAnidadoMapeado);
