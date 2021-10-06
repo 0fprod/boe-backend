@@ -1,7 +1,12 @@
 import { constuirLote, Lote } from '@repositories/models';
 import { Descripcion, ListaDeDefinicion, Termino, Texto } from './models';
 
-export const esValida = (lista: ListaDeDefinicion) => lista && Object.keys(lista).length > 0;
+type ExtractorIndice = (lotes: Termino | Termino[], numLote: Termino) => number;
+
+export const esValida = (lista: ListaDeDefinicion): boolean => lista && Object.keys(lista).length > 0;
+// Se considera nivel plano ciando la lista DD contiene string y no Texto *ver modelo*
+export const esNivelPlano = (dd: ListaDeDefinicion['dd']): boolean => dd && Array.isArray(dd) && dd.length && typeof dd[0] === 'string';
+export const esLote = (texto: string): boolean => texto.indexOf('Lote') !== -1;
 
 export const extraerIndice = (terminos: Termino | Termino[], termino: Termino): number => {
   if (!Array.isArray(terminos)) {
@@ -18,8 +23,6 @@ export const extraerIndicePorLote = (lotes: Termino | Termino[], numLote: Termin
   return lotes.findIndex((lote) => lote.match(numLote));
 };
 
-type ExtractorIndice = (lotes: Termino | Termino[], numLote: Termino) => number;
-
 export const extraerDescripcionPorTermino = (
   lista: ListaDeDefinicion,
   termino: Termino,
@@ -34,27 +37,29 @@ export const extraerDescripcionPorTermino = (
     return descripciones;
   }
 
-  return descripciones[indice];
+  return descripciones[indice] ?? '';
 };
 
-export const esNivelPlano = (dd: ListaDeDefinicion['dd']): boolean => dd && dd.length && typeof dd[0] === 'string';
-
-export const esLote = (texto: string): boolean => texto.indexOf('Lote') !== -1;
-
+// Navega recursivamente hasta llegar a un nivel plano,
+// en la salida de la recursión los va añadiendo a una lista
 export const obtenerNivelPlano = (lista: ListaDeDefinicion): ListaDeDefinicion[] => {
-  const { dd, dt } = lista;
-  let total = [];
+  try {
+    const { dd, dt } = lista;
+    let total = [];
 
-  if (esNivelPlano(dd)) {
-    return [{ dd, dt }];
+    if (esNivelPlano(dd)) {
+      return [{ dd, dt }];
+    }
+
+    for (const iterator of dd) {
+      const element: ListaDeDefinicion = (iterator as Texto).dl;
+      total = [...total, ...obtenerNivelPlano(element)];
+    }
+
+    return total;
+  } catch (err) {
+    return [];
   }
-
-  for (const iterator of dd) {
-    const element: ListaDeDefinicion = (iterator as Texto).dl;
-    total = [...total, ...obtenerNivelPlano(element)];
-  }
-
-  return total;
 };
 
 export const buscarLotes = (descripcion: Descripcion): Lote[] => {
@@ -63,25 +68,36 @@ export const buscarLotes = (descripcion: Descripcion): Lote[] => {
   } = descripcion as Texto;
 
   if (Array.isArray(dd)) {
-    return dd.reduce((lotes: Lote[], termino: Termino) => (esLote(termino) ? [...lotes, constuirLote(termino)] : [...lotes]), []);
+    return dd.reduce((lotes: Lote[], termino: Termino) => {
+      const lote = constuirLote(termino);
+
+      return esLote(termino) && lote ? [...lotes, lote] : [...lotes];
+    }, []);
   }
 
   return [];
 };
 
 // formato xx.xxx,yyy euros
-export const costeMapper = (coste: string) => {
-  // quitamos separador de miles
-  coste = coste.replace('.', '');
-  // sustituimos separador de decimales
-  coste = coste.replace(',', '.');
-  // quitamos la moneda
-  return Number(coste.split(' ')[0]);
+export const costeMapper = (coste: string): number => {
+  try {
+    // quitamos separador de miles
+    coste = coste.replace('.', '');
+    // sustituimos separador de decimales
+    coste = coste.replace(',', '.');
+    // quitamos la moneda
+    const [precio] = coste.split(' ');
+    const digito = Number(precio);
+    return isNaN(digito) ? 0 : digito;
+  } catch {
+    return 0;
+  }
 };
 
 // Formato: Prefijo : Titulo. Sufijo
 export const tituloMapper = (titulo: string): string => {
-  // "Anuncio de formalización de contratos de: Jefatura de Intendencia de Asuntos Económicos Este. Objeto: Selección de empresas para el suministro de material de ferretería, eléctrico, construcción, fontanería y repuestos de automoción a las BAE,S ubicadas dentro del ámbito de la JIAE ESTE. Expediente: 2032719008000."
+  const match = /[\w\W]+:[\w\W]+\.[\w\W]+$/;
+  if (!titulo.match(match)) return '';
   const indicePrefijo = titulo.indexOf(':') + 1;
   const indiceSufijo = titulo.indexOf('.');
   return titulo.substring(indicePrefijo, indiceSufijo).trim();
@@ -89,6 +105,11 @@ export const tituloMapper = (titulo: string): string => {
 
 // Formato AAAAMMDD
 export const fechaPublicacionMapper = (fecha: string): string => {
-  const fechaConSeparador = fecha.replace(/(\d{4})(\d{2})/g, '$1-$2-');
-  return new Date(fechaConSeparador).toISOString();
+  if (!fecha) return '';
+  try {
+    const fechaConSeparador = fecha.replace(/(\d{4})(\d{2})/g, '$1-$2-');
+    return new Date(fechaConSeparador).toISOString();
+  } catch (err) {
+    return '';
+  }
 };

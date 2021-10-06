@@ -36,8 +36,12 @@ export interface Lote {
   descripcion: string;
 }
 
+// El texto del lote viene con el formato: NUM) Lote NUM: Descripción del lote
 export const constuirLote = (texto: string): Lote => {
   const [id, descripcion] = texto.split(/(?<=Lote\s\d:)/gi);
+  if (!id || !descripcion) {
+    return;
+  }
   return {
     id: id.replace(':', '').trim(),
     descripcion: descripcion.replace(/\.$/, '').trim(),
