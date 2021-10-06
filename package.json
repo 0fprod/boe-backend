@@ -75,11 +75,5 @@
       "@services/(.*)": "<rootDir>/services/$1",
       "@test/(.*)": "<rootDir>/../test/$1"
     }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lin",
-      "pre-push": "npm run test && npm run build"
-    }
   }
 }
