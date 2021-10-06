@@ -8,7 +8,11 @@ export class AppController {
 
   @Get()
   getHello(): string {
+    return this.appService.getHello();
+  }
+
+  @Get('/env')
+  getEnv(): string {
     return this.configService.get('DATABASE_USER');
-    // return this.appService.getHello();
   }
 }
