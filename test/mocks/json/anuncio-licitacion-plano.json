@@ -1,0 +1,164 @@
+{
+  "fecha_actualizacion": "20200831071613",
+  "metadatos": {
+    "identificador": "BOE-B-2020-27644",
+    "titulo": "Anuncio de formalización de contratos de: Intendente de Ferrol. Objeto: Suministro Abierto de víveres para alimentación de los residentes de la Residencia de Estudiantes de la Armada \"Teniente General Barroso\". Expediente: 2020AR42U0000536.",
+    "diario": { "_": "Boletín Oficial del Estado", "codigo": "BOE" },
+    "diario_numero": "233",
+    "seccion": "5",
+    "subseccion": "A",
+    "departamento": { "_": "Ministerio de Defensa", "codigo": "6110" },
+    "numero_anuncio": "A200036860",
+    "fecha_publicacion": "20200831",
+    "letra_imagen": "B",
+    "pagina_inicial": "37119",
+    "pagina_final": "37120",
+    "suplemento_letra_imagen": "",
+    "suplemento_pagina_inicial": "",
+    "suplemento_pagina_final": "",
+    "url_pdf": "/boe/dias/2020/08/31/pdfs/BOE-B-2020-27644.pdf"
+  },
+  "analisis": {
+    "modalidad": { "_": "Formalización contrato", "codigo": "F" },
+    "tipo": { "_": "Suministros", "codigo": "1" },
+    "tramitacion": { "codigo": "" },
+    "procedimiento": { "_": "Abierto", "codigo": "1" },
+    "fecha_presentacion_ofertas": "",
+    "fecha_apertura_ofertas": "",
+    "precio": { "codigo": "" },
+    "importe": "",
+    "ambito_geografico": "Galicia",
+    "materias": "",
+    "materias_cpv": "15000000 Alimentos, bebidas, tabaco y productos afines",
+    "observaciones": "Varias adjudicaciones"
+  },
+  "texto": {
+    "dl": {
+      "dt": [
+        "1. Poder adjudicador:",
+        "2. Tipo de poder adjudicador y principal actividad ejercida:",
+        "4. Códigos CPV:",
+        "5. Lugar principal de entrega de los suministros:",
+        "6. Descripción de la licitación:",
+        "7. Tipo de procedimiento de adjudicación:",
+        "9. Criterios de adjudicación:",
+        "10. Fecha de adjudicación:",
+        "11. Ofertas recibidas:",
+        "12. Adjudicatarios:",
+        "13. Valor de las ofertas:",
+        "17. Publicación anterior referente al presente procedimiento:",
+        "18. Fecha de envío del anuncio:"
+      ],
+      "dd": [
+        {
+          "dl": {
+            "dt": [
+              "1.1) Nombre:",
+              "1.2) Número de identificación fiscal:",
+              "1.3) Dirección:",
+              "1.4) Localidad:",
+              "1.5) Provincia:",
+              "1.6) Código postal:",
+              "1.7) País:",
+              "1.8) Código NUTS:",
+              "1.9) Teléfono:",
+              "1.10) Fax:",
+              "1.11) Correo electrónico:",
+              "1.13) Dirección del perfil de comprador:"
+            ],
+            "dd": [
+              "Intendente de Ferrol.",
+              "S1515003J.",
+              "ARSENAL MILITAR CALLE IRMANDIÑOS S/N.",
+              "Ferrol (A Coruña).",
+              "A Coruña.",
+              "15490.",
+              "España.",
+              "ES111.",
+              "981336207.",
+              "981336135.",
+              "a3jucofer@fn.mde.es",
+              "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=Ga9cB7M9jyU%3D"
+            ]
+          }
+        },
+        { "dl": { "dt": ["2.1) Tipo:", "2.2) Actividad principal ejercida:"], "dd": ["Administración General del Estado.", "Defensa."] } },
+        {
+          "dl": {
+            "dt": ["4.1) CPV principal:", "4.2) CPV", "4.3) CPV", "4.4) CPV", "4.5) CPV", "4.6) CPV", "4.7) CPV"],
+            "dd": [
+              "15800000 (Productos alimenticios diversos).",
+              "Lote 1: 15800000 (Productos alimenticios diversos).",
+              "Lote 2: 15800000 (Productos alimenticios diversos).",
+              "Lote 3: 15800000 (Productos alimenticios diversos).",
+              "Lote 4: 15800000 (Productos alimenticios diversos).",
+              "Lote 5: 15800000 (Productos alimenticios diversos).",
+              "Lote 6: 15800000 (Productos alimenticios diversos)."
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "5.1) Código NUTS principal:",
+              "5.2) Código NUTS",
+              "5.3) Código NUTS",
+              "5.4) Código NUTS",
+              "5.5) Código NUTS",
+              "5.6) Código NUTS",
+              "5.7) Código NUTS"
+            ],
+            "dd": ["ES111.", "Lote 1: ES111.", "Lote 2: ES111.", "Lote 3: ES111.", "Lote 4: ES111.", "Lote 5: ES111.", "Lote 6: ES111."]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["6.1) Descripción genérica:", "6.2)", "6.3)", "6.4)", "6.5)", "6.6)", "6.7)"],
+            "dd": [
+              "Suministro Abierto de viveres para alimentacion de los residentes de la Residencia de Estudiantes de la Armada ``Teniente General Barroso´´.",
+              "Lote 1: Lote 1 Carne fresca, salazón, aves y embutidos.",
+              "Lote 2: Lote 2 Frutas, verduras y patatas.",
+              "Lote 3: Lote 3 Pescados y mariscos frescos.",
+              "Lote 4: Lote 4 Cerveza, vino y licores.",
+              "Lote 5: Lote 5 Pan fresco .",
+              "Lote 6: Lote 6 Derivados lácteos."
+            ]
+          }
+        },
+        "Abierto simplificado.",
+        { "dl": { "dt": ["9.1)", "9.2)"], "dd": ["Precio (P) (Ponderación: 90%).", "SERVICIO OFERTADO (SO) (Ponderación: 10%)."] } },
+        "4 de agosto de 2020.",
+        { "dl": { "dt": "11.1) Lote 1:", "dd": { "dl": { "dt": "11.1.1) Número de ofertas recibidas:", "dd": "1." } } } },
+        {
+          "dl": {
+            "dt": "12.1) Lote 1:",
+            "dd": {
+              "dl": {
+                "dt": ["12.1.1) Nombre:", "12.1.2) Número de identificación fiscal:", "12.1.7) País:"],
+                "dd": ["MERCASH SAR, S.L.U.", "B36007409.", "España."]
+              }
+            }
+          }
+        },
+        {
+          "dl": {
+            "dt": "13.1) Lote 1:",
+            "dd": {
+              "dl": {
+                "dt": [
+                  "13.1.1) Valor de la oferta seleccionada:",
+                  "13.1.2) Valor de la orferta de mayor coste:",
+                  "13.1.3) Valor de la oferta de menor coste:"
+                ],
+                "dd": ["36.362,73 euros.", "34.908,22 euros.", "34.908,22 euros."]
+              }
+            }
+          }
+        },
+        "ID: 2020-161003. Anuncio de Formalización publicado en BOE (18 de agosto de 2020).",
+        "26 de agosto de 2020."
+      ]
+    },
+    "p": { "_": "Ferrol (A Coruña), 26 de agosto de 2020.- Intendente de Ferrol, Nelson Carlos Ameyugo Catalán.", "class": "parrafo_2" }
+  }
+}

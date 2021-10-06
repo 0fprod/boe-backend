@@ -1,6 +1,7 @@
 import { constuirContrato, Contrato } from '@repositories/models';
 import { Documento } from '@services/models';
 import { contratoAnidadoMapeado } from '@test/mocks/ts/contrato-anidado-mapeado';
+import { contratoPlanoMapeado } from '@test/mocks/ts/contrato-plano-mapeado';
 import { readFileSync } from 'fs';
 import { anuncioMapper } from './anuncio.mapper';
 
@@ -10,9 +11,15 @@ describe('Anuncio Mapper specs', () => {
     expect(anuncioMapper(parametroInvalido as Documento)).toStrictEqual(contratoVacio);
   });
 
-  it('Transforma un Documento en un Contrato', () => {
-    const boe = readFileSync('./test/mocks/json/anuncio-licitacion-1.json', { encoding: 'utf-8' });
+  it('Transforma un Documento anidado en un Contrato', () => {
+    const boe = readFileSync('./test/mocks/json/anuncio-licitacion-anidado.json', { encoding: 'utf-8' });
     const contrato: Contrato = anuncioMapper(JSON.parse(boe));
     expect(contrato).toStrictEqual(contratoAnidadoMapeado);
+  });
+
+  it('Transforma un Documento plano en un Contrato', () => {
+    const boe = readFileSync('./test/mocks/json/anuncio-licitacion-plano.json', { encoding: 'utf-8' });
+    const contrato: Contrato = anuncioMapper(JSON.parse(boe));
+    expect(contrato).toStrictEqual(contratoPlanoMapeado);
   });
 });

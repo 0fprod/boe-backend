@@ -35,12 +35,19 @@ describe('Xml2jsonService', () => {
   });
 
   it('Debería transformar un XML de un anuncio del BOE a un JSON', async () => {
-    const anuncioLicitaction = readFileSync(
-      './test/mocks/xml/anuncio-licitacion-1.xml',
-      {
-        encoding: 'utf-8',
-      },
-    );
+    const anuncioLicitaction = readFileSync('./test/mocks/xml/anuncio-licitacion-anidado.xml', {
+      encoding: 'utf-8',
+    });
+
+    const contenido: Anuncio = await service.parse(anuncioLicitaction);
+
+    expect(contenido).toBeTruthy();
+  });
+
+  it('Debería transformar un XML de un anuncio del BOE a un JSON', async () => {
+    const anuncioLicitaction = readFileSync('./test/mocks/xml/anuncio-licitacion-plano.xml', {
+      encoding: 'utf-8',
+    });
 
     const contenido: Anuncio = await service.parse(anuncioLicitaction);
 
