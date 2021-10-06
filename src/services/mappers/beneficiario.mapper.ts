@@ -51,10 +51,10 @@ export const beneficiarioMapper = (lista: ListaDeDefinicion): Beneficiario[] => 
   }
 
   const descripciones = extraerDescripcionPorTermino(lista, DESCRIPCION);
-  const adjudicatarios = extraerDescripcionPorTermino(lista, ADJUDICATARIOS);
-  const valorDeOfertas = extraerDescripcionPorTermino(lista, VALOR_OFERTAS);
+  const adjudicatarios = <Texto>extraerDescripcionPorTermino(lista, ADJUDICATARIOS);
+  const valorDeOfertas = <Texto>extraerDescripcionPorTermino(lista, VALOR_OFERTAS);
 
   const lotes = buscarLotes(descripciones);
-  const beneficiarios = lotes.map((lote) => buscarBeneficiariosPorLote(adjudicatarios as Texto, valorDeOfertas as Texto, lote)).flat();
+  const beneficiarios = lotes.map((lote) => buscarBeneficiariosPorLote(adjudicatarios, valorDeOfertas, lote)).flat();
   return beneficiarios;
 };

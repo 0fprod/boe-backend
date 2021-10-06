@@ -5,7 +5,11 @@ type ExtractorIndice = (lotes: Termino | Termino[], numLote: Termino) => number;
 
 export const esValida = (lista: ListaDeDefinicion): boolean => lista && Object.keys(lista).length > 0;
 // Se considera nivel plano ciando la lista DD contiene string y no Texto *ver modelo*
-export const esNivelPlano = (dd: ListaDeDefinicion['dd']): boolean => dd && Array.isArray(dd) && dd.length && typeof dd[0] === 'string';
+export const esNivelPlano = (dd: ListaDeDefinicion['dd']): boolean => {
+  if (Array.isArray(dd) && dd.length && typeof dd[0] === 'string') return true;
+  if (!Array.isArray(dd) && typeof dd === 'string') return true;
+  return false;
+};
 export const esLote = (texto: string): boolean => texto.indexOf('Lote') !== -1;
 
 export const extraerIndice = (terminos: Termino | Termino[], termino: Termino): number => {
@@ -18,9 +22,10 @@ export const extraerIndice = (terminos: Termino | Termino[], termino: Termino): 
 
 export const extraerIndicePorLote = (lotes: Termino | Termino[], numLote: Termino): number => {
   if (!Array.isArray(lotes)) {
-    return 0;
+    return lotes.match(numLote) ? 0 : -1;
   }
-  return lotes.findIndex((lote) => lote.match(numLote));
+  const lote = lotes.findIndex((lote) => lote.match(numLote));
+  return lote;
 };
 
 export const extraerDescripcionPorTermino = (

@@ -28,8 +28,8 @@ describe('Utils specs', () => {
 
   it('Devuelve un boolean si la entrada es un nivel plano (no es anidado)', () => {
     expect(esNivelPlano([''])).toBeTruthy();
+    expect(esNivelPlano('')).toBeTruthy();
     expect(esNivelPlano([])).toBeFalsy();
-    expect(esNivelPlano('')).toBeFalsy();
     expect(esNivelPlano([{ dl: { dd: [], dt: '' } }])).toBeFalsy();
   });
 
@@ -58,10 +58,12 @@ describe('Utils specs', () => {
   });
 
   it('Extrae un índice dado un lote', () => {
-    expect(extraerIndicePorLote('', '')).toEqual(0);
-    expect(extraerIndicePorLote(['irrelevante'], 'no casa')).toEqual(-1);
-    expect(extraerIndicePorLote(['casa'], 'casa')).toEqual(0);
-    expect(extraerIndicePorLote(['no Casa', 'casa'], 'casa')).toEqual(1);
+    expect(extraerIndicePorLote('', 'lote')).toEqual(-1);
+    expect(extraerIndicePorLote('lote 1', 'lote 1')).toEqual(0);
+    expect(extraerIndicePorLote('lote 1', 'lote 2')).toEqual(-1);
+    expect(extraerIndicePorLote(['irrelevante'], 'lote')).toEqual(-1);
+    expect(extraerIndicePorLote(['lote 1'], 'lote 1')).toEqual(0);
+    expect(extraerIndicePorLote(['lote 1', 'lote 2'], 'lote 2')).toEqual(1);
   });
 
   it('Extrae una descripción dado un término', () => {
