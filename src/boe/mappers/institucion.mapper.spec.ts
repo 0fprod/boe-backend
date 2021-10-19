@@ -1,5 +1,5 @@
-import { constuirInstitucion } from '@repositories/models';
-import { ListaDeDefinicion } from '@services/models';
+import { ListaDeDefinicion } from 'src/boe/api-models';
+import { constuirInstitucion } from 'src/contratos/models';
 import { institucionMapper } from './institucion.mapper';
 
 describe('Institucion Mapper specs', () => {

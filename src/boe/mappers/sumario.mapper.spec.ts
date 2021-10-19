@@ -1,17 +1,17 @@
-import { Boe, construirBoe } from '@repositories/models';
-import { Sumario } from '@services/models';
 import { readFileSync } from 'fs';
-import { boeMapper } from './boe.mapper';
+import { Sumario } from 'src/boe/api-models';
+import { Boe, construirBoe } from 'src/contratos/models';
+import { mapSumarioABoe } from './sumario.mapper';
 
 describe('Boe Mapper specs', () => {
   it.each([undefined, null, {}, []])('Devuelve un BOE vacío si el parámetro es [%s]', (parametroInvalido) => {
     const defaultBoe = construirBoe();
-    expect(boeMapper(parametroInvalido as Sumario)).toStrictEqual(defaultBoe);
+    expect(mapSumarioABoe(parametroInvalido as Sumario)).toStrictEqual(defaultBoe);
   });
 
   it('Transforma un Sumario en un BOE', () => {
     const boe = readFileSync('./test/mocks/json/boe.json', { encoding: 'utf-8' });
-    const sumario: Boe = boeMapper(JSON.parse(boe));
+    const sumario: Boe = mapSumarioABoe(JSON.parse(boe));
     expect(sumario).toEqual({
       idContratos: [
         'BOE-B-2020-27644',

@@ -1,5 +1,5 @@
-import { Boe, construirBoe } from '@repositories/models';
-import { Item, Seccion, Sumario } from '@services/models';
+import { Item, Seccion, Sumario } from 'src/boe/api-models';
+import { Boe, construirBoe } from 'src/contratos/models';
 
 /*
 En un sumario vienen muchas más secciones y tipos de contratos como, licitaciones, actualizaciones..etc
@@ -13,7 +13,7 @@ const extraerSeccionAnuncios = (entrada: Sumario) => entrada.diario.seccion.find
 const extaerItemsDeDepartamentos = (seccion?: Seccion) => (seccion ? seccion.departamento.map(({ item }) => item).flat() : []);
 const esFormalizacion = (titulo: string) => titulo.includes(FORMALIZACION_CONTRATOS);
 
-export const boeMapper = (entrada: Sumario): Boe => {
+export const mapSumarioABoe = (entrada: Sumario): Boe => {
   if (esValida(entrada)) {
     const seccionAnuncios5A = extraerSeccionAnuncios(entrada);
     const items: Item[] = extaerItemsDeDepartamentos(seccionAnuncios5A);

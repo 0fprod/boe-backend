@@ -1,5 +1,5 @@
-import { Lote } from '@repositories/models';
-import { Descripcion, ListaDeDefinicion } from './models';
+import { Lote } from 'src/contratos/models';
+import { Descripcion, ListaDeDefinicion } from '../boe/api-models';
 import {
   buscarLotes,
   costeMapper,

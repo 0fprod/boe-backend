@@ -1,5 +1,5 @@
-import { ListaDeDefinicion } from '@services/models';
 import { mockDeBeneficiarioAnidado } from '@test/mocks/ts/beneficiario-anidado';
+import { ListaDeDefinicion } from 'src/boe/api-models';
 import { descripcionMapper } from './descripcion.mapper';
 
 describe('Descripcion Specs', () => {

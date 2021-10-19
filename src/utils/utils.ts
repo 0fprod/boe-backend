@@ -1,5 +1,5 @@
-import { constuirLote, Lote } from '@repositories/models';
-import { Descripcion, ListaDeDefinicion, Termino, Texto } from './models';
+import { constuirLote, Lote } from 'src/contratos/models';
+import { Descripcion, ListaDeDefinicion, Termino, Texto } from '../boe/api-models';
 
 type ExtractorIndice = (lotes: Termino | Termino[], numLote: Termino) => number;
 

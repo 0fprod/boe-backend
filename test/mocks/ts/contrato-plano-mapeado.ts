@@ -1,4 +1,4 @@
-import { Contrato } from '@repositories/models';
+import { Contrato } from 'src/contratos/models';
 
 export const contratoPlanoMapeado: Contrato = {
   detalles: {
