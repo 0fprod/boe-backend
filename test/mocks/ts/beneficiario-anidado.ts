@@ -1,4 +1,4 @@
-import { ListaDeDefinicion } from 'src/boe/api-models';
+import { ListaDeDefinicion } from '@boe/api-models';
 
 export const mockDeBeneficiarioAnidado: ListaDeDefinicion = {
   dd: [

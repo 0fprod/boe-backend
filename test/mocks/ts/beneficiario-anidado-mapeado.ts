@@ -1,4 +1,4 @@
-import { Beneficiario } from 'src/contratos/models';
+import { Beneficiario } from '@contratos/models';
 
 export const beneficiarioAnidadoMapeado: Beneficiario[] = [
   {

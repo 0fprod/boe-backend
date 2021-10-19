@@ -1,6 +1,6 @@
-import { ListaDeDefinicion, Texto } from 'src/boe/api-models';
-import { constuirInstitucion, Institucion } from 'src/contratos/models';
-import { esValida, extraerDescripcionPorTermino, extraerIndice } from 'src/utils/utils';
+import { ListaDeDefinicion, Texto } from '@boe/api-models';
+import { constuirInstitucion, Institucion } from '@contratos/models';
+import { esValida, extraerDescripcionPorTermino, extraerIndice } from '@utils/utils';
 
 const PODER_ADJUDICADOR = 'Poder adjudicador';
 const NOMBRE = 'Nombre';

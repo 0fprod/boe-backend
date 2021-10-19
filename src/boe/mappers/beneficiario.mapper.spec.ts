@@ -1,7 +1,7 @@
+import { ListaDeDefinicion } from '@boe/api-models';
+import { Beneficiario } from '@contratos/models';
 import { mockDeBeneficiarioAnidado } from '@test/mocks/ts/beneficiario-anidado';
 import { beneficiarioAnidadoMapeado } from '@test/mocks/ts/beneficiario-anidado-mapeado';
-import { ListaDeDefinicion } from 'src/boe/api-models';
-import { Beneficiario } from 'src/contratos/models';
 import { beneficiarioMapper } from './beneficiario.mapper';
 
 describe('Beneficiario mapper specs ', () => {

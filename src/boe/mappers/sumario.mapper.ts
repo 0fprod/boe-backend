@@ -1,5 +1,5 @@
-import { Item, Seccion, Sumario } from 'src/boe/api-models';
-import { Boe, construirBoe } from 'src/contratos/models';
+import { Item, Seccion, Sumario } from '@boe/api-models';
+import { Boe, construirBoe } from '@contratos/models';
 
 /*
 En un sumario vienen muchas más secciones y tipos de contratos como, licitaciones, actualizaciones..etc

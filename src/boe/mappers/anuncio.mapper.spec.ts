@@ -1,8 +1,8 @@
+import { constuirContrato, Contrato } from '@contratos/models';
 import { contratoAnidadoMapeado } from '@test/mocks/ts/contrato-anidado-mapeado';
 import { contratoPlanoMapeado } from '@test/mocks/ts/contrato-plano-mapeado';
 import { readFileSync } from 'fs';
-import { Documento } from 'src/boe/api-models';
-import { constuirContrato, Contrato } from 'src/contratos/models';
+import { Documento } from '../api-models';
 import { anuncioMapper } from './anuncio.mapper';
 
 describe('Anuncio Mapper specs', () => {

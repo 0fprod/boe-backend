@@ -1,6 +1,6 @@
-import { ListaDeDefinicion, Texto } from 'src/boe/api-models';
-import { Beneficiario, construirBeneficiario, Lote } from 'src/contratos/models';
-import { buscarLotes, costeMapper, esValida, extraerDescripcionPorTermino, extraerIndicePorLote, obtenerNivelPlano } from 'src/utils/utils';
+import { ListaDeDefinicion, Texto } from '@boe/api-models';
+import { Beneficiario, construirBeneficiario, Lote } from '@contratos/models';
+import { buscarLotes, costeMapper, esValida, extraerDescripcionPorTermino, extraerIndicePorLote, obtenerNivelPlano } from '@utils/utils';
 
 const DESCRIPCION = 'Descripción de la licitación';
 const VALOR_OFERTAS = 'Valor de las ofertas';

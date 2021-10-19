@@ -1,5 +1,5 @@
-import { ListaDeDefinicion, Termino, Texto } from 'src/boe/api-models';
-import { esValida, extraerDescripcionPorTermino } from 'src/utils/utils';
+import { ListaDeDefinicion, Termino, Texto } from '@boe/api-models';
+import { esValida, extraerDescripcionPorTermino } from '@utils/utils';
 
 const DESCRIPCION = 'Descripción de la licitación';
 const DESCRIPCION_GENERICA = 'Descripción genérica';

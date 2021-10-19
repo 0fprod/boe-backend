@@ -1,6 +1,6 @@
-import { Documento } from 'src/boe/api-models';
-import { construirDetallesDeContrato, constuirContrato, Contrato } from 'src/contratos/models';
-import { fechaPublicacionMapper, tituloMapper } from 'src/utils/utils';
+import { Documento } from '@boe/api-models';
+import { construirDetallesDeContrato, constuirContrato, Contrato } from '@contratos/models';
+import { fechaPublicacionMapper, tituloMapper } from '@utils/utils';
 import { beneficiarioMapper } from './beneficiario.mapper';
 import { descripcionMapper } from './descripcion.mapper';
 import { institucionMapper } from './institucion.mapper';

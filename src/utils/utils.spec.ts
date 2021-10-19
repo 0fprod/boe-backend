@@ -1,4 +1,4 @@
-import { Lote } from 'src/contratos/models';
+import { Lote } from '@contratos/models';
 import { Descripcion, ListaDeDefinicion } from '../boe/api-models';
 import {
   buscarLotes,
