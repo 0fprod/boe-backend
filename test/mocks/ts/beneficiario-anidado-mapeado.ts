@@ -1,4 +1,4 @@
-import { Beneficiario } from '@repositories/models';
+import { Beneficiario } from '@compartido/models';
 
 export const beneficiarioAnidadoMapeado: Beneficiario[] = [
   {

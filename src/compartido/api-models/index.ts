@@ -1,2 +1,2 @@
 export * from './anuncio.model';
-export * from './boe.model';
+export * from './sumario.model';

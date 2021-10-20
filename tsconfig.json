@@ -18,8 +18,10 @@
     "noFallthroughCasesInSwitch": false,
     "baseUrl": "./",
     "paths": {
-      "@repositories/*": ["src/repositories/*"],
-      "@services/*": ["src/services/*"],
+      "@boe/*": ["src/boe/*"],
+      "@contratos/*": ["src/contratos/*"],
+      "@compartido/*": ["src/compartido/*"],
+      "@utils/*": ["src/utils/*"],
       "@test/*": ["test/*"]
     }
   }

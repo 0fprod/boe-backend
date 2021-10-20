@@ -1,4 +1,4 @@
-import { ListaDeDefinicion } from '@services/models';
+import { ListaDeDefinicion } from '@compartido/api-models';
 import { mockDeBeneficiarioAnidado } from '@test/mocks/ts/beneficiario-anidado';
 import { descripcionMapper } from './descripcion.mapper';
 

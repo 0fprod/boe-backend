@@ -1,5 +1,5 @@
-import { Beneficiario } from '@repositories/models';
-import { ListaDeDefinicion } from '@services/models';
+import { ListaDeDefinicion } from '@compartido/api-models';
+import { Beneficiario } from '@compartido/models';
 import { mockDeBeneficiarioAnidado } from '@test/mocks/ts/beneficiario-anidado';
 import { beneficiarioAnidadoMapeado } from '@test/mocks/ts/beneficiario-anidado-mapeado';
 import { beneficiarioMapper } from './beneficiario.mapper';

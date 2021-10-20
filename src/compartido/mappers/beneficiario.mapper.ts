@@ -1,6 +1,6 @@
-import { Beneficiario, construirBeneficiario, Lote } from '@repositories/models';
-import { ListaDeDefinicion, Texto } from '@services/models';
-import { buscarLotes, costeMapper, esValida, extraerDescripcionPorTermino, extraerIndicePorLote, obtenerNivelPlano } from '@services/utils';
+import { ListaDeDefinicion, Texto } from '@compartido/api-models';
+import { Beneficiario, construirBeneficiario, Lote } from '@compartido/models';
+import { buscarLotes, costeMapper, esValida, extraerDescripcionPorTermino, extraerIndicePorLote, obtenerNivelPlano } from '@utils/utils';
 
 const DESCRIPCION = 'Descripción de la licitación';
 const VALOR_OFERTAS = 'Valor de las ofertas';

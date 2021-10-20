@@ -1,5 +1,5 @@
-import { Lote } from '@repositories/models';
-import { Descripcion, ListaDeDefinicion } from './models';
+import { Lote } from '@compartido/models';
+import { Descripcion, ListaDeDefinicion } from '../compartido/api-models';
 import {
   buscarLotes,
   costeMapper,

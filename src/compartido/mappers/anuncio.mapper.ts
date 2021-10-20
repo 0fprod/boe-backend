@@ -1,6 +1,6 @@
-import { construirDetallesDeContrato, constuirContrato, Contrato } from '@repositories/models';
-import { Documento } from '@services/models';
-import { fechaPublicacionMapper, tituloMapper } from '@services/utils';
+import { Documento } from '@compartido/api-models';
+import { construirDetallesDeContrato, constuirContrato, Contrato } from '@compartido/models';
+import { fechaPublicacionMapper, tituloMapper } from '@utils/utils';
 import { beneficiarioMapper } from './beneficiario.mapper';
 import { descripcionMapper } from './descripcion.mapper';
 import { institucionMapper } from './institucion.mapper';

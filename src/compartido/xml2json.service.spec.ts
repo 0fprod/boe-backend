@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { readFileSync } from 'fs';
-import { Anuncio, Sumario } from '../models';
+import { Anuncio, Sumario } from './api-models';
 import { Xml2jsonService } from './xml2json.service';
 
 describe('Xml2jsonService', () => {
