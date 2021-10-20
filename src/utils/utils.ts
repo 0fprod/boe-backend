@@ -107,9 +107,10 @@ export const costeMapper = (coste: string): number => {
 export const tituloMapper = (titulo: string): string => {
   const prefijo = 'Objeto:';
   const sufijo = 'Expediente';
-  const indicePrefijo = titulo.indexOf(prefijo) + prefijo.length;
+  const indicePrefijo = titulo.indexOf(prefijo);
   const indiceSufijo = titulo.indexOf(sufijo);
-  return titulo.substring(indicePrefijo, indiceSufijo).trim();
+  if (indicePrefijo === -1 || indiceSufijo === -1) return '';
+  return titulo.substring(indicePrefijo + prefijo.length, indiceSufijo).trim();
 };
 
 // Formato AAAAMMDD

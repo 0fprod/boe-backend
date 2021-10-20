@@ -1,12 +1,16 @@
+import { HttpModule } from '@nestjs/axios';
+import { ConfigService } from '@nestjs/config';
 import { Test, TestingModule } from '@nestjs/testing';
 import { BoeApiService } from './boe-api.service';
+import { Xml2jsonService } from './xml2json.service';
 
 describe('BoeApiService', () => {
   let service: BoeApiService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [BoeApiService],
+      imports: [HttpModule],
+      providers: [BoeApiService, ConfigService, Xml2jsonService],
     }).compile();
 
     service = module.get<BoeApiService>(BoeApiService);
