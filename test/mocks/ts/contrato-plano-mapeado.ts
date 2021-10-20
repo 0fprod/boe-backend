@@ -1,4 +1,4 @@
-import { Contrato } from 'src/compartido/models';
+import { Contrato } from '@compartido/models';
 
 export const contratoPlanoMapeado: Contrato = {
   detalles: {

@@ -20,6 +20,7 @@
     "paths": {
       "@boe/*": ["src/boe/*"],
       "@contratos/*": ["src/contratos/*"],
+      "@compartido/*": ["src/compartido/*"],
       "@utils/*": ["src/utils/*"],
       "@test/*": ["test/*"]
     }

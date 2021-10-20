@@ -1,7 +1,7 @@
+import { ListaDeDefinicion } from '@compartido/api-models';
+import { Beneficiario } from '@compartido/models';
 import { mockDeBeneficiarioAnidado } from '@test/mocks/ts/beneficiario-anidado';
 import { beneficiarioAnidadoMapeado } from '@test/mocks/ts/beneficiario-anidado-mapeado';
-import { ListaDeDefinicion } from 'src/compartido/api-models';
-import { Beneficiario } from 'src/compartido/models';
 import { beneficiarioMapper } from './beneficiario.mapper';
 
 describe('Beneficiario mapper specs ', () => {

@@ -1,7 +1,7 @@
+import { constuirContrato, Contrato } from '@compartido/models';
 import { contratoAnidadoMapeado } from '@test/mocks/ts/contrato-anidado-mapeado';
 import { contratoPlanoMapeado } from '@test/mocks/ts/contrato-plano-mapeado';
 import { readFileSync } from 'fs';
-import { constuirContrato, Contrato } from 'src/compartido/models';
 import { Documento } from '../api-models';
 import { anuncioMapper } from './anuncio.mapper';
 

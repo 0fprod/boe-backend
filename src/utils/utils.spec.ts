@@ -1,4 +1,4 @@
-import { Lote } from 'src/compartido/models';
+import { Lote } from '@compartido/models';
 import { Descripcion, ListaDeDefinicion } from '../compartido/api-models';
 import {
   buscarLotes,

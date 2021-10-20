@@ -1,5 +1,5 @@
-import { Item, Seccion, Sumario } from 'src/compartido/api-models';
-import { Boe, construirBoe } from 'src/compartido/models';
+import { Item, Seccion, Sumario } from '@compartido/api-models';
+import { Boe, construirBoe } from '@compartido/models';
 
 /*
 En un sumario vienen muchas más secciones y tipos de contratos como, licitaciones, actualizaciones..etc

@@ -74,6 +74,7 @@
     "moduleNameMapper": {
       "@boe/(.*)": "<rootDir>/boe/$1",
       "@contratos/(.*)": "<rootDir>/contratos/$1",
+      "@compartido/(.*)": "<rootDir>/compartido/$1",
       "@utils/(.*)": "<rootDir>/utils/$1",
       "@test/(.*)": "<rootDir>/../test/$1"
     }
