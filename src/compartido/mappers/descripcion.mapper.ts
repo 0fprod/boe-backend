@@ -9,8 +9,12 @@ export const descripcionMapper = (lista: ListaDeDefinicion): string => {
     return '';
   }
 
-  const descripciones = <Texto>extraerDescripcionPorTermino(lista, DESCRIPCION);
-  const descripcionGenerica = <Termino>extraerDescripcionPorTermino(descripciones.dl, DESCRIPCION_GENERICA);
+  const descripciones = <Texto | Termino>extraerDescripcionPorTermino(lista, DESCRIPCION);
 
-  return descripcionGenerica ?? (descripciones.dl.dd[0] as string);
+  if (typeof descripciones !== 'string') {
+    const descripcionGenerica = <Termino>extraerDescripcionPorTermino(descripciones.dl, DESCRIPCION_GENERICA);
+    return descripcionGenerica ?? (descripciones.dl.dd[0] as string);
+  }
+
+  return descripciones as string;
 };

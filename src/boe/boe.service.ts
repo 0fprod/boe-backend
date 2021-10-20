@@ -1,9 +1,31 @@
+import { Anuncio, Sumario } from '@compartido/api-models';
+import { BoeApiService } from '@compartido/boe-api.service';
+import { Boe, Contrato } from '@compartido/models';
 import { Injectable } from '@nestjs/common';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class BoeService {
+  constructor(private boeApi: BoeApiService) {}
+
   public getHello(): string {
     return 'Hello';
+  }
+
+  public obtenerBoe(id: string): Observable<Boe> {
+    return this.boeApi.obtenerBoe(id);
+  }
+
+  public obtenerSumario(id: string): Observable<Sumario> {
+    return this.boeApi.obtenerSumario(id);
+  }
+
+  public obtenerAnuncio(id: string): Observable<Anuncio> {
+    return this.boeApi.obtenerAnuncio(id);
+  }
+
+  public obtenerContrato(id: string): Observable<Contrato> {
+    return this.boeApi.obtenerContrato(id);
   }
 
   private llamarBoeApi(): void {

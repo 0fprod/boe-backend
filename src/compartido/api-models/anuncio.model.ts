@@ -18,11 +18,7 @@ export interface Texto {
   dl: ListaDeDefinicion;
 }
 
-export interface Documento {
+export interface Anuncio {
   metadatos: Metadatos;
   texto: Texto;
-}
-
-export interface Anuncio {
-  documento: Documento;
 }

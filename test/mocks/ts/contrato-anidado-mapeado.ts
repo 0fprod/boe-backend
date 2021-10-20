@@ -986,6 +986,7 @@ export const contratoAnidadoMapeado: Contrato = {
   },
   id: 'BOE-B-2020-9754',
   fechaPub: '2020-03-03T00:00:00.000Z',
-  titulo: 'Jefatura de Intendencia de Asuntos Económicos Este',
+  titulo:
+    'Selección de empresas para el suministro de material de ferretería, eléctrico, construcción, fontanería y repuestos de automoción a las BAE,S ubicadas dentro del ámbito de la JIAE ESTE.',
   urlPdf: '/boe/dias/2020/03/03/pdfs/BOE-B-2020-9754.pdf',
 };

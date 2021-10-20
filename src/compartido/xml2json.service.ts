@@ -17,10 +17,7 @@ export class Xml2jsonService {
   }
 
   async parse(xml: string) {
-    const { error, documento, sumario } = await parseStringPromise(
-      xml,
-      this.opciones,
-    );
+    const { error, documento, sumario } = await parseStringPromise(xml, this.opciones);
 
     if (error) {
       throw new Error('Fichero inválido');
