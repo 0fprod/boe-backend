@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BoeModule } from './boe/boe.module';
 import { ContratosModule } from './contratos/contratos.module';
+import { CompartidoModule } from './compartido/compartido.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { ContratosModule } from './contratos/contratos.module';
     }),
     ContratosModule,
     BoeModule,
+    CompartidoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

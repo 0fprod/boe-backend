@@ -1,5 +1,5 @@
-import { Lote } from '@contratos/models';
-import { Descripcion, ListaDeDefinicion } from '../boe/api-models';
+import { Lote } from 'src/compartido/models';
+import { Descripcion, ListaDeDefinicion } from '../compartido/api-models';
 import {
   buscarLotes,
   costeMapper,
