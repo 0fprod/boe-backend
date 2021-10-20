@@ -1,10 +1,9 @@
+import { BoeModule } from '@boe/boe.module';
+import { ContratosModule } from '@contratos/contratos.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { BoeModule } from './boe/boe.module';
-import { ContratosModule } from './contratos/contratos.module';
-import { CompartidoModule } from './compartido/compartido.module';
 
 @Module({
   imports: [
@@ -14,7 +13,6 @@ import { CompartidoModule } from './compartido/compartido.module';
     }),
     ContratosModule,
     BoeModule,
-    CompartidoModule,
   ],
   controllers: [AppController],
   providers: [AppService],
