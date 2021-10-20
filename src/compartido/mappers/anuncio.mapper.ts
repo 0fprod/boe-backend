@@ -1,13 +1,13 @@
-import { Documento } from '@compartido/api-models';
+import { Anuncio } from '@compartido/api-models';
 import { construirDetallesDeContrato, constuirContrato, Contrato } from '@compartido/models';
 import { fechaPublicacionMapper, tituloMapper } from '@utils/utils';
 import { beneficiarioMapper } from './beneficiario.mapper';
 import { descripcionMapper } from './descripcion.mapper';
 import { institucionMapper } from './institucion.mapper';
 
-const esValida = (entrada: Documento) => entrada && entrada.metadatos && entrada.texto;
+const esValida = (entrada: Anuncio) => entrada && entrada.metadatos && entrada.texto;
 
-export const anuncioMapper = (entrada: Documento): Contrato => {
+export const anuncioMapper = (entrada: Anuncio): Contrato => {
   if (esValida(entrada)) {
     const { texto } = entrada;
 
