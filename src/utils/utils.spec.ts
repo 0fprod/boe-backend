@@ -125,6 +125,6 @@ describe('Utils specs', () => {
     expect(tituloMapper('titulo sin formato')).toEqual('');
     expect(tituloMapper('prefijo : titulo sufijo')).toEqual('');
     expect(tituloMapper('prefijo  titulo. sufijo')).toEqual('');
-    expect(tituloMapper('prefijo : titulo. sufijo')).toEqual('titulo');
+    expect(tituloMapper('Objeto : titulo. Expediente')).toEqual('titulo');
   });
 });

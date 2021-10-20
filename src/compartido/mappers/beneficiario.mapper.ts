@@ -31,18 +31,22 @@ const construirBeneficiariosConCostes = (
 };
 
 const buscarBeneficiariosPorLote = (adjudicatarios: Texto, costes: Texto, lote: Lote): Beneficiario[] => {
-  const textoAdjudicatarios = <Texto>extraerDescripcionPorTermino(adjudicatarios.dl, lote.id, extraerIndicePorLote);
-  const textoCostes = <Texto>extraerDescripcionPorTermino(costes.dl, lote.id, extraerIndicePorLote);
-  const beneficiariosPlanos: ListaDeDefinicion[] = obtenerNivelPlano(textoAdjudicatarios.dl);
-  const costesPlanos: ListaDeDefinicion[] = obtenerNivelPlano(textoCostes.dl);
+  if (lote.id) {
+    const textoAdjudicatarios = <Texto>extraerDescripcionPorTermino(adjudicatarios.dl, lote.id, extraerIndicePorLote);
+    const textoCostes = <Texto>extraerDescripcionPorTermino(costes.dl, lote.id, extraerIndicePorLote);
+    const beneficiariosPlanos: ListaDeDefinicion[] = obtenerNivelPlano(textoAdjudicatarios.dl);
+    const costesPlanos: ListaDeDefinicion[] = obtenerNivelPlano(textoCostes.dl);
 
-  // Ambas colecciones están ordenadas siempre.
-  const beneficiarios = beneficiariosPlanos.map((beneficiarioPlano, indice) => {
-    const costePlano = costesPlanos[indice];
-    return construirBeneficiariosConCostes(beneficiarioPlano, costePlano, lote);
-  });
+    // Ambas colecciones están ordenadas siempre.
+    const beneficiarios = beneficiariosPlanos.map((beneficiarioPlano, indice) => {
+      const costePlano = costesPlanos[indice];
+      return construirBeneficiariosConCostes(beneficiarioPlano, costePlano, lote);
+    });
 
-  return beneficiarios;
+    return beneficiarios;
+  }
+
+  return [construirBeneficiariosConCostes(adjudicatarios.dl, costes.dl, lote)];
 };
 
 export const beneficiarioMapper = (lista: ListaDeDefinicion): Beneficiario[] => {

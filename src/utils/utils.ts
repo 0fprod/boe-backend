@@ -68,6 +68,10 @@ export const obtenerNivelPlano = (lista: ListaDeDefinicion): ListaDeDefinicion[]
 };
 
 export const buscarLotes = (descripcion: Descripcion): Lote[] => {
+  if (typeof descripcion === 'string') {
+    return [{ descripcion, id: '' }];
+  }
+
   const {
     dl: { dd },
   } = descripcion as Texto;
@@ -101,10 +105,10 @@ export const costeMapper = (coste: string): number => {
 
 // Formato: Prefijo : Titulo. Sufijo
 export const tituloMapper = (titulo: string): string => {
-  const match = /[\w\W]+:[\w\W]+\.[\w\W]+$/;
-  if (!titulo.match(match)) return '';
-  const indicePrefijo = titulo.indexOf(':') + 1;
-  const indiceSufijo = titulo.indexOf('.');
+  const prefijo = 'Objeto:';
+  const sufijo = 'Expediente';
+  const indicePrefijo = titulo.indexOf(prefijo) + prefijo.length;
+  const indiceSufijo = titulo.indexOf(sufijo);
   return titulo.substring(indicePrefijo, indiceSufijo).trim();
 };
 
