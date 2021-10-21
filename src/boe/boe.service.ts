@@ -1,8 +1,8 @@
-import { Anuncio, Sumario } from '@compartido/api-models';
-import { BoeApiService } from '@compartido/boe-api.service';
-import { Boe, Contrato } from '@compartido/models';
 import { Injectable } from '@nestjs/common';
 import { Observable } from 'rxjs';
+import { Anuncio, Sumario } from '../compartido/api-models';
+import { BoeApiService } from '../compartido/boe-api.service';
+import { Boe, Contrato } from '../compartido/models';
 
 @Injectable()
 export class BoeService {

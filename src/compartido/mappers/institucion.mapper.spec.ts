@@ -1,5 +1,5 @@
-import { ListaDeDefinicion } from '@compartido/api-models';
-import { constuirInstitucion } from '@compartido/models';
+import { ListaDeDefinicion } from '../api-models';
+import { constuirInstitucion } from '../models';
 import { institucionMapper } from './institucion.mapper';
 
 describe('Institucion Mapper specs', () => {

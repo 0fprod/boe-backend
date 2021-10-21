@@ -1,5 +1,5 @@
-import { ListaDeDefinicion, Termino, Texto } from '@compartido/api-models';
-import { esValida, extraerDescripcionPorTermino } from '@utils/utils';
+import { esValida, extraerDescripcionPorTermino } from '../../utils';
+import { ListaDeDefinicion, Termino, Texto } from '../api-models';
 
 const DESCRIPCION = 'Descripción de la licitación';
 const DESCRIPCION_GENERICA = 'Descripción genérica';

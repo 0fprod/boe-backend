@@ -1,5 +1,5 @@
-import { CompartidoModule } from '@compartido/compartido.module';
 import { Test, TestingModule } from '@nestjs/testing';
+import { CompartidoModule } from '../compartido/compartido.module';
 import { BoeService } from './boe.service';
 
 describe('BoeService', () => {
