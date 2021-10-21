@@ -1,5 +1,5 @@
-import { CompartidoModule } from '@compartido/compartido.module';
 import { Module } from '@nestjs/common';
+import { CompartidoModule } from '../compartido/compartido.module';
 import { BoeController } from './boe.controller';
 import { BoeService } from './boe.service';
 
