@@ -1,9 +1,9 @@
-import { ListaDeDefinicion } from '@compartido/api-models';
-import { Beneficiario } from '@compartido/models';
-import { mockDeBeneficiarioAnidado } from '@test/mocks/ts/beneficiario-anidado';
-import { beneficiarioAnidadoMapeado } from '@test/mocks/ts/beneficiario-anidado-mapeado';
-import { MockBeneficiariosSinLoteMapeado } from '@test/mocks/ts/beneficiario-sin-lote-mapeado';
-import { MockBeneficiariosSinLote } from '@test/mocks/ts/beneficiarios-sin-lote';
+import { mockDeBeneficiarioAnidado } from '../../../test/mocks/ts/beneficiario-anidado';
+import { beneficiarioAnidadoMapeado } from '../../../test/mocks/ts/beneficiario-anidado-mapeado';
+import { MockBeneficiariosSinLoteMapeado } from '../../../test/mocks/ts/beneficiario-sin-lote-mapeado';
+import { MockBeneficiariosSinLote } from '../../../test/mocks/ts/beneficiarios-sin-lote';
+import { ListaDeDefinicion } from '../api-models';
+import { Beneficiario } from '../models';
 import { beneficiarioMapper } from './beneficiario.mapper';
 
 describe('Beneficiario mapper specs ', () => {

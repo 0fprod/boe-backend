@@ -1,5 +1,5 @@
-import { ListaDeDefinicion } from '@compartido/api-models';
-import { mockDeBeneficiarioAnidado } from '@test/mocks/ts/beneficiario-anidado';
+import { mockDeBeneficiarioAnidado } from '../../../test/mocks/ts/beneficiario-anidado';
+import { ListaDeDefinicion } from '../api-models';
 import { descripcionMapper } from './descripcion.mapper';
 
 describe('Descripcion Specs', () => {

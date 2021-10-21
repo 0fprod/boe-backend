@@ -1,8 +1,8 @@
-import { Anuncio } from '@compartido/api-models';
-import { constuirContrato, Contrato } from '@compartido/models';
-import { contratoAnidadoMapeado } from '@test/mocks/ts/contrato-anidado-mapeado';
-import { contratoPlanoMapeado } from '@test/mocks/ts/contrato-plano-mapeado';
 import { readFileSync } from 'fs';
+import { contratoAnidadoMapeado } from '../../../test/mocks/ts/contrato-anidado-mapeado';
+import { contratoPlanoMapeado } from '../../../test/mocks/ts/contrato-plano-mapeado';
+import { Anuncio } from '../api-models';
+import { constuirContrato, Contrato } from '../models';
 import { anuncioMapper } from './anuncio.mapper';
 
 describe('Anuncio Mapper specs', () => {

@@ -1,7 +1,7 @@
-import { Anuncio, Sumario } from '@compartido/api-models';
-import { Boe, Contrato } from '@compartido/models';
 import { Controller, Get, Param, Post } from '@nestjs/common';
 import { firstValueFrom } from 'rxjs';
+import { Anuncio, Sumario } from '../compartido/api-models';
+import { Boe, Contrato } from '../compartido/models';
 import { BoeService } from './boe.service';
 
 @Controller('boe')

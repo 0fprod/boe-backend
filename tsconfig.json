@@ -15,14 +15,6 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
-    "baseUrl": "./",
-    "paths": {
-      "@boe/*": ["src/boe/*"],
-      "@contratos/*": ["src/contratos/*"],
-      "@compartido/*": ["src/compartido/*"],
-      "@utils/*": ["src/utils/*"],
-      "@test/*": ["test/*"]
-    }
+    "noFallthroughCasesInSwitch": false
   }
 }

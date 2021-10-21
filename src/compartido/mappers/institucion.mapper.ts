@@ -1,6 +1,6 @@
-import { ListaDeDefinicion, Texto } from '@compartido/api-models';
-import { constuirInstitucion, Institucion } from '@compartido/models';
-import { esValida, extraerDescripcionPorTermino, extraerIndice } from '@utils/utils';
+import { esValida, extraerDescripcionPorTermino, extraerIndice } from '../..//utils';
+import { ListaDeDefinicion, Texto } from '../api-models';
+import { constuirInstitucion, Institucion } from '../models';
 
 const PODER_ADJUDICADOR = 'Poder adjudicador';
 const NOMBRE = 'Nombre';

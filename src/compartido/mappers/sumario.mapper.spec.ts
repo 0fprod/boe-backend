@@ -1,6 +1,6 @@
-import { Sumario } from '@compartido/api-models';
-import { Boe, construirBoe } from '@compartido/models';
 import { readFileSync } from 'fs';
+import { Sumario } from '../api-models';
+import { Boe, construirBoe } from '../models';
 import { mapSumarioABoe } from './sumario.mapper';
 
 describe('Boe Mapper specs', () => {

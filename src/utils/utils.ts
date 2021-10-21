@@ -1,5 +1,5 @@
-import { constuirLote, Lote } from '@compartido/models';
 import { Descripcion, ListaDeDefinicion, Termino, Texto } from '../compartido/api-models';
+import { constuirLote, Lote } from '../compartido/models';
 
 type ExtractorIndice = (lotes: Termino | Termino[], numLote: Termino) => number;
 
