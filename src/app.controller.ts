@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AppService } from './app.service';
 
@@ -11,8 +11,8 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('/env')
-  getEnv(): string {
-    return this.configService.get('DATABASE_USER');
+  @Get('/cron')
+  getEnv(@Param() params): string {
+    return 'Cronjob called with ' + JSON.stringify(params);
   }
 }
