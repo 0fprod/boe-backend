@@ -1,4 +1,4 @@
-import { ListaDeDefinicion } from '@compartido/api-models';
+import { ListaDeDefinicion } from '../../../src/compartido/api-models';
 
 export const mockDeBeneficiarioAnidado: ListaDeDefinicion = {
   dd: [

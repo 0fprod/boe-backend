@@ -1,4 +1,4 @@
-import { Beneficiario } from '@compartido/models';
+import { Beneficiario } from '../../../src/compartido/models';
 
 export const MockBeneficiariosSinLoteMapeado: Beneficiario[] = [
   {

@@ -1,4 +1,4 @@
-import { ListaDeDefinicion } from '@compartido/api-models';
+import { ListaDeDefinicion } from '../../../src/compartido/api-models';
 
 export const MockBeneficiariosSinLote: ListaDeDefinicion = {
   dt: ['3. Descripción de la licitación:', '5. Adjudicatarios:', '6. Valor de las ofertas:'],
