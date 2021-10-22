@@ -1,6 +1,6 @@
 import { fechaPublicacionMapper, tituloMapper } from '../../utils';
 import { Anuncio } from '../api-models';
-import { construirDetallesDeContrato, constuirContrato, Contrato } from '../models';
+import { construirContrato, construirDetallesDeContrato, Contrato } from '../models';
 import { beneficiarioMapper } from './beneficiario.mapper';
 import { descripcionMapper } from './descripcion.mapper';
 import { institucionMapper } from './institucion.mapper';
@@ -11,7 +11,7 @@ export const anuncioMapper = (entrada: Anuncio): Contrato => {
   if (esValida(entrada)) {
     const { texto } = entrada;
 
-    return constuirContrato({
+    return construirContrato({
       detalles: construirDetallesDeContrato({
         institucion: institucionMapper(texto.dl),
         beneficiarios: beneficiarioMapper(texto.dl),
@@ -23,5 +23,5 @@ export const anuncioMapper = (entrada: Anuncio): Contrato => {
       urlPdf: entrada.metadatos.url_pdf,
     });
   }
-  return constuirContrato({});
+  return construirContrato({});
 };

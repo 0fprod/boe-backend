@@ -2,12 +2,12 @@ import { readFileSync } from 'fs';
 import { contratoAnidadoMapeado } from '../../../test/mocks/ts/contrato-anidado-mapeado';
 import { contratoPlanoMapeado } from '../../../test/mocks/ts/contrato-plano-mapeado';
 import { Anuncio } from '../api-models';
-import { constuirContrato, Contrato } from '../models';
+import { construirContrato, Contrato } from '../models';
 import { anuncioMapper } from './anuncio.mapper';
 
 describe('Anuncio Mapper specs', () => {
   it.each([undefined, null, {}, []])('Devuelve un contrato vacío si el parámetro es [%s]', (parametroInvalido) => {
-    const contratoVacio = constuirContrato({});
+    const contratoVacio = construirContrato({});
     expect(anuncioMapper(parametroInvalido as Anuncio)).toStrictEqual(contratoVacio);
   });
 
