@@ -7,7 +7,7 @@ import { institucionMapper } from './institucion.mapper';
 
 const esValida = (entrada: Anuncio) => entrada && entrada.metadatos && entrada.texto;
 
-export const anuncioMapper = (entrada: Anuncio): Contrato => {
+export const mapAnuncioAContrato = (entrada: Anuncio): Contrato => {
   if (esValida(entrada)) {
     const { texto } = entrada;
 
