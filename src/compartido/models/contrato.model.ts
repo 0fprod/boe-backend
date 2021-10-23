@@ -92,7 +92,7 @@ export const construirDetallesDeContrato = ({
   institucion,
 });
 
-export const constuirContrato = ({
+export const construirContrato = ({
   detalles = construirDetallesDeContrato({}),
   fechaPub = '',
   id = '',
