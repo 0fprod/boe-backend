@@ -9,9 +9,15 @@ const SECCION_5A = '5A';
 const FORMALIZACION_CONTRATOS = 'Anuncio de formalización de contratos';
 
 const esValida = (entrada: Sumario) => entrada && Object.keys(entrada).length > 0;
-const extraerSeccionAnuncios = (entrada: Sumario) => entrada.diario.seccion.find(({ num }) => num === SECCION_5A);
-const extaerItemsDeDepartamentos = (seccion?: Seccion) => (seccion ? seccion.departamento.map(({ item }) => item).flat() : []);
 const esFormalizacion = (titulo: string) => titulo.includes(FORMALIZACION_CONTRATOS);
+const envolverParametroEnArray = (parametro: any): any[] => (Array.isArray(parametro) ? parametro : [parametro]);
+const extraerSeccionAnuncios = (entrada: Sumario) => envolverParametroEnArray(entrada.diario.seccion).find(({ num }) => num === SECCION_5A);
+const extaerItemsDeDepartamentos = (seccion?: Seccion) =>
+  seccion
+    ? envolverParametroEnArray(seccion.departamento)
+        .map(({ item }) => item)
+        .flat()
+    : [];
 
 export const mapSumarioABoe = (entrada: Sumario): Boe => {
   if (esValida(entrada)) {
