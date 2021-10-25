@@ -24,7 +24,7 @@ export interface DetallesDeContrato {
 }
 
 export interface Contrato {
-  id: string;
+  id?: string;
   contratoId: string;
   fechaPub: string;
   titulo: string;
