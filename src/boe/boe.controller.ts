@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { firstValueFrom } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
 import { Boe, Contrato } from '../compartido/models';
@@ -33,8 +33,11 @@ export class BoeController {
   }
 
   @Post('/cron')
-  public anunciosId(boeId: string): string {
+  public async cron(@Body() body): Promise<any> {
+    const { id } = body;
     // Es atacado por un CRONJOB para obtener los anuncios del día a través del boe
-    return this.boeService.getHello();
+    const contrato = await firstValueFrom(this.boeService.obtenerContrato(id));
+    const itemGuardado = await this.boeService.guardarContrato(contrato);
+    return itemGuardado;
   }
 }
