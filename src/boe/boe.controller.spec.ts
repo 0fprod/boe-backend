@@ -1,8 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { BoeApiService } from '../compartido/boe-api.service';
+import { ContratoRepository } from '../compartido/contrato.repository';
 import { BoeController } from './boe.controller';
 import { BoeService } from './boe.service';
 import { mockBoeApiService } from './mocks/boeapi.service.mock';
+import { MockRepository } from './mocks/repository.mock';
 
 describe('BoeController', () => {
   let controller: BoeController;
@@ -16,6 +18,11 @@ describe('BoeController', () => {
         {
           provide: BoeApiService,
           useClass: mockBoeApiService,
+        },
+        ContratoRepository,
+        {
+          provide: ContratoRepository,
+          useClass: MockRepository,
         },
       ],
     }).compile();
