@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
-import { BoeApiService } from '../compartido/boe-api.service';
+import { CompartidoModule } from '../compartido/compartido.module';
 import { BoeController } from './boe.controller';
 import { BoeService } from './boe.service';
 
 @Module({
   controllers: [BoeController],
-  providers: [BoeService, BoeApiService],
+  imports: [CompartidoModule],
+  providers: [BoeService],
 })
 export class BoeModule {}
