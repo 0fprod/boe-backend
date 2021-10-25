@@ -91,7 +91,7 @@ export const buscarLotes = (descripcion: Descripcion): Lote[] => {
 export const costeMapper = (coste: string): number => {
   try {
     // quitamos separador de miles
-    coste = coste.replace('.', '');
+    coste = coste.replace(/\./g, '');
     // sustituimos separador de decimales
     coste = coste.replace(',', '.');
     // quitamos la moneda
