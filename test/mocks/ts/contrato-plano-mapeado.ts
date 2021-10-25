@@ -24,9 +24,10 @@ export const contratoPlanoMapeado: Contrato = {
       web: '',
     },
   },
-  id: 'BOE-B-2020-27644',
+  contratoId: 'BOE-B-2020-27644',
   fechaPub: '2020-08-31T00:00:00.000Z',
   titulo:
     'Suministro Abierto de víveres para alimentación de los residentes de la Residencia de Estudiantes de la Armada "Teniente General Barroso".',
   urlPdf: '/boe/dias/2020/08/31/pdfs/BOE-B-2020-27644.pdf',
+  id: '',
 };
