@@ -70,7 +70,7 @@ class DetallesDeContrato {
 @Schema({ collection: 'contratos' })
 export class ContratoEntity {
   @Prop()
-  id: string;
+  contratoId: string;
 
   @Prop()
   fechaPub: string;
