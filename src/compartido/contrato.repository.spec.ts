@@ -1,7 +1,7 @@
 import { getModelToken } from '@nestjs/mongoose';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Model } from 'mongoose';
-import { ContratoRepository } from './contratoDto.repository';
+import { ContratoRepository } from './contrato.repository';
 import { ContratoDTO } from './dto/contrato.dto';
 import { construirContrato } from './models';
 import { ContratoDoc, ContratoEntity } from './schema/contrato.schema';
