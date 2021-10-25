@@ -18,7 +18,7 @@ export const mapAnuncioAContrato = (entrada: Anuncio): Contrato => {
         descripcion: descripcionMapper(texto.dl),
       }),
       fechaPub: fechaPublicacionMapper(entrada.metadatos.fecha_publicacion),
-      id: entrada.metadatos.identificador,
+      contratoId: entrada.metadatos.identificador,
       titulo: tituloMapper(entrada.metadatos.titulo),
       urlPdf: entrada.metadatos.url_pdf,
     });
