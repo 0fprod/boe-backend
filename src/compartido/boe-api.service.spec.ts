@@ -44,7 +44,7 @@ describe('BoeApiService', () => {
   it('Se obtiene un contrato a partir de un ID de Anuncio', async () => {
     jest.spyOn(http, 'get').mockReturnValue(of(mockDeAnuncio));
     const contratoVacio = construirContrato({
-      id: 'identificador irrelevante',
+      contratoId: 'identificador irrelevante',
       titulo: 'Titulo irrelevante.',
       detalles: construirDetallesDeContrato({
         institucion: constuirInstitucion({
