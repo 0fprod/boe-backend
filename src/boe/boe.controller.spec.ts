@@ -1,7 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { CompartidoModule } from '../compartido/compartido.module';
+import { BoeApiService } from '../compartido/boe-api.service';
+import { ContratoRepository } from '../compartido/contrato.repository';
 import { BoeController } from './boe.controller';
 import { BoeService } from './boe.service';
+import { mockBoeApiService } from './mocks/boeapi.service.mock';
+import { MockRepository } from './mocks/repository.mock';
 
 describe('BoeController', () => {
   let controller: BoeController;
@@ -9,8 +12,19 @@ describe('BoeController', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [BoeController],
-      imports: [CompartidoModule],
-      providers: [BoeService],
+      providers: [
+        BoeService,
+        BoeApiService,
+        {
+          provide: BoeApiService,
+          useClass: mockBoeApiService,
+        },
+        ContratoRepository,
+        {
+          provide: ContratoRepository,
+          useClass: MockRepository,
+        },
+      ],
     }).compile();
 
     controller = module.get<BoeController>(BoeController);
