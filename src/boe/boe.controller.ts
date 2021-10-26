@@ -12,7 +12,6 @@ export class BoeController {
   @HttpCode(201)
   public async cron(@Query() query): Promise<any> {
     const { id } = query;
-    console.log('🚀 ~ file: boe.controller.ts ~ line 15 ~ BoeController ~ cron ~ id', id);
     // Es atacado por un CRONJOB para obtener los anuncios del día a través del boe
     const contrato = await firstValueFrom(this.boeService.obtenerContrato(id));
     const itemGuardado = await this.boeService.guardarContrato(contrato);

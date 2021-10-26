@@ -4,7 +4,6 @@ import { Contrato } from '../models';
 
 export type ContratoDoc = Document & Omit<Contrato, 'id'>;
 
-@Schema()
 class Institucion {
   @Prop()
   nombre: string;
@@ -28,7 +27,6 @@ class Institucion {
   actividad: string;
 }
 
-@Schema()
 class Beneficiario {
   @Prop()
   nombre: string;
@@ -49,18 +47,11 @@ class Beneficiario {
   descripcion: string;
 }
 
-@Schema()
 class DetallesDeContrato {
-  @Prop({
-    type: Institucion,
-  })
+  @Prop({ type: Institucion })
   institucion: Institucion;
 
-  @Prop([
-    {
-      type: Beneficiario,
-    },
-  ])
+  @Prop([{ type: Beneficiario }])
   beneficiarios: Beneficiario[];
 
   @Prop()
@@ -73,6 +64,9 @@ export class ContratoEntity {
   contratoId: string;
 
   @Prop()
+  fechaInsercion: string;
+
+  @Prop()
   fechaPub: string;
 
   @Prop()
@@ -81,9 +75,7 @@ export class ContratoEntity {
   @Prop()
   urlPdf: string;
 
-  @Prop({
-    type: DetallesDeContrato,
-  })
+  @Prop({ type: DetallesDeContrato })
   detalles: DetallesDeContrato;
 }
 
