@@ -11,7 +11,7 @@ export class ContratoRepository {
   constructor(@InjectModel(ContratoEntity.name) private contratoModel: Model<ContratoDoc>) {}
 
   async create(contrato: Contrato): Promise<ContratoDTO> {
-    const contratoDoc = await this.contratoModel.create({ ...contrato });
+    const contratoDoc = await this.contratoModel.create({ ...contrato, fechaInsercion: new Date().toISOString() });
 
     return mapDocumentAContrato(contratoDoc);
   }
