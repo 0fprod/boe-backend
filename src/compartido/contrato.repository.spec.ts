@@ -1,31 +1,22 @@
-import { getModelToken } from '@nestjs/mongoose';
+import { getModelToken, MongooseModule } from '@nestjs/mongoose';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Model } from 'mongoose';
+import { rootMongooseTestModule } from '../../test/mongo.memory.server';
 import { ContratoRepository } from './contrato.repository';
-import { ContratoDTO } from './dto/contrato.dto';
 import { construirContrato } from './models';
-import { ContratoDoc, ContratoEntity } from './schema/contrato.schema';
-
-class MockContrato {
-  create = jest.fn();
-}
+import { ContratoDoc, ContratoEntity, ContratoSchema } from './schema/contrato.schema';
 
 describe('Pruebas del repositorio de contrato', () => {
-  let service: ContratoRepository;
+  let repositorio: ContratoRepository;
   let model: Model<ContratoDoc>;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [
-        ContratoRepository,
-        {
-          provide: getModelToken(ContratoEntity.name),
-          useClass: MockContrato,
-        },
-      ],
+      imports: [rootMongooseTestModule(), MongooseModule.forFeature([{ name: ContratoEntity.name, schema: ContratoSchema }])],
+      providers: [ContratoRepository],
     }).compile();
 
-    service = module.get<ContratoRepository>(ContratoRepository);
+    repositorio = module.get<ContratoRepository>(ContratoRepository);
     model = module.get<Model<ContratoDoc>>(getModelToken(ContratoEntity.name));
   });
 
@@ -33,22 +24,81 @@ describe('Pruebas del repositorio de contrato', () => {
     jest.clearAllMocks();
   });
 
-  it('Se monta el servicio', () => {
-    expect(service).toBeTruthy();
+  it('Se monta el repositorio', () => {
+    expect(repositorio).toBeTruthy();
   });
 
-  it('Devuelve un contrato con ID de mongo', async () => {
-    const mockDto: ContratoDTO = {
-      _id: 'mongo-id',
-      ...construirContrato({
-        titulo: 'titulo-irrelevante',
-      }),
-    };
-    jest.spyOn(model, 'create').mockImplementationOnce(() => Promise.resolve(mockDto));
-    const contratoConId = construirContrato({ titulo: 'titulo-irrelevante', id: 'mongo-id' });
+  it('Se guarda un contrato', async () => {
+    const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante' });
 
-    const contrato = await service.create(construirContrato({ titulo: 'titulo-irrelevante' }));
+    const contratoGuardado = await repositorio.guardarContrato(contratoIrrelevante);
+    const contrato = await model.findById(contratoGuardado.id);
 
-    expect(contrato).toStrictEqual(contratoConId);
+    expect(contrato).toBeTruthy();
+    expect(contrato.id).toBeTruthy();
+    expect(contrato.titulo).toEqual('contrato irrelevante');
+  });
+
+  it('Devuelve un contrato a partir de un id de contrato', async () => {
+    const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato-id' });
+
+    let contrato = await repositorio.obtenerContratoPorId('contrato-id');
+    expect(contrato).toBeNull();
+
+    await repositorio.guardarContrato(contratoIrrelevante);
+
+    contrato = await repositorio.obtenerContratoPorId('contrato-id');
+    expect(contrato).toBeTruthy();
+    expect(contrato.titulo).toEqual('contrato irrelevante');
+    expect(contrato.contratoId).toEqual('contrato-id');
+  });
+
+  it('Devuelve contratos a partir de una fecha de publicación', async () => {
+    const fechaPub = new Date().toISOString();
+    const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato-id', fechaPub });
+
+    let contratos = await repositorio.obtenerContratoPorFecha(fechaPub);
+    expect(contratos).toHaveLength(0);
+
+    await repositorio.guardarContrato(contratoIrrelevante);
+
+    contratos = await repositorio.obtenerContratoPorFecha(fechaPub);
+    expect(contratos).toHaveLength(1);
+    expect(contratos[0].titulo).toEqual('contrato irrelevante');
+    expect(contratos[0].contratoId).toEqual('contrato-id');
+  });
+
+  it('Devuelve contratos a partir de un rango de fechas de publicación', async () => {
+    const fechaPubInicio = new Date().toISOString();
+    const fechaPubFin = new Date().toISOString();
+    const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato-id', fechaPub: fechaPubInicio });
+
+    let contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    expect(contratos).toHaveLength(0);
+
+    await repositorio.guardarContrato(contratoIrrelevante);
+
+    contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    expect(contratos).toHaveLength(1);
+    expect(contratos[0].titulo).toEqual('contrato irrelevante');
+    expect(contratos[0].contratoId).toEqual('contrato-id');
+  });
+
+  it('No devuelve contratos si no estan en un rango de fechas de publicación', async () => {
+    const fechaPubInicio = new Date(2020, 1, 1).toISOString();
+    const fechaPubFin = new Date(2020, 1, 3).toISOString();
+    const contratoIrrelevante = construirContrato({
+      titulo: 'contrato irrelevante',
+      contratoId: 'contrato-id',
+      fechaPub: new Date().toISOString(),
+    });
+
+    let contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    expect(contratos).toHaveLength(0);
+
+    await repositorio.guardarContrato(contratoIrrelevante);
+
+    contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    expect(contratos).toHaveLength(0);
   });
 });
