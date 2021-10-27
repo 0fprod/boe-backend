@@ -1,3 +1,6 @@
 export class MockRepository {
-  create = jest.fn;
+  guardarContrato = jest.fn;
+  obtenerContratoPorId = jest.fn;
+  obtenerContratoPorFecha = jest.fn;
+  obtenerContratoPorRangoDeFecha = jest.fn;
 }
