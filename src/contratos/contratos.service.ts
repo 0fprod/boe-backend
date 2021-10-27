@@ -6,12 +6,7 @@ import { Contrato } from '../compartido/models';
 export class ContratosService {
   constructor(private repositorio: ContratoRepository) {}
 
-  obtenerContratoPorId(idContrato: string): Promise<Contrato | null> {
+  obtenerContratoPorId(idContrato: string): Promise<Contrato> {
     return this.repositorio.obtenerContratoPorId(idContrato);
-  }
-
-  // Leer de mongo
-  getHello(): string {
-    return 'Hello';
   }
 }
