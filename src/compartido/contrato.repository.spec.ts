@@ -1,7 +1,7 @@
 import { getModelToken, MongooseModule } from '@nestjs/mongoose';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Model } from 'mongoose';
-import { rootMongooseTestModule } from '../../test/mongo.memory.server';
+import { closeInMongodConnection, rootMongooseTestModule } from '../../test/mongo.memory.server';
 import { ContratoRepository } from './contrato.repository';
 import { construirContrato } from './models';
 import { ContratoDoc, ContratoEntity, ContratoSchema } from './schema/contrato.schema';
@@ -22,6 +22,11 @@ describe('Pruebas del repositorio de contrato', () => {
 
   afterEach(() => {
     jest.clearAllMocks();
+    model.deleteMany({});
+  });
+
+  afterAll(async () => {
+    await closeInMongodConnection();
   });
 
   it('Se monta el repositorio', () => {
