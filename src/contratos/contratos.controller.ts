@@ -1,4 +1,4 @@
-import { Controller, Get, NotFoundException, Param } from '@nestjs/common';
+import { Controller, Get, HttpException, HttpStatus, Param, Query } from '@nestjs/common';
 import { Contrato } from '../compartido/models';
 import { ContratosService } from './contratos.service';
 
@@ -6,7 +6,7 @@ import { ContratosService } from './contratos.service';
 export class ContratosController {
   constructor(private contratosService: ContratosService) {}
 
-  @Get(':id')
+  @Get('/contrato/:id')
   async getId(@Param() params): Promise<Contrato> {
     const { id } = params;
     const contrato = await this.contratosService.obtenerContratoPorId(id);
@@ -15,11 +15,26 @@ export class ContratosController {
       return contrato;
     }
 
-    throw new NotFoundException();
+    throw new HttpException('El contrato no existe', HttpStatus.NOT_FOUND);
   }
 
-  @Get()
-  getRangoDeFecha(): string {
-    throw new Error('To be implemented');
+  @Get('/rango')
+  getRangoDeFecha(@Query() query): Promise<Contrato[]> {
+    const { fechaInicio, fechaFin } = query;
+
+    if (fechaFin !== undefined && this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
+      return this.contratosService.obtenerContratoPorRangoFecha(fechaInicio, fechaFin);
+    }
+
+    if (this.fechaValida(fechaInicio)) {
+      return this.contratosService.obtenerContratoPorFecha(fechaInicio);
+    }
+
+    throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);
+  }
+
+  private fechaValida(fecha: string): boolean {
+    const formato = /^\d{4}-\d{2}-\d{2}$/;
+    return formato.test(fecha);
   }
 }
