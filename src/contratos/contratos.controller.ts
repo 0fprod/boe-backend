@@ -20,6 +20,6 @@ export class ContratosController {
 
   @Get()
   getRangoDeFecha(): string {
-    return this.contratosService.getHello();
+    throw new Error('To be implemented');
   }
 }
