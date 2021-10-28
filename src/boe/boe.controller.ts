@@ -1,4 +1,4 @@
-import { Controller, Get, HttpCode, Param, Query, Res } from '@nestjs/common';
+import { BadRequestException, Controller, Get, HttpCode, Param, Query } from '@nestjs/common';
 import { firstValueFrom } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
 import { Boe, Contrato } from '../compartido/models';
@@ -19,13 +19,13 @@ export class BoeController {
   }
 
   @Get('/boe/:id')
-  public async boe(@Param() params, @Res() res): Promise<Boe> {
-    try {
-      const { id } = params;
+  public async boe(@Param() params): Promise<Boe> {
+    const { id } = params;
+    if (id) {
       return firstValueFrom(this.boeService.obtenerBoe(id));
-    } catch (err) {
-      return res.send(400);
     }
+
+    throw new BadRequestException();
   }
 
   @Get('/sumario/:id')
