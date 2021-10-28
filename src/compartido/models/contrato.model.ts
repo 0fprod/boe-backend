@@ -24,7 +24,6 @@ export interface DetallesDeContrato {
 }
 
 export interface Contrato {
-  id?: string;
   contratoId: string;
   fechaInsercion?: string;
   fechaPub: string;
@@ -98,11 +97,9 @@ export const construirContrato = ({
   detalles = construirDetallesDeContrato({}),
   fechaPub = '',
   contratoId = '',
-  id = '',
   titulo = '',
   urlPdf = '',
 }: Partial<Contrato>): Contrato => ({
-  id,
   detalles,
   contratoId,
   fechaPub,
