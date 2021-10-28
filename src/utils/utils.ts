@@ -115,10 +115,17 @@ export const tituloMapper = (titulo: string): string => {
 
 // Formato AAAAMMDD
 export const fechaPublicacionMapper = (fecha: string): string => {
-  if (!fecha) return '';
+  if (!fecha || fecha.length !== 8) return '';
   try {
-    const fechaConSeparador = fecha.replace(/(\d{4})(\d{2})/g, '$1-$2-');
-    return new Date(fechaConSeparador).toISOString();
+    const yyyy = +fecha.substr(0, 4);
+    const mm = +fecha.substr(4, 2);
+    const dd = +fecha.substr(6);
+
+    if (yyyy > 2500 || mm > 11 || dd > 31) {
+      throw Error();
+    }
+
+    return new Date(Date.UTC(yyyy, mm - 1, dd)).toISOString();
   } catch (err) {
     return '';
   }

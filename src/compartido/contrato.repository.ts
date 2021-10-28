@@ -10,7 +10,10 @@ export class ContratoRepository {
   constructor(@InjectModel(ContratoEntity.name) private contratoModel: Model<ContratoDoc>) {}
 
   async guardarContrato(contrato: Contrato): Promise<Contrato> {
-    const contratoDoc = await this.contratoModel.create({ ...contrato, fechaInsercion: new Date().toISOString() });
+    const yyyy = new Date().getFullYear();
+    const mm = new Date().getUTCMonth();
+    const dd = new Date().getUTCDay();
+    const contratoDoc = await this.contratoModel.create({ ...contrato, fechaInsercion: new Date(Date.UTC(yyyy, mm, dd)).toISOString() });
 
     return mapDocumentAContrato(contratoDoc);
   }

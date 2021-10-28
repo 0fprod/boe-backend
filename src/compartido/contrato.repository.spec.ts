@@ -34,13 +34,13 @@ describe('Pruebas del repositorio de contrato', () => {
   });
 
   it('Se guarda un contrato', async () => {
-    const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante' });
+    const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato1' });
 
     const contratoGuardado = await repositorio.guardarContrato(contratoIrrelevante);
-    const contrato = await model.findById(contratoGuardado.id);
+    const contrato = await model.findOne({ contratoId: contratoGuardado.contratoId });
 
     expect(contrato).toBeTruthy();
-    expect(contrato.id).toBeTruthy();
+    expect(contrato.contratoId).toEqual('contrato1');
     expect(contrato.titulo).toEqual('contrato irrelevante');
   });
 
