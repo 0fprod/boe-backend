@@ -21,7 +21,6 @@ export const mapAnuncioAContrato = (entrada: Anuncio): Contrato => {
       contratoId: entrada.metadatos.identificador,
       titulo: tituloMapper(entrada.metadatos.titulo),
       urlPdf: entrada.metadatos.url_pdf,
-      id: '',
     });
   }
   return construirContrato({});
