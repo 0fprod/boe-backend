@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { ContratoDTO } from './dto/contrato.dto';
 import { mapDocumentAContrato } from './mappers/contrato.mapper';
 import { Contrato } from './models';
 import { ContratoDoc, ContratoEntity } from './schema/contrato.schema';
@@ -10,9 +9,39 @@ import { ContratoDoc, ContratoEntity } from './schema/contrato.schema';
 export class ContratoRepository {
   constructor(@InjectModel(ContratoEntity.name) private contratoModel: Model<ContratoDoc>) {}
 
-  async create(contrato: Contrato): Promise<ContratoDTO> {
-    const contratoDoc = await this.contratoModel.create({ ...contrato });
+  async guardarContrato(contrato: Contrato): Promise<Contrato> {
+    const yyyy = new Date().getFullYear();
+    const mm = new Date().getUTCMonth();
+    const dd = new Date().getUTCDay();
+    const contratoDoc = await this.contratoModel.create({ ...contrato, fechaInsercion: new Date(Date.UTC(yyyy, mm, dd)).toISOString() });
 
     return mapDocumentAContrato(contratoDoc);
+  }
+
+  async obtenerContratoPorId(contratoId: string): Promise<Contrato> {
+    const contratoDoc = await this.contratoModel.findOne({ contratoId });
+
+    if (contratoDoc) {
+      return mapDocumentAContrato(contratoDoc);
+    }
+
+    return null;
+  }
+
+  async obtenerContratoPorFecha(fechaPub: string): Promise<Contrato[]> {
+    const contratoDoc = await this.contratoModel.find({ fechaPub });
+
+    return contratoDoc.map(mapDocumentAContrato);
+  }
+
+  async obtenerContratoPorRangoDeFecha(fechaPubInicio: string, fechaPubFin: string): Promise<Contrato[]> {
+    const contratoDoc = await this.contratoModel.find({
+      fechaPub: {
+        $gte: fechaPubInicio,
+        $lte: fechaPubFin,
+      },
+    });
+
+    return contratoDoc.map(mapDocumentAContrato);
   }
 }

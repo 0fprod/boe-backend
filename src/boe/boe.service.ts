@@ -31,6 +31,6 @@ export class BoeService {
   }
 
   public guardarContrato(contrato: Contrato): Promise<ContratoDTO> {
-    return this.repositorio.create(contrato);
+    return this.repositorio.guardarContrato(contrato);
   }
 }

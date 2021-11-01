@@ -2,6 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Watch e2e selected file",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": ["${fileBasenameNoExtension}", "-i", "--no-cache", "--watchAll", "--config", "./test/jest-e2e.json"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
       "name": "Test selected file",
       "type": "node",
       "request": "launch",
