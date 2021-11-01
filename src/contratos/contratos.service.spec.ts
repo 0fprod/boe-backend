@@ -5,6 +5,7 @@ import { closeInMongodConnection, rootMongooseTestModule } from '../../test/mong
 import { ContratoRepository } from '../compartido/contrato.repository';
 import { construirContrato, Contrato } from '../compartido/models';
 import { ContratoDoc, ContratoEntity, ContratoSchema } from '../compartido/schema/contrato.schema';
+import { fechaPublicacionMapper } from '../utils';
 import { ContratosService } from './contratos.service';
 
 const buscarPorId = (coleccion: Contrato[], idContrato: string): number => coleccion.findIndex((c) => c.contratoId === idContrato);
@@ -12,6 +13,10 @@ const buscarPorId = (coleccion: Contrato[], idContrato: string): number => colec
 describe('ContratosService', () => {
   let servicio: ContratosService;
   let model: Model<ContratoDoc>;
+  const contrato1 = construirContrato({ contratoId: 'contratoId-1', fechaPub: fechaPublicacionMapper('20200501') });
+  const contrato2 = construirContrato({ contratoId: 'contratoId-2', fechaPub: fechaPublicacionMapper('20200503') });
+  const contrato3 = construirContrato({ contratoId: 'contratoId-3', fechaPub: fechaPublicacionMapper('20200505') });
+  const contrato4 = construirContrato({ contratoId: 'contratoId-4', fechaPub: fechaPublicacionMapper('20200505') });
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -22,12 +27,7 @@ describe('ContratosService', () => {
     servicio = module.get<ContratosService>(ContratosService);
     model = module.get<Model<ContratoDoc>>(getModelToken(ContratoEntity.name));
 
-    await model.insertMany([
-      construirContrato({ contratoId: 'contratoId-1', fechaPub: new Date(2020, 5, 1).toISOString() }),
-      construirContrato({ contratoId: 'contratoId-2', fechaPub: new Date(2020, 5, 3).toISOString() }),
-      construirContrato({ contratoId: 'contratoId-3', fechaPub: new Date(2020, 5, 5).toISOString() }),
-      construirContrato({ contratoId: 'contratoId-4', fechaPub: new Date(2020, 5, 5).toISOString() }),
-    ]);
+    await model.insertMany([contrato1, contrato2, contrato3, contrato4]);
   });
 
   afterEach(async () => {
@@ -49,7 +49,7 @@ describe('ContratosService', () => {
   });
 
   it('Devuelve los contratos de un día dada una fecha', async () => {
-    const fechaPub = new Date(2020, 5, 5).toISOString();
+    const fechaPub = fechaPublicacionMapper('20200505');
     const contratos = await servicio.obtenerContratoPorFecha(fechaPub);
     expect(contratos).toBeTruthy();
     expect(contratos).toHaveLength(2);
@@ -58,8 +58,8 @@ describe('ContratosService', () => {
   });
 
   it('Devuelve los contratos que esten en un rango de fecha dado', async () => {
-    const inicio = new Date(2020, 5, 1).toISOString();
-    const fin = new Date(2020, 5, 3).toISOString();
+    const inicio = fechaPublicacionMapper('20200501');
+    const fin = fechaPublicacionMapper('20200503');
     const contratos = await servicio.obtenerContratoPorRangoFecha(inicio, fin);
     expect(contratos).toBeTruthy();
     expect(contratos).toHaveLength(2);

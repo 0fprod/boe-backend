@@ -12,12 +12,19 @@ export class ContratosService {
   }
 
   obtenerContratoPorFecha(fechaPub: string): Promise<Contrato[]> {
-    // añadir la hora a la fecha
-    fechaPub = fechaPub + this.EN_PUNTO;
-    return this.repositorio.obtenerContratoPorFecha(fechaPub);
+    return this.repositorio.obtenerContratoPorFecha(this.ajustarHora(fechaPub));
   }
 
   obtenerContratoPorRangoFecha(fechaPubInicio: string, fechaPubFin: string): Promise<Contrato[]> {
-    return this.repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    return this.repositorio.obtenerContratoPorRangoDeFecha(this.ajustarHora(fechaPubInicio), this.ajustarHora(fechaPubFin));
+  }
+
+  private ajustarHora(fecha: string): string {
+    // añadir la hora a la fecha
+    if (fecha.indexOf('Z') === -1) {
+      return fecha + this.EN_PUNTO;
+    }
+
+    return fecha;
   }
 }
