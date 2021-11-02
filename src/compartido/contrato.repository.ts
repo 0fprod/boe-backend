@@ -18,6 +18,19 @@ export class ContratoRepository {
     return mapDocumentAContrato(contratoDoc);
   }
 
+  async guardarContratos(contratos: Contrato[]): Promise<number> {
+    const yyyy = new Date().getFullYear();
+    const mm = new Date().getUTCMonth();
+    const dd = new Date().getUTCDay();
+    const contratosConFecha = contratos.map((c) => {
+      c.fechaInsercion = new Date(Date.UTC(yyyy, mm, dd)).toISOString();
+      return c;
+    });
+
+    const contratosGuardados = await this.contratoModel.insertMany(contratosConFecha);
+    return contratosGuardados.length;
+  }
+
   async obtenerContratoPorId(contratoId: string): Promise<Contrato> {
     const contratoDoc = await this.contratoModel.findOne({ contratoId });
 
