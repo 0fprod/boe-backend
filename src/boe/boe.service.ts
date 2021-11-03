@@ -3,7 +3,6 @@ import { firstValueFrom, Observable } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
 import { BoeApiService } from '../compartido/boe-api.service';
 import { ContratoRepository } from '../compartido/contrato.repository';
-import { ContratoDTO } from '../compartido/dto/contrato.dto';
 import { Boe, Contrato } from '../compartido/models';
 
 @Injectable()
@@ -26,7 +25,7 @@ export class BoeService {
     return this.boeApi.obtenerContrato(id);
   }
 
-  public guardarContrato(contrato: Contrato): Promise<ContratoDTO> {
+  public guardarContrato(contrato: Contrato): Promise<Contrato> {
     return this.repositorio.guardarContrato(contrato);
   }
 
