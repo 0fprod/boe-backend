@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Observable } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
 import { BoeApiService } from '../compartido/boe-api.service';
 import { ContratoRepository } from '../compartido/contrato.repository';
@@ -9,10 +9,6 @@ import { Boe, Contrato } from '../compartido/models';
 @Injectable()
 export class BoeService {
   constructor(private boeApi: BoeApiService, private repositorio: ContratoRepository) {}
-
-  public getHello(): string {
-    return 'Hello';
-  }
 
   public obtenerBoe(id: string): Observable<Boe> {
     return this.boeApi.obtenerBoe(id);
@@ -32,5 +28,17 @@ export class BoeService {
 
   public guardarContrato(contrato: Contrato): Promise<ContratoDTO> {
     return this.repositorio.guardarContrato(contrato);
+  }
+
+  public async guardarContratosPorBoeId(id: string): Promise<number> {
+    try {
+      const { idContratos } = await firstValueFrom(this.boeApi.obtenerBoe(id));
+      const promisesDeContratos = idContratos.map((idC) => firstValueFrom(this.boeApi.obtenerContrato(idC)));
+      const contratos = await Promise.all(promisesDeContratos);
+      const totalDeContratosGuardados = this.repositorio.guardarContratos(contratos);
+      return totalDeContratosGuardados;
+    } catch (err) {
+      console.log('Error -->', err);
+    }
   }
 }
