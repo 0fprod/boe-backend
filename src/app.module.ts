@@ -16,7 +16,7 @@ import { ContratosModule } from './contratos/contratos.module';
     ContratosModule,
     BoeModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'api'),
+      rootPath: join(__dirname, '..', 'public'),
     }),
   ],
   controllers: [AppController],
