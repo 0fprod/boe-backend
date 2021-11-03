@@ -11,7 +11,11 @@ async function bootstrap() {
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api', app, document, {
+    customCssUrl: '../api/swagger-ui.css',
+    customfavIcon: '../api/favicon-32x32.png',
+    customSiteTitle: 'Formalización de contratos del BOE',
+  });
 
   await app.listen(3000);
 }
