@@ -1,18 +1,11 @@
-import { Controller, Get } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
-import { AppService } from './app.service';
+import { Controller, Get, Res } from '@nestjs/common';
+import { ApiExcludeEndpoint } from '@nestjs/swagger';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService, private configService: ConfigService) {}
-
+  @ApiExcludeEndpoint()
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
-
-  @Get('/env')
-  getEnv(): string {
-    return this.configService.get('DATABASE_USER');
+  inicio(@Res() res): string {
+    return res.redirect('/api');
   }
 }
