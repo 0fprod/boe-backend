@@ -44,6 +44,19 @@ describe('Pruebas del repositorio de contrato', () => {
     expect(contrato.titulo).toEqual('contrato irrelevante');
   });
 
+  it('Se guardan varios contratos', async () => {
+    const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato1' });
+
+    const contratosGuardado = await repositorio.guardarContratos([
+      contratoIrrelevante,
+      contratoIrrelevante,
+      contratoIrrelevante,
+      contratoIrrelevante,
+    ]);
+
+    expect(contratosGuardado).toEqual(4);
+  });
+
   it('Devuelve un contrato a partir de un id de contrato', async () => {
     const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato-id' });
 
