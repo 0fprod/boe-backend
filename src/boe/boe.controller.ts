@@ -1,5 +1,5 @@
 import { BadRequestException, Controller, Get, HttpCode, Param, Query } from '@nestjs/common';
-import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ApiHeader, ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { firstValueFrom } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
 import { BoeDTO } from '../compartido/dto/boe.dto';
@@ -19,6 +19,19 @@ export class BoeController {
   @ApiResponse({
     status: 401,
     description: 'No autorizado',
+  })
+  @ApiOperation({
+    summary: 'Añade a la BBDD los contratos de la fecha indicada',
+  })
+  @ApiQuery({
+    name: 'id',
+    description: 'Fecha de publicacion de contratos',
+    example: '20200506',
+    required: true,
+  })
+  @ApiHeader({
+    name: 'Authentication bearer',
+    required: true,
   })
   @Get('/cron')
   @HttpCode(201)

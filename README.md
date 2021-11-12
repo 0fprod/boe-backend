@@ -44,7 +44,13 @@ $ npm run test:e2e
 <p align="center">
   <a href="https://www.mongodb.com/es/atlas/" target="blank"><img src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress" width="320" alt="MongoDB logo" /></a>
 </p>
+<p align="center">
+  <a href="http://vercel.com/" target="blank"><img src="https://logovtor.com/wp-content/uploads/2020/10/vercel-inc-logo-vector.png" width="320" alt="vercel Logo" /></a>
+</p>
+<p align="center">
+  <a href="https://jestjs.io/" target="blank"><img src="https://cdn-images-1.medium.com/max/1200/1*Q26gw-kNzOXUqZKRr04T-g.png" width="320" alt="jest Logo" /></a>
+</p>
 
 ## Licencia
 
-[BSD-3](License).
+[BSD-3](license.md).
