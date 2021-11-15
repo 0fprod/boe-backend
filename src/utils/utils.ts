@@ -130,3 +130,18 @@ export const fechaPublicacionMapper = (fecha: string): string => {
     return '';
   }
 };
+
+// Divide una coleccion en varios grupos de tamaño `itemsPorGrupo`
+export const dividirEn = <T>(itemsPorGrupo: number, coleccion: T[]): T[][] => {
+  if (itemsPorGrupo <= 0 || coleccion.length == 0) return [];
+  const copia = [...coleccion];
+  const resultado = [];
+
+  let i,
+    j = 0;
+  for (i = 0, j = copia.length; i < j; i += itemsPorGrupo) {
+    resultado.push(copia.slice(i, i + itemsPorGrupo));
+  }
+
+  return resultado;
+};
