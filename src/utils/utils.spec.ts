@@ -1,3 +1,4 @@
+import { dividirEn } from '.';
 import { Descripcion, ListaDeDefinicion } from '../compartido/api-models';
 import { Lote } from '../compartido/models';
 import {
@@ -126,5 +127,27 @@ describe('Utils specs', () => {
     expect(tituloMapper('prefijo : titulo sufijo')).toEqual('');
     expect(tituloMapper('prefijo  titulo. sufijo')).toEqual('');
     expect(tituloMapper('Objeto: titulo. Expediente')).toEqual('titulo.');
+  });
+
+  it('Divide en varios grupos una coleccion', () => {
+    const itemsPorGrupo = 2;
+
+    const coleccionImpar = [1, 2, 3, 4, 5];
+    const resultadoImpar = [[1, 2], [3, 4], [5]];
+
+    const coleccionPar = [1, 2, 3, 4, 5, 6];
+    const resultadoPar = [
+      [1, 2],
+      [3, 4],
+      [5, 6],
+    ];
+
+    expect(dividirEn(0, coleccionImpar)).toStrictEqual([]);
+    expect(dividirEn(-1, coleccionImpar)).toStrictEqual([]);
+    expect(dividirEn(itemsPorGrupo, [])).toStrictEqual([]);
+    expect(dividirEn(itemsPorGrupo, coleccionImpar)).toStrictEqual(resultadoImpar);
+    expect(dividirEn(itemsPorGrupo, coleccionImpar)).toStrictEqual(resultadoImpar);
+    expect(dividirEn(itemsPorGrupo, coleccionPar)).toStrictEqual(resultadoPar);
+    expect(dividirEn(10, coleccionImpar)).toStrictEqual([coleccionImpar]);
   });
 });

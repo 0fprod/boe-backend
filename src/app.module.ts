@@ -7,7 +7,7 @@ import { ContratosModule } from './contratos/contratos.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: ['.env.local', '.env.dev', '.env'],
+      envFilePath: ['.env.local', '.env.dev', '.env.production'],
       isGlobal: true,
     }),
     MongooseModule.forRoot(process.env.DATABASE_URL),
