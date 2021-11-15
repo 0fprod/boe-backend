@@ -37,7 +37,8 @@ export class BoeService {
       const totalDeContratosGuardados = this.repositorio.guardarContratos(contratos);
       return totalDeContratosGuardados;
     } catch (err) {
-      console.log('Error -->', err);
+      console.log(`Error con el id [${id}]:`, err);
+      return 0;
     }
   }
 }
