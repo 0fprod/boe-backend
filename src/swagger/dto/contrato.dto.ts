@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { Beneficiario, Contrato, DetallesDeContrato, Institucion } from '../models';
+import { Beneficiario, Contrato, DetallesDeContrato, Institucion } from '../../compartido/models';
 
 class InstitucionDto implements Institucion {
   @ApiProperty({

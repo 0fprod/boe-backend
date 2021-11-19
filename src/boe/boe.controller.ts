@@ -2,8 +2,8 @@ import { BadRequestException, Controller, Get, HttpCode, Param, Query } from '@n
 import { ApiHeader, ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { firstValueFrom } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
-import { BoeDTO } from '../compartido/dto/boe.dto';
 import { Boe, Contrato } from '../compartido/models';
+import { BoeDTO } from '../swagger/dto/boe.dto';
 import { BoeService } from './boe.service';
 
 @ApiTags('BOE')
