@@ -6,6 +6,11 @@ import { swaggerUi } from './swagger-styles';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  app.enableCors({
+    origin: 'https://boe-frontend.vercel.app',
+    methods: 'GET',
+  });
+
   const config = new DocumentBuilder()
     .setTitle('Contratos públicos formalizados')
     .setDescription('Esta API sirve datos de contratos formalizados anunciados en la api del BOE en la sección de 5A de anuncios.')
@@ -17,6 +22,6 @@ async function bootstrap() {
     customCss: `.download-url-wrapper {display:none !important;} ${swaggerUi}`,
   });
 
-  await app.listen(3000);
+  await app.listen(3001);
 }
 bootstrap();

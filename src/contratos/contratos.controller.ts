@@ -1,7 +1,7 @@
 import { Controller, Get, HttpException, HttpStatus, Param, Query } from '@nestjs/common';
 import { ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { ContratoDTO } from '../compartido/dto/contrato.dto';
 import { Contrato } from '../compartido/models';
+import { ContratoDTO } from '../swagger/dto/contrato.dto';
 import { ContratosService } from './contratos.service';
 
 @ApiTags('Contratos')
