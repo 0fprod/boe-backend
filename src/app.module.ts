@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { BoeModule } from './boe/boe.module';
 import { ContratosModule } from './contratos/contratos.module';
+import { EstadisticasModule } from './estadisticas/estadisticas.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -13,6 +14,7 @@ import { ContratosModule } from './contratos/contratos.module';
     MongooseModule.forRoot(process.env.DATABASE_URL),
     ContratosModule,
     BoeModule,
+    EstadisticasModule,
   ],
   controllers: [AppController],
   providers: [],
