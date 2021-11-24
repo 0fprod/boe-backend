@@ -71,6 +71,37 @@ export class EstadisticasController {
     throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);
   }
 
+  @ApiResponse({
+    status: 200,
+    description: 'EstadisticasActividad',
+    type: EstadisticasBeneficiario,
+  })
+  @ApiQuery({
+    name: 'fechaInicio',
+    description: 'Fecha de inicio del rango',
+    example: '2020-05-06',
+    required: true,
+  })
+  @ApiQuery({
+    name: 'fechaFin',
+    example: '2020-05-12',
+    description: 'Fecha final del rango',
+    required: true,
+  })
+  @Get('/actividad')
+  @ApiOperation({
+    summary: 'Devuelve el total gastado por actividad de una institucion en un rango de fechas',
+  })
+  getActividad(@Query() query): Promise<Estadistica[]> {
+    const { fechaInicio, fechaFin } = query;
+
+    if (this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
+      return this.estadisticasService.getGastosPorActividad(fechaInicio, fechaFin);
+    }
+
+    throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);
+  }
+
   private fechaValida(fecha: string): boolean {
     const formato = /^\d{4}-\d{2}-\d{2}$/;
     return formato.test(fecha);
