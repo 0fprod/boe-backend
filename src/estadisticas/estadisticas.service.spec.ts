@@ -2,9 +2,9 @@ import { getModelToken, MongooseModule } from '@nestjs/mongoose';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Model } from 'mongoose';
 import { closeInMongodConnection, rootMongooseTestModule } from '../../test/mongo.memory.server';
-import { ContratoRepository } from '../compartido/contrato.repository';
 import { construirBeneficiario, construirContrato, construirDetallesDeContrato } from '../compartido/models';
 import { ContratoDoc, ContratoEntity, ContratoSchema } from '../compartido/schema/contrato.schema';
+import { EstadisticasRepository } from './estadisticas.repository';
 import { EstadisticasService } from './estadisticas.service';
 
 describe('EstadisticasService', () => {
@@ -44,7 +44,7 @@ describe('EstadisticasService', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: [rootMongooseTestModule(), MongooseModule.forFeature([{ name: ContratoEntity.name, schema: ContratoSchema }])],
-      providers: [EstadisticasService, ContratoRepository],
+      providers: [EstadisticasService, EstadisticasRepository],
     }).compile();
 
     servicio = module.get<EstadisticasService>(EstadisticasService);
@@ -72,8 +72,8 @@ describe('EstadisticasService', () => {
 
     expect(beneficiarios).toHaveLength(2);
     expect(beneficiarios).toStrictEqual([
-      { nombre: 'empresa-1', numContratos: 3 },
-      { nombre: 'empresa-2', numContratos: 2 },
+      { etiqueta: 'empresa-1', valor: 3 },
+      { etiqueta: 'empresa-2', valor: 2 },
     ]);
   });
 });
