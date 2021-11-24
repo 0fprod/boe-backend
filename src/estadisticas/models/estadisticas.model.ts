@@ -1,9 +1,9 @@
-export interface EstadisticasBeneficiarios {
-  nombre: string;
-  numContratos: number;
+export interface Estadistica {
+  etiqueta: string;
+  valor: number;
 }
 
-export const mapContratoDocAEstadisticasBeneficiario = (doc: any): EstadisticasBeneficiarios => ({
-  nombre: doc._id,
-  numContratos: doc.numVeces,
+export const mapNumContratosPorBeneficiario = (doc: any): Estadistica => ({
+  etiqueta: doc._id,
+  valor: doc.numVeces,
 });
