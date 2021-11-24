@@ -1,6 +1,6 @@
 import { Controller, Get, HttpException, HttpStatus, Query } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { EstadisticasBeneficiario } from '../swagger/dto/estadisticas.dto';
+import { EstadisticasDto } from '../swagger/dto/estadisticas.dto';
 import { EstadisticasService } from './estadisticas.service';
 import { Estadistica } from './models/estadisticas.model';
 
@@ -12,7 +12,7 @@ export class EstadisticasController {
   @ApiResponse({
     status: 200,
     description: 'EstatisticasBeneficiarios',
-    type: EstadisticasBeneficiario,
+    type: EstadisticasDto,
   })
   @ApiQuery({
     name: 'fechaInicio',
@@ -43,18 +43,18 @@ export class EstadisticasController {
   @ApiResponse({
     status: 200,
     description: 'EstadisticasPYMES',
-    type: EstadisticasBeneficiario,
-  })
-  @ApiQuery({
-    name: 'fechaInicio',
-    description: 'Fecha de inicio del rango',
-    example: '2020-05-06',
-    required: true,
+    type: EstadisticasDto,
   })
   @ApiQuery({
     name: 'fechaFin',
     example: '2020-05-12',
     description: 'Fecha final del rango',
+    required: true,
+  })
+  @ApiQuery({
+    name: 'fechaInicio',
+    description: 'Fecha de inicio del rango',
+    example: '2020-05-06',
     required: true,
   })
   @Get('/pyme')
@@ -65,7 +65,7 @@ export class EstadisticasController {
     const { fechaInicio, fechaFin } = query;
 
     if (this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
-      return this.estadisticasService.obtenerTopBeneficiariosPorFecha(fechaInicio, fechaFin);
+      return this.estadisticasService.getGastosPorPymes(fechaInicio, fechaFin);
     }
 
     throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);
@@ -74,18 +74,18 @@ export class EstadisticasController {
   @ApiResponse({
     status: 200,
     description: 'EstadisticasActividad',
-    type: EstadisticasBeneficiario,
-  })
-  @ApiQuery({
-    name: 'fechaInicio',
-    description: 'Fecha de inicio del rango',
-    example: '2020-05-06',
-    required: true,
+    type: EstadisticasDto,
   })
   @ApiQuery({
     name: 'fechaFin',
     example: '2020-05-12',
     description: 'Fecha final del rango',
+    required: true,
+  })
+  @ApiQuery({
+    name: 'fechaInicio',
+    description: 'Fecha de inicio del rango',
+    example: '2020-05-06',
     required: true,
   })
   @Get('/actividad')
