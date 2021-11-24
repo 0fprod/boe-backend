@@ -1,15 +1,15 @@
 import { Injectable } from '@nestjs/common';
-import { ContratoRepository } from '../compartido/contrato.repository';
-import { EstadisticasBeneficiarios, mapContratoDocAEstadisticasBeneficiario } from './models/estadisticas.model';
+import { EstadisticasRepository } from './estadisticas.repository';
+import { Estadistica, mapNumContratosPorBeneficiario } from './models/estadisticas.model';
 
 @Injectable()
 export class EstadisticasService {
-  constructor(private repositorio: ContratoRepository) {}
+  constructor(private repositorio: EstadisticasRepository) {}
 
-  async obtenerTopBeneficiariosPorFecha(fechaInicio: string, fechafinal: string): Promise<EstadisticasBeneficiarios[]> {
+  async obtenerTopBeneficiariosPorFecha(fechaInicio: string, fechafinal: string): Promise<Estadistica[]> {
     try {
       const estadisticas = await this.repositorio.obtenerTopBeneficiariosPorFecha(fechaInicio, fechafinal);
-      return estadisticas.map(mapContratoDocAEstadisticasBeneficiario);
+      return estadisticas.map(mapNumContratosPorBeneficiario);
     } catch (error) {
       console.log('Error ->', error);
       return [];

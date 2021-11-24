@@ -2,7 +2,7 @@ import { Controller, Get, HttpException, HttpStatus, Query } from '@nestjs/commo
 import { ApiOperation, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { EstadisticasBeneficiario } from '../swagger/dto/estadisticas.dto';
 import { EstadisticasService } from './estadisticas.service';
-import { EstadisticasBeneficiarios } from './models/estadisticas.model';
+import { Estadistica } from './models/estadisticas.model';
 
 @ApiTags('Estadisticas')
 @Controller('estadisticas')
@@ -28,9 +28,40 @@ export class EstadisticasController {
   })
   @Get('/beneficiarios')
   @ApiOperation({
-    summary: 'Devuelve un listado de contratos en un rango de una fecha o rango de fechas',
+    summary: 'Devuelve una lista de empresas con el numero de contratos obtenidos en un rango de fechas',
   })
-  getRangoDeFecha(@Query() query): Promise<EstadisticasBeneficiarios[]> {
+  getBeneficiarios(@Query() query): Promise<Estadistica[]> {
+    const { fechaInicio, fechaFin } = query;
+
+    if (this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
+      return this.estadisticasService.obtenerTopBeneficiariosPorFecha(fechaInicio, fechaFin);
+    }
+
+    throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);
+  }
+
+  @ApiResponse({
+    status: 200,
+    description: 'EstadisticasPYMES',
+    type: EstadisticasBeneficiario,
+  })
+  @ApiQuery({
+    name: 'fechaInicio',
+    description: 'Fecha de inicio del rango',
+    example: '2020-05-06',
+    required: true,
+  })
+  @ApiQuery({
+    name: 'fechaFin',
+    example: '2020-05-12',
+    description: 'Fecha final del rango',
+    required: true,
+  })
+  @Get('/pyme')
+  @ApiOperation({
+    summary: 'Devuelve el total gastado en pymes/no pymes en un rango de fechas',
+  })
+  getPymes(@Query() query): Promise<Estadistica[]> {
     const { fechaInicio, fechaFin } = query;
 
     if (this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
