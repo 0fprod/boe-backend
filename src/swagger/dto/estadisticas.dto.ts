@@ -1,16 +1,16 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { EstadisticasBeneficiarios } from '../../estadisticas/models/estadisticas.model';
+import { Estadistica } from '../../estadisticas/models/estadisticas.model';
 
-export class EstadisticasBeneficiario implements EstadisticasBeneficiarios {
+export class EstadisticasDto implements Estadistica {
   @ApiProperty({
-    example: 'Ferrovial',
-    description: 'Nombre de la empresa',
+    example: 'Categoria',
+    description: 'Nombre de la categoría',
   })
-  nombre: string;
+  etiqueta: string;
 
   @ApiProperty({
     example: 2,
-    description: 'Numero de contratos que se ha llevado',
+    description: 'Cantidad',
   })
-  numContratos: number;
+  valor: number;
 }
