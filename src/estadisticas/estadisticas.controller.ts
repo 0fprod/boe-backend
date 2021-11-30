@@ -1,6 +1,7 @@
 import { Controller, Get, HttpException, HttpStatus, Query } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { EstadisticasDto } from '../swagger/dto/estadisticas.dto';
+import { anhadirHoraAFechaFinal, fechaValida } from '../utils';
 import { EstadisticasService } from './estadisticas.service';
 import { Estadistica } from './models/estadisticas.model';
 
@@ -24,16 +25,21 @@ export class EstadisticasController {
     name: 'fechaFin',
     example: '2020-05-12',
     description: 'Fecha final del rango',
-    required: true,
+    required: false,
   })
   @Get('/beneficiarios')
   @ApiOperation({
     summary: 'Devuelve una lista de empresas con el numero de contratos obtenidos en un rango de fechas',
   })
   getBeneficiarios(@Query() query): Promise<Estadistica[]> {
-    const { fechaInicio, fechaFin } = query;
+    const { fechaInicio } = query;
+    let { fechaFin } = query;
 
-    if (this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
+    if (fechaFin !== undefined) {
+      fechaFin = anhadirHoraAFechaFinal(fechaInicio);
+    }
+
+    if (fechaValida(fechaFin) && fechaValida(fechaInicio)) {
       return this.estadisticasService.obtenerTopBeneficiariosPorFecha(fechaInicio, fechaFin);
     }
 
@@ -49,7 +55,7 @@ export class EstadisticasController {
     name: 'fechaFin',
     example: '2020-05-12',
     description: 'Fecha final del rango',
-    required: true,
+    required: false,
   })
   @ApiQuery({
     name: 'fechaInicio',
@@ -62,9 +68,14 @@ export class EstadisticasController {
     summary: 'Devuelve el total gastado en pymes/no pymes en un rango de fechas',
   })
   getPymes(@Query() query): Promise<Estadistica[]> {
-    const { fechaInicio, fechaFin } = query;
+    const { fechaInicio } = query;
+    let { fechaFin } = query;
 
-    if (this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
+    if (fechaFin !== undefined) {
+      fechaFin = anhadirHoraAFechaFinal(fechaInicio);
+    }
+
+    if (fechaValida(fechaFin) && fechaValida(fechaInicio)) {
       return this.estadisticasService.getGastosPorPymes(fechaInicio, fechaFin);
     }
 
@@ -80,7 +91,7 @@ export class EstadisticasController {
     name: 'fechaFin',
     example: '2020-05-12',
     description: 'Fecha final del rango',
-    required: true,
+    required: false,
   })
   @ApiQuery({
     name: 'fechaInicio',
@@ -93,17 +104,16 @@ export class EstadisticasController {
     summary: 'Devuelve el total gastado por actividad de una institucion en un rango de fechas',
   })
   getActividad(@Query() query): Promise<Estadistica[]> {
-    const { fechaInicio, fechaFin } = query;
+    const { fechaInicio } = query;
+    let { fechaFin } = query;
 
-    if (this.fechaValida(fechaFin) && this.fechaValida(fechaInicio)) {
+    if (fechaFin !== undefined) {
+      fechaFin = anhadirHoraAFechaFinal(fechaInicio);
+    }
+    if (fechaValida(fechaFin) && fechaValida(fechaInicio)) {
       return this.estadisticasService.getGastosPorActividad(fechaInicio, fechaFin);
     }
 
     throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);
-  }
-
-  private fechaValida(fecha: string): boolean {
-    const formato = /^\d{4}-\d{2}-\d{2}$/;
-    return formato.test(fecha);
   }
 }
