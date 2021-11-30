@@ -35,7 +35,7 @@ export class EstadisticasController {
     const { fechaInicio } = query;
     let { fechaFin } = query;
 
-    if (fechaFin !== undefined) {
+    if (!fechaFin) {
       fechaFin = anhadirHoraAFechaFinal(fechaInicio);
     }
 
@@ -71,7 +71,7 @@ export class EstadisticasController {
     const { fechaInicio } = query;
     let { fechaFin } = query;
 
-    if (fechaFin !== undefined) {
+    if (!fechaFin) {
       fechaFin = anhadirHoraAFechaFinal(fechaInicio);
     }
 
@@ -107,7 +107,7 @@ export class EstadisticasController {
     const { fechaInicio } = query;
     let { fechaFin } = query;
 
-    if (fechaFin !== undefined) {
+    if (!fechaFin) {
       fechaFin = anhadirHoraAFechaFinal(fechaInicio);
     }
     if (fechaValida(fechaFin) && fechaValida(fechaInicio)) {

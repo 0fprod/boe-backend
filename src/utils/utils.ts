@@ -148,6 +148,6 @@ export const dividirEn = <T>(itemsPorGrupo: number, coleccion: T[]): T[][] => {
 
 export const anhadirHoraAFechaFinal = (fecha: string): string => `${fecha}T23:59:59`;
 export const fechaValida = (fecha: string): boolean => {
-  const formato = /^\d{4}-\d{2}-\d{2}$/;
+  const formato = /^\d{4}-\d{2}-\d{2}(T(\d{2}:){2}\d{2})?$/;
   return formato.test(fecha);
 };

@@ -62,7 +62,7 @@ export class ContratosController {
     const { fechaInicio } = query;
     let { fechaFin } = query;
 
-    if (fechaFin !== undefined) {
+    if (!fechaFin) {
       fechaFin = anhadirHoraAFechaFinal(fechaInicio);
     }
 
