@@ -120,6 +120,7 @@ describe('Utils specs', () => {
     expect(fechaPublicacionMapper('20203030')).toEqual('');
     expect(fechaPublicacionMapper('20200510')).toEqual('2020-05-10T00:00:00.000Z');
     expect(fechaPublicacionMapper('19900710')).toEqual('1990-07-10T00:00:00.000Z');
+    expect(fechaPublicacionMapper('20211201')).toEqual('2021-12-01T00:00:00.000Z');
   });
 
   it('Elimina un prefijo y un sufijo dado un título', () => {

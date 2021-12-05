@@ -121,7 +121,7 @@ export const fechaPublicacionMapper = (fecha: string): string => {
     const mm = +fecha.substr(4, 2);
     const dd = +fecha.substr(6);
 
-    if (yyyy > 2500 || mm > 11 || dd > 31) {
+    if (yyyy > 2500 || mm > 12 || dd > 31) {
       throw Error();
     }
 
