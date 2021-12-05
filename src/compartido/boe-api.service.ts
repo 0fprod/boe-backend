@@ -29,7 +29,7 @@ export class BoeApiService {
     return this.httpService.get<string>(`${this.configService.get('BOE_API_URL')}${this.SUMARIO_QUERY}${boeId}`).pipe(
       concatMap<AxiosResponse<string, any>, Promise<Sumario>>((value: AxiosResponse<string, any>) => {
         const { data: xml } = value;
-        return this.xml2JsonService.parse(xml);
+        return this.xml2JsonService.parse(xml).catch((e) => Promise.resolve(null));
       }),
       map<Sumario, Boe>((sumario: Sumario) => mapSumarioABoe(sumario)),
     );
