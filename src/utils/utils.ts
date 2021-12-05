@@ -151,3 +151,27 @@ export const fechaValida = (fecha: string): boolean => {
   const formato = /^\d{4}-\d{2}-\d{2}(T(\d{2}:){2}\d{2})?$/;
   return formato.test(fecha);
 };
+
+// extrae YYYYMMDD del formato ISO y lo devuelve
+const formatearISO = (fechaEnIso: string): string => {
+  return fechaEnIso.substr(0, 10).replace(/-/g, '');
+};
+
+export const getColeccionDeFechas = (fecha: string): string[] => {
+  const yyyy = +fecha.substr(0, 4);
+  const mm = +fecha.substr(4);
+
+  const fechaInicial = new Date(Date.UTC(yyyy, mm - 1));
+  const fechaFinal = new Date(Date.UTC(yyyy, mm, 0));
+  const fechaActual = new Date(fechaInicial);
+  const fechas: string[] = [];
+  let dias = 1;
+
+  while (fechaActual <= fechaFinal) {
+    fechas.push(formatearISO(fechaActual.toISOString()));
+    fechaActual.setDate(fechaInicial.getDate() + dias);
+    dias++;
+  }
+
+  return fechas;
+};

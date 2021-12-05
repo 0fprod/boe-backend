@@ -1,4 +1,4 @@
-import { dividirEn } from '.';
+import { dividirEn, getColeccionDeFechas } from '.';
 import { Descripcion, ListaDeDefinicion } from '../compartido/api-models';
 import { Lote } from '../compartido/models';
 import {
@@ -150,5 +150,40 @@ describe('Utils specs', () => {
     expect(dividirEn(itemsPorGrupo, coleccionImpar)).toStrictEqual(resultadoImpar);
     expect(dividirEn(itemsPorGrupo, coleccionPar)).toStrictEqual(resultadoPar);
     expect(dividirEn(10, coleccionImpar)).toStrictEqual([coleccionImpar]);
+  });
+
+  it('Devuelve todas las fechas de un mes dado mes y año', () => {
+    const fechasDeFebrero = [
+      '20210201',
+      '20210202',
+      '20210203',
+      '20210204',
+      '20210205',
+      '20210206',
+      '20210207',
+      '20210208',
+      '20210209',
+      '20210210',
+      '20210211',
+      '20210212',
+      '20210213',
+      '20210214',
+      '20210215',
+      '20210216',
+      '20210217',
+      '20210218',
+      '20210219',
+      '20210220',
+      '20210221',
+      '20210222',
+      '20210223',
+      '20210224',
+      '20210225',
+      '20210226',
+      '20210227',
+      '20210228',
+    ];
+
+    expect(getColeccionDeFechas('202102')).toStrictEqual(fechasDeFebrero);
   });
 });
