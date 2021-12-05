@@ -42,6 +42,41 @@ export class BoeController {
   }
 
   @ApiResponse({
+    status: 201,
+    description: 'Devuelve el número de contratos guardados',
+    type: Number,
+  })
+  @ApiResponse({
+    status: 401,
+    description: 'No autorizado',
+  })
+  @ApiOperation({
+    summary: 'Añade a la BBDD los contratos de la fecha indicada',
+  })
+  @ApiQuery({
+    name: 'fecha',
+    description: 'Mes y año de donde queremos extraer los contratos',
+    example: '202005',
+    required: true,
+  })
+  @ApiHeader({
+    name: 'Authentication bearer',
+    required: true,
+  })
+  @Get('/bulk')
+  @HttpCode(201)
+  public async bulk(@Query() query): Promise<any> {
+    const { fecha } = query;
+
+    if (fecha) {
+      const numDeContratosGuardados = await this.boeService.bulk(fecha);
+      return numDeContratosGuardados;
+    }
+
+    throw new BadRequestException();
+  }
+
+  @ApiResponse({
     status: 200,
     description: 'Lista de contratos en el BOE de la fecha indicada',
     type: BoeDTO,
