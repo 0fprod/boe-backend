@@ -60,12 +60,12 @@ describe('Pruebas del repositorio de contrato', () => {
   it('Devuelve un contrato a partir de un id de contrato', async () => {
     const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato-id' });
 
-    let contrato = await repositorio.obtenerContratoPorId('contrato-id');
+    let contrato = await repositorio.getContratoPorId('contrato-id');
     expect(contrato).toBeNull();
 
     await repositorio.guardarContrato(contratoIrrelevante);
 
-    contrato = await repositorio.obtenerContratoPorId('contrato-id');
+    contrato = await repositorio.getContratoPorId('contrato-id');
     expect(contrato).toBeTruthy();
     expect(contrato.titulo).toEqual('contrato irrelevante');
     expect(contrato.contratoId).toEqual('contrato-id');
@@ -75,12 +75,12 @@ describe('Pruebas del repositorio de contrato', () => {
     const fechaPub = new Date().toISOString();
     const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato-id', fechaPub });
 
-    let contratos = await repositorio.obtenerContratoPorFecha(fechaPub);
+    let contratos = await repositorio.getContratoPorFecha(fechaPub);
     expect(contratos).toHaveLength(0);
 
     await repositorio.guardarContrato(contratoIrrelevante);
 
-    contratos = await repositorio.obtenerContratoPorFecha(fechaPub);
+    contratos = await repositorio.getContratoPorFecha(fechaPub);
     expect(contratos).toHaveLength(1);
     expect(contratos[0].titulo).toEqual('contrato irrelevante');
     expect(contratos[0].contratoId).toEqual('contrato-id');
@@ -91,12 +91,12 @@ describe('Pruebas del repositorio de contrato', () => {
     const fechaPubFin = new Date().toISOString();
     const contratoIrrelevante = construirContrato({ titulo: 'contrato irrelevante', contratoId: 'contrato-id', fechaPub: fechaPubInicio });
 
-    let contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    let contratos = await repositorio.getContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
     expect(contratos).toHaveLength(0);
 
     await repositorio.guardarContrato(contratoIrrelevante);
 
-    contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    contratos = await repositorio.getContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
     expect(contratos).toHaveLength(1);
     expect(contratos[0].titulo).toEqual('contrato irrelevante');
     expect(contratos[0].contratoId).toEqual('contrato-id');
@@ -111,12 +111,12 @@ describe('Pruebas del repositorio de contrato', () => {
       fechaPub: new Date().toISOString(),
     });
 
-    let contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    let contratos = await repositorio.getContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
     expect(contratos).toHaveLength(0);
 
     await repositorio.guardarContrato(contratoIrrelevante);
 
-    contratos = await repositorio.obtenerContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
+    contratos = await repositorio.getContratoPorRangoDeFecha(fechaPubInicio, fechaPubFin);
     expect(contratos).toHaveLength(0);
   });
 });

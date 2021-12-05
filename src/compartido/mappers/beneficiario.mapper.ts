@@ -1,4 +1,4 @@
-import { buscarLotes, costeMapper, esValida, extraerDescripcionPorTermino, extraerIndicePorLote, obtenerNivelPlano } from '../../utils';
+import { buscarLotes, costeMapper, esValida, extraerDescripcionPorTermino, extraerIndicePorLote, getNivelPlano } from '../../utils';
 import { ListaDeDefinicion, Texto } from '../api-models';
 import { Beneficiario, construirBeneficiario, Lote } from '../models';
 
@@ -34,8 +34,8 @@ const buscarBeneficiariosPorLote = (adjudicatarios: Texto, costes: Texto, lote: 
   if (lote.id) {
     const textoAdjudicatarios = <Texto>extraerDescripcionPorTermino(adjudicatarios.dl, lote.id, extraerIndicePorLote);
     const textoCostes = <Texto>extraerDescripcionPorTermino(costes.dl, lote.id, extraerIndicePorLote);
-    const beneficiariosPlanos: ListaDeDefinicion[] = obtenerNivelPlano(textoAdjudicatarios.dl);
-    const costesPlanos: ListaDeDefinicion[] = obtenerNivelPlano(textoCostes.dl);
+    const beneficiariosPlanos: ListaDeDefinicion[] = getNivelPlano(textoAdjudicatarios.dl);
+    const costesPlanos: ListaDeDefinicion[] = getNivelPlano(textoCostes.dl);
 
     // Ambas colecciones están ordenadas siempre.
     const beneficiarios = beneficiariosPlanos.map((beneficiarioPlano, indice) => {

@@ -39,8 +39,8 @@ describe('BoeService', () => {
   });
 
   it('Se guardan en base de datos los contratos del día', async () => {
-    jest.spyOn(api, 'obtenerBoe').mockReturnValue(of(construirBoe(['id-irrelevante-1', 'id-irrelevante-2'])));
-    jest.spyOn(api, 'obtenerContrato').mockReturnValueOnce(
+    jest.spyOn(api, 'getBoe').mockReturnValue(of(construirBoe(['id-irrelevante-1', 'id-irrelevante-2'])));
+    jest.spyOn(api, 'getContrato').mockReturnValueOnce(
       of(
         construirContrato({
           contratoId: 'id-irrelevante-1',
@@ -48,7 +48,7 @@ describe('BoeService', () => {
         }),
       ),
     );
-    jest.spyOn(api, 'obtenerContrato').mockReturnValue(
+    jest.spyOn(api, 'getContrato').mockReturnValue(
       of(
         construirContrato({
           contratoId: 'id-irrelevante-2',

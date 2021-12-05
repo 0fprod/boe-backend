@@ -31,7 +31,7 @@ export class ContratoRepository {
     return contratosGuardados.length;
   }
 
-  async obtenerContratoPorId(contratoId: string): Promise<Contrato> {
+  async getContratoPorId(contratoId: string): Promise<Contrato> {
     const contratoDoc = await this.contratoModel.findOne({ contratoId });
 
     if (contratoDoc) {
@@ -41,13 +41,13 @@ export class ContratoRepository {
     return null;
   }
 
-  async obtenerContratoPorFecha(fechaPub: string): Promise<Contrato[]> {
+  async getContratoPorFecha(fechaPub: string): Promise<Contrato[]> {
     const contratoDoc = await this.contratoModel.find({ fechaPub });
 
     return contratoDoc.map(mapDocumentAContrato);
   }
 
-  async obtenerContratoPorRangoDeFecha(fechaPubInicio: string, fechaPubFin: string): Promise<Contrato[]> {
+  async getContratoPorRangoDeFecha(fechaPubInicio: string, fechaPubFin: string): Promise<Contrato[]> {
     const contratoDoc = await this.contratoModel.find({
       fechaPub: {
         $gte: fechaPubInicio,

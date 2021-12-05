@@ -94,7 +94,7 @@ export class BoeController {
   public async boe(@Param() params): Promise<Boe> {
     const { id } = params;
     if (id) {
-      return firstValueFrom(this.boeService.obtenerBoe(id));
+      return firstValueFrom(this.boeService.getBoe(id));
     }
 
     throw new BadRequestException();
@@ -113,7 +113,7 @@ export class BoeController {
   public async sumario(@Param() params): Promise<Sumario> {
     const { id } = params;
     if (id) {
-      return firstValueFrom(this.boeService.obtenerSumario(id));
+      return firstValueFrom(this.boeService.getSumario(id));
     }
     throw new BadRequestException();
   }
@@ -131,7 +131,7 @@ export class BoeController {
   public anuncioNativo(@Param() params): Promise<Anuncio> {
     const { id } = params;
     if (id) {
-      return firstValueFrom(this.boeService.obtenerAnuncio(id));
+      return firstValueFrom(this.boeService.getAnuncio(id));
     }
     throw new BadRequestException();
   }
@@ -149,7 +149,7 @@ export class BoeController {
   public anuncioParceado(@Param() params): Promise<Contrato> {
     const { id } = params;
     if (id) {
-      return firstValueFrom(this.boeService.obtenerContrato(id));
+      return firstValueFrom(this.boeService.getContrato(id));
     }
     throw new BadRequestException();
   }

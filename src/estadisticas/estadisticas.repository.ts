@@ -73,7 +73,7 @@ export class EstadisticasRepository {
     return contratoDoc;
   }
 
-  async obtenerTopBeneficiariosPorFecha(fechaPubInicio: string, fechaPubFin: string): Promise<EstadisticaApiModel[]> {
+  async getTopBeneficiariosPorFecha(fechaPubInicio: string, fechaPubFin: string): Promise<EstadisticaApiModel[]> {
     const contratoDoc = await this.contratoModel.aggregate([
       {
         // Filtramos por rango de fecha

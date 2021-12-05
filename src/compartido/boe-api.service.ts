@@ -16,7 +16,7 @@ export class BoeApiService {
 
   constructor(private httpService: HttpService, private configService: ConfigService, private xml2JsonService: Xml2jsonService) {}
 
-  public obtenerSumario(idSumario: string): Observable<Sumario> {
+  public getSumario(idSumario: string): Observable<Sumario> {
     return this.httpService.get<string>(`${this.configService.get('BOE_API_URL')}${this.SUMARIO_QUERY}${idSumario}`).pipe(
       concatMap<AxiosResponse<string, any>, Promise<Sumario>>((value: AxiosResponse<string, any>) => {
         const { data: xml } = value;
@@ -25,7 +25,7 @@ export class BoeApiService {
     );
   }
 
-  public obtenerBoe(boeId: string): Observable<Boe> {
+  public getBoe(boeId: string): Observable<Boe> {
     return this.httpService.get<string>(`${this.configService.get('BOE_API_URL')}${this.SUMARIO_QUERY}${boeId}`).pipe(
       concatMap<AxiosResponse<string, any>, Promise<Sumario>>((value: AxiosResponse<string, any>) => {
         const { data: xml } = value;
@@ -35,7 +35,7 @@ export class BoeApiService {
     );
   }
 
-  public obtenerAnuncio(anuncioID: string): Observable<Anuncio> {
+  public getAnuncio(anuncioID: string): Observable<Anuncio> {
     return this.httpService.get<string>(`${this.configService.get('BOE_API_URL')}${this.CONTRATO_QUERY}${anuncioID}`).pipe(
       concatMap<AxiosResponse<string, any>, Promise<Anuncio>>((value: AxiosResponse<string, any>) => {
         const { data: xml } = value;
@@ -44,7 +44,7 @@ export class BoeApiService {
     );
   }
 
-  public obtenerContrato(contratoId: string): Observable<Contrato> {
+  public getContrato(contratoId: string): Observable<Contrato> {
     return this.httpService.get<string>(`${this.configService.get('BOE_API_URL')}${this.CONTRATO_QUERY}${contratoId}`).pipe(
       concatMap<AxiosResponse<string, any>, Promise<Anuncio>>((value: AxiosResponse<string, any>) => {
         const { data: xml } = value;

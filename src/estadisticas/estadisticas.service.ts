@@ -6,9 +6,9 @@ import { Estadistica, mapEstadisticaActividad, mapEstadisticaPYMES, mapNumContra
 export class EstadisticasService {
   constructor(private repositorio: EstadisticasRepository) {}
 
-  async obtenerTopBeneficiariosPorFecha(fechaInicio: string, fechafinal: string): Promise<Estadistica[]> {
+  async getTopBeneficiariosPorFecha(fechaInicio: string, fechafinal: string): Promise<Estadistica[]> {
     try {
-      const estadisticas = await this.repositorio.obtenerTopBeneficiariosPorFecha(fechaInicio, fechafinal);
+      const estadisticas = await this.repositorio.getTopBeneficiariosPorFecha(fechaInicio, fechafinal);
       return estadisticas.map(mapNumContratosPorBeneficiario);
     } catch (error) {
       console.log('Error ->', error);

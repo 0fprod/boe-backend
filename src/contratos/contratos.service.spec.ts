@@ -43,14 +43,14 @@ describe('ContratosService', () => {
   });
 
   it('Devuelve un contrato dado un id de contrato', async () => {
-    const contrato = await servicio.obtenerContratoPorId('contratoId-1');
+    const contrato = await servicio.getContratoPorId('contratoId-1');
     expect(contrato).toBeTruthy();
     expect(contrato.contratoId).toEqual('contratoId-1');
   });
 
   it('Devuelve los contratos de un día dada una fecha', async () => {
     const fechaPub = fechaPublicacionMapper('20200505');
-    const contratos = await servicio.obtenerContratoPorFecha(fechaPub);
+    const contratos = await servicio.getContratoPorFecha(fechaPub);
     expect(contratos).toBeTruthy();
     expect(contratos).toHaveLength(2);
     expect(buscarPorId(contratos, 'contratoId-3')).toBeGreaterThan(-1);
@@ -60,7 +60,7 @@ describe('ContratosService', () => {
   it('Devuelve los contratos que esten en un rango de fecha dado', async () => {
     const inicio = fechaPublicacionMapper('20200501');
     const fin = fechaPublicacionMapper('20200503');
-    const contratos = await servicio.obtenerContratoPorRangoFecha(inicio, fin);
+    const contratos = await servicio.getContratoPorRangoFecha(inicio, fin);
     expect(contratos).toBeTruthy();
     expect(contratos).toHaveLength(2);
     expect(buscarPorId(contratos, 'contratoId-1')).toBeGreaterThan(-1);

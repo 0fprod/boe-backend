@@ -40,7 +40,7 @@ export class EstadisticasController {
     }
 
     if (fechaValida(fechaFin) && fechaValida(fechaInicio)) {
-      return this.estadisticasService.obtenerTopBeneficiariosPorFecha(fechaInicio, fechaFin);
+      return this.estadisticasService.getTopBeneficiariosPorFecha(fechaInicio, fechaFin);
     }
 
     throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);

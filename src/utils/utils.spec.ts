@@ -11,7 +11,7 @@ import {
   extraerIndice,
   extraerIndicePorLote,
   fechaPublicacionMapper,
-  obtenerNivelPlano,
+  getNivelPlano,
   tituloMapper,
 } from './utils';
 
@@ -47,9 +47,9 @@ describe('Utils specs', () => {
       dd: [{ dl: { dd: [{ dl: { ...nivelPlano } }], dt: [''] } }],
       dt: ['anidado'],
     };
-    expect(obtenerNivelPlano(listaAnidadaSimple)).toStrictEqual([nivelPlano]);
-    expect(obtenerNivelPlano(listaAnidada)).toStrictEqual([nivelPlano]);
-    expect(obtenerNivelPlano(undefined as ListaDeDefinicion)).toStrictEqual([]);
+    expect(getNivelPlano(listaAnidadaSimple)).toStrictEqual([nivelPlano]);
+    expect(getNivelPlano(listaAnidada)).toStrictEqual([nivelPlano]);
+    expect(getNivelPlano(undefined as ListaDeDefinicion)).toStrictEqual([]);
   });
 
   it('Extrae un índice dado una lista de definición y un término', () => {

@@ -71,7 +71,7 @@ describe('EstadisticasService', () => {
   it('Devuelve beneficiarios y número de contratos se llevaron en determinada fecha', async () => {
     const fechaPubInicio = new Date(2020, 1, 1).toISOString();
     const fechaPubFin = new Date(2020, 11, 31).toISOString();
-    const beneficiarios = await servicio.obtenerTopBeneficiariosPorFecha(fechaPubInicio, fechaPubFin);
+    const beneficiarios = await servicio.getTopBeneficiariosPorFecha(fechaPubInicio, fechaPubFin);
 
     expect(beneficiarios).toHaveLength(2);
     expect(beneficiarios).toStrictEqual([

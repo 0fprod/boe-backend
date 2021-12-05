@@ -64,7 +64,7 @@ describe('BoeApiService', () => {
       }),
     });
 
-    const contrato = await firstValueFrom(service.obtenerContrato('identificador irrelevante'));
+    const contrato = await firstValueFrom(service.getContrato('identificador irrelevante'));
 
     expect(contratoVacio).toStrictEqual(contrato);
   });
@@ -73,7 +73,7 @@ describe('BoeApiService', () => {
     jest.spyOn(http, 'get').mockReturnValue(of(mockDeSumario));
     const boeVacio = construirBoe(['identificador irrelevante-1', 'identificador irrelevante-2']);
 
-    const boe = await firstValueFrom(service.obtenerBoe('identificador irrelevante'));
+    const boe = await firstValueFrom(service.getBoe('identificador irrelevante'));
 
     expect(boeVacio).toStrictEqual(boe);
   });

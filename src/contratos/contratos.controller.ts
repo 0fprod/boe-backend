@@ -26,7 +26,7 @@ export class ContratosController {
   @Get('/contrato/:id')
   async getId(@Param() params): Promise<Contrato> {
     const { id } = params;
-    const contrato = await this.contratosService.obtenerContratoPorId(id);
+    const contrato = await this.contratosService.getContratoPorId(id);
 
     if (contrato) {
       return contrato;
@@ -67,7 +67,7 @@ export class ContratosController {
     }
 
     if (fechaValida(fechaFin) && fechaValida(fechaInicio)) {
-      return this.contratosService.obtenerContratoPorRangoFecha(fechaInicio, fechaFin);
+      return this.contratosService.getContratoPorRangoFecha(fechaInicio, fechaFin);
     }
 
     throw new HttpException('El formato de fecha debe ser YYYY-MM-DD.', HttpStatus.BAD_REQUEST);

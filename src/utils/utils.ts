@@ -47,7 +47,7 @@ export const extraerDescripcionPorTermino = (
 
 // Navega recursivamente hasta llegar a un nivel plano,
 // en la salida de la recursión los va añadiendo a una lista
-export const obtenerNivelPlano = (lista: ListaDeDefinicion): ListaDeDefinicion[] => {
+export const getNivelPlano = (lista: ListaDeDefinicion): ListaDeDefinicion[] => {
   try {
     const { dd, dt } = lista;
     let total = [];
@@ -58,7 +58,7 @@ export const obtenerNivelPlano = (lista: ListaDeDefinicion): ListaDeDefinicion[]
 
     for (const iterator of dd) {
       const element: ListaDeDefinicion = (iterator as Texto).dl;
-      total = [...total, ...obtenerNivelPlano(element)];
+      total = [...total, ...getNivelPlano(element)];
     }
 
     return total;

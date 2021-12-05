@@ -69,7 +69,7 @@ describe('Pruebas del repositorio de estadisticas', () => {
 
     // Act
     await model.create([contratoIrrelevante1, contratoIrrelevante2, contratoFueraDeRango]);
-    const beneficiarios = await repositorio.obtenerTopBeneficiariosPorFecha(fechaPubInicio, fechaPubFin);
+    const beneficiarios = await repositorio.getTopBeneficiariosPorFecha(fechaPubInicio, fechaPubFin);
 
     expect(beneficiarios).toHaveLength(2);
     expect(beneficiarios).toStrictEqual([
