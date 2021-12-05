@@ -56,6 +56,9 @@ describe('BoeService', () => {
         }),
       ),
     );
+    jest.spyOn(console, 'log').mockImplementation(() => {
+      /*noop*/
+    });
 
     const totalContratosGuardados = await service.guardarContratosPorBoeId('id-irrelevante');
     const totalContratosEnBDD = await repo.find({});
