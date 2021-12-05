@@ -1,5 +1,5 @@
 import { BadRequestException, Controller, Get, HttpCode, Param, Query } from '@nestjs/common';
-import { ApiHeader, ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ApiExcludeEndpoint, ApiHeader, ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { firstValueFrom } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
 import { Boe, Contrato } from '../compartido/models';
@@ -33,6 +33,7 @@ export class BoeController {
     name: 'Authentication bearer',
     required: true,
   })
+  @ApiExcludeEndpoint()
   @Get('/cron')
   @HttpCode(201)
   public async cron(@Query() query): Promise<any> {
@@ -63,15 +64,16 @@ export class BoeController {
     name: 'Authentication bearer',
     required: true,
   })
+  @ApiExcludeEndpoint()
   @Get('/bulk')
   @HttpCode(201)
   public async bulk(@Query() query): Promise<any> {
     const { fecha } = query;
 
-    if (fecha) {
-      const numDeContratosGuardados = await this.boeService.bulk(fecha);
-      return numDeContratosGuardados;
-    }
+    // if (fecha) {
+    //   const numDeContratosGuardados = await this.boeService.bulk(fecha);
+    //   return numDeContratosGuardados;
+    // }
 
     throw new BadRequestException();
   }
