@@ -30,6 +30,7 @@
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/swagger": "^5.1.4",
     "axios": "^0.23.0",
+    "helmet": "^5.0.2",
     "mongoose": "^6.0.12",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
