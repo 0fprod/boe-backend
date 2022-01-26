@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Beneficiario, Contrato, DetallesDeContrato, Institucion } from '../../compartido/models';
 
-class InstitucionDto implements Institucion {
+class InstitucionSwagger implements Institucion {
   @ApiProperty({
     example: 'Sección de Asuntos Económicos de la Jefatura Sistemas de Información, Telecomunicaciones y Asistencia Técnica.',
     description: 'Nombre de la entidad adjudicadora',
@@ -21,7 +21,7 @@ class InstitucionDto implements Institucion {
   actividad: string;
 }
 
-class BeneficiarioDto implements Beneficiario {
+class BeneficiarioSwagger implements Beneficiario {
   @ApiProperty({ example: 'Centro de Observación y Teledetección Espacial, S.A.U', description: 'Nombre de la empresa adjudicataria' })
   nombre: string;
   @ApiProperty({ example: 'A47461066', description: 'NIF de la empresa' })
@@ -40,11 +40,11 @@ class BeneficiarioDto implements Beneficiario {
   descripcion: string;
 }
 
-class DetallesDeContratoDto implements DetallesDeContrato {
-  @ApiProperty({ type: InstitucionDto, description: 'Institución' })
-  institucion: InstitucionDto;
-  @ApiProperty({ type: BeneficiarioDto, description: 'Beneficiarios', isArray: true })
-  beneficiarios: BeneficiarioDto[];
+class DetallesDeContratoSwagger implements DetallesDeContrato {
+  @ApiProperty({ type: InstitucionSwagger, description: 'Institución' })
+  institucion: InstitucionSwagger;
+  @ApiProperty({ type: BeneficiarioSwagger, description: 'Beneficiarios', isArray: true })
+  beneficiarios: BeneficiarioSwagger[];
   @ApiProperty({
     example:
       'Servicio para la generación, a partir de ortodoimagen espacial, de información vectorial geoespacial de alta resolucion de zonas urbanas de intertes para la defensa.',
@@ -53,7 +53,7 @@ class DetallesDeContratoDto implements DetallesDeContrato {
   descripcion: string;
 }
 
-export class ContratoDTO implements Contrato {
+export class ContratoSwagger implements Contrato {
   @ApiProperty({ example: 'BOE-B-2021-44545', description: 'ID del contrato' })
   contratoId: string;
   @ApiProperty({ example: '2021-11-03T00:00:00.000Z', description: 'Fecha de publicación del contrato' })
@@ -66,6 +66,6 @@ export class ContratoDTO implements Contrato {
   titulo: string;
   @ApiProperty({ example: '/boe/dias/2021/11/03/pdfs/BOE-B-2021-44545.pdf', description: 'Enlace al PDF oficial' })
   urlPdf: string;
-  @ApiProperty({ type: DetallesDeContratoDto, description: 'Detalles' })
-  detalles: DetallesDeContratoDto;
+  @ApiProperty({ type: DetallesDeContratoSwagger, description: 'Detalles' })
+  detalles: DetallesDeContratoSwagger;
 }

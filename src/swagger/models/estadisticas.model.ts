@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { Estadistica } from '../../estadisticas/models/estadisticas.model';
 
-export class EstadisticasDto implements Estadistica {
+export class EstadisticasSwagger implements Estadistica {
   @ApiProperty({
     example: 'Categoria',
     description: 'Nombre de la categoría',

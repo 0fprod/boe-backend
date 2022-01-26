@@ -1,7 +1,7 @@
 import { Controller, Get, HttpException, HttpStatus, Param, Query } from '@nestjs/common';
 import { ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Contrato } from '../compartido/models';
-import { ContratoDTO } from '../swagger/dto/contrato.dto';
+import { ContratoSwagger } from '../swagger/models/contrato.model';
 import { anhadirHoraAFechaFinal, fechaValida } from '../utils';
 import { ContratosService } from './contratos.service';
 
@@ -13,7 +13,7 @@ export class ContratosController {
   @ApiResponse({
     status: 200,
     description: 'Contrato',
-    type: ContratoDTO,
+    type: ContratoSwagger,
   })
   @ApiParam({
     name: 'id',
@@ -38,7 +38,7 @@ export class ContratosController {
   @ApiResponse({
     status: 200,
     description: 'Contrato',
-    type: ContratoDTO,
+    type: ContratoSwagger,
     isArray: true,
   })
   @ApiResponse({ status: 400, description: 'El formato de fecha debe ser YYYY-MM-DD.' })

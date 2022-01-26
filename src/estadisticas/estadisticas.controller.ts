@@ -1,6 +1,6 @@
 import { Controller, Get, HttpException, HttpStatus, Query } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { EstadisticasDto } from '../swagger/dto/estadisticas.dto';
+import { EstadisticasSwagger } from '../swagger/models/estadisticas.model';
 import { anhadirHoraAFechaFinal, fechaValida } from '../utils';
 import { EstadisticasService } from './estadisticas.service';
 import { Estadistica } from './models/estadisticas.model';
@@ -13,7 +13,7 @@ export class EstadisticasController {
   @ApiResponse({
     status: 200,
     description: 'EstatisticasBeneficiarios',
-    type: EstadisticasDto,
+    type: EstadisticasSwagger,
   })
   @ApiQuery({
     name: 'fechaInicio',
@@ -49,7 +49,7 @@ export class EstadisticasController {
   @ApiResponse({
     status: 200,
     description: 'EstadisticasPYMES',
-    type: EstadisticasDto,
+    type: EstadisticasSwagger,
   })
   @ApiQuery({
     name: 'fechaFin',
@@ -85,7 +85,7 @@ export class EstadisticasController {
   @ApiResponse({
     status: 200,
     description: 'EstadisticasActividad',
-    type: EstadisticasDto,
+    type: EstadisticasSwagger,
   })
   @ApiQuery({
     name: 'fechaFin',
