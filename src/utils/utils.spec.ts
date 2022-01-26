@@ -186,4 +186,26 @@ describe('Utils specs', () => {
 
     expect(getColeccionDeFechas('202102')).toStrictEqual(fechasDeFebrero);
   });
+
+  it('Devuelve todas las fechas posibles de un mes hasta un limite dado mes y año', () => {
+    const fechasDeFebrero = [
+      '20210201',
+      '20210202',
+      '20210203',
+      '20210204',
+      '20210205',
+      '20210206',
+      '20210207',
+      '20210208',
+      '20210209',
+      '20210210',
+      '20210211',
+      '20210212',
+      '20210213',
+      '20210214',
+      '20210215',
+    ];
+
+    expect(getColeccionDeFechas('202102', new Date(Date.UTC(2021, 1, 15)))).toStrictEqual(fechasDeFebrero);
+  });
 });

@@ -157,12 +157,12 @@ const formatearISO = (fechaEnIso: string): string => {
   return fechaEnIso.substr(0, 10).replace(/-/g, '');
 };
 
-export const getColeccionDeFechas = (fecha: string): string[] => {
+export const getColeccionDeFechas = (fecha: string, fechaLimite?: Date): string[] => {
   const yyyy = +fecha.substr(0, 4);
   const mm = +fecha.substr(4);
 
   const fechaInicial = new Date(Date.UTC(yyyy, mm - 1));
-  const fechaFinal = new Date(Date.UTC(yyyy, mm, 0));
+  const fechaFinal = fechaLimite ?? new Date(Date.UTC(yyyy, mm, 0));
   const fechaActual = new Date(fechaInicial);
   const fechas: string[] = [];
   let dias = 1;
