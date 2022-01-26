@@ -1,15 +1,16 @@
-import { BadRequestException, Controller, Get, HttpCode, Param, Query } from '@nestjs/common';
+import { BadRequestException, Controller, ForbiddenException, Get, Headers, HttpCode, Param, Query } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { ApiExcludeEndpoint, ApiHeader, ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { firstValueFrom } from 'rxjs';
 import { Anuncio, Sumario } from '../compartido/api-models';
 import { Boe, Contrato } from '../compartido/models';
-import { BoeDTO } from '../swagger/dto/boe.dto';
+import { BoeSwagger } from '../swagger/models/boe.model';
 import { BoeService } from './boe.service';
 
 @ApiTags('BOE')
 @Controller('boe')
 export class BoeController {
-  constructor(private boeService: BoeService) {}
+  constructor(private boeService: BoeService, private cfg: ConfigService) {}
 
   @ApiResponse({
     status: 201,
@@ -29,17 +30,16 @@ export class BoeController {
     example: '20200506',
     required: true,
   })
-  @ApiHeader({
-    name: 'Authentication bearer',
-    required: true,
-  })
   @ApiExcludeEndpoint()
   @Get('/cron')
   @HttpCode(201)
-  public async cron(@Query() query): Promise<any> {
+  public async cron(@Query() query, @Headers() headers): Promise<any> {
     const { id } = query;
-    const guardados = await this.boeService.guardarContratosPorBoeId(id);
-    return guardados;
+    if (headers.authorization === `Bearer ${this.cfg.get('API_SECRET')}`) {
+      const guardados = await this.boeService.guardarContratosPorBoeId(id);
+      return guardados;
+    }
+    return new ForbiddenException();
   }
 
   @ApiResponse({
@@ -81,7 +81,7 @@ export class BoeController {
   @ApiResponse({
     status: 200,
     description: 'Lista de contratos en el BOE de la fecha indicada',
-    type: BoeDTO,
+    type: BoeSwagger,
   })
   @ApiParam({
     name: 'id',
