@@ -1,0 +1,224 @@
+{
+  "fecha_actualizacion": "20220126071731",
+  "metadatos": {
+    "identificador": "BOE-B-2022-2190",
+    "titulo": "Anuncio de formalización de contratos de: ADIF - Presidencia. Objeto: Suministro de traviesas plásticas y sintéticas para tramo de pruebas en la estación de Quintana del Puente de la línea 100 Madrid-Hendaya (3 lotes). Expediente: 6.21/28510.0026.",
+    "diario": {
+      "_": "Boletín Oficial del Estado",
+      "codigo": "BOE"
+    },
+    "diario_numero": "22",
+    "seccion": "5",
+    "subseccion": "A",
+    "departamento": {
+      "_": "Ministerio de Transportes, Movilidad y Agenda Urbana",
+      "codigo": "9572"
+    },
+    "numero_anuncio": "A220002005",
+    "fecha_publicacion": "20220126",
+    "letra_imagen": "B",
+    "pagina_inicial": "3555",
+    "pagina_final": "3557",
+    "suplemento_letra_imagen": "",
+    "suplemento_pagina_inicial": "",
+    "suplemento_pagina_final": "",
+    "url_pdf": "/boe/dias/2022/01/26/pdfs/BOE-B-2022-2190.pdf"
+  },
+  "analisis": {
+    "modalidad": {
+      "_": "Formalización contrato",
+      "codigo": "F"
+    },
+    "tipo": {
+      "_": "Suministros",
+      "codigo": "1"
+    },
+    "tramitacion": {
+      "codigo": ""
+    },
+    "procedimiento": {
+      "_": "Abierto",
+      "codigo": "1"
+    },
+    "fecha_presentacion_ofertas": "",
+    "fecha_apertura_ofertas": "",
+    "precio": {
+      "codigo": ""
+    },
+    "importe": "",
+    "ambito_geografico": "Castilla y León",
+    "materias": "",
+    "materias_cpv": "34000000 Equipos de transporte y productos auxiliares",
+    "observaciones": ""
+  },
+  "texto": {
+    "dl": {
+      "dt": [
+        "1. Poder adjudicador:",
+        "2. Tipo de poder adjudicador y principal actividad ejercida:",
+        "4. Códigos CPV:",
+        "5. Lugar principal de entrega de los suministros:",
+        "6. Descripción de la licitación:",
+        "7. Tipo de procedimiento de adjudicación:",
+        "10. Fecha de adjudicación:",
+        "11. Ofertas recibidas:",
+        "12. Adjudicatarios:",
+        "13. Valor de las ofertas:",
+        "18. Fecha de envío del anuncio:"
+      ],
+      "dd": [
+        {
+          "dl": {
+            "dt": [
+              "1.1) Nombre:",
+              "1.2) Número de identificación fiscal:",
+              "1.3) Dirección:",
+              "1.4) Localidad:",
+              "1.5) Provincia:",
+              "1.6) Código postal:",
+              "1.7) País:",
+              "1.8) Código NUTS:",
+              "1.11) Correo electrónico:",
+              "1.12) Dirección principal:",
+              "1.13) Dirección del perfil de comprador:"
+            ],
+            "dd": [
+              "ADIF - Presidencia.",
+              "Q2801660H.",
+              "Sor Ángela de la Cruz, 3.",
+              "Madrid.",
+              "Madrid.",
+              "28020.",
+              "España.",
+              "ES300.",
+              "comprascontratacion@adif.es",
+              "http://www.adif.es/es_ES/empresas_servicios/licitaciones/licitaciones.shtml",
+              "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=leIX8rsUk0MQK2TEfXGy%2BA%3D%3D"
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["2.1) Tipo:", "2.2) Actividad principal ejercida:"],
+            "dd": ["Entidad de Derecho Público.", "Infraestructuras."]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["4.1) CPV principal:", "4.2) CPV", "4.3) CPV", "4.4) CPV"],
+            "dd": [
+              "34947100 (Traviesas).",
+              "Lote 001: 34947100 (Traviesas).",
+              "Lote 002: 34947100 (Traviesas).",
+              "Lote 003: 34947100 (Traviesas)."
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["5.1) Código NUTS principal:", "5.2) Código NUTS", "5.3) Código NUTS", "5.4) Código NUTS"],
+            "dd": ["ES414.", "Lote 001: ES414.", "Lote 002: ES414.", "Lote 003: ES414."]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["6.1) Descripción genérica:", "6.2)", "6.3)", "6.4)"],
+            "dd": [
+              "Suministro de traviesas plásticas y sintéticas para tramo de pruebas en la estación de Quintana del Puente de la línea 100 Madrid-Hendaya (3 lotes).",
+              "Lote 001: Lote 1: fabricación de traviesas sintéticas compuestas de uretano reforzado con fibras de vidrio continuas mediante un proceso de poltrusión necesarias para el montaje de un desvío completo tipo C.",
+              "Lote 002: Lote 2: fabricación de traviesas híbridas de plástico reciclado de alta calidad reforzadas con barras de acero encapsuladas necesarias para el montaje de un desvío completo tipo C.",
+              "Lote 003: Lote 3: fabricación de traviesas plásticas de polietileno de alta densidad reciclado reforzado con fibra de vidrio necesarias para el montaje de un desvío completo tipo C."
+            ]
+          }
+        },
+        "Abierto simplificado.",
+        {
+          "dl": {
+            "dt": ["10.001) Lote 001:", "10.002) Lote 002:", "10.003) Lote 003:"],
+            "dd": ["15 de noviembre de 2021.", "15 de noviembre de 2021.", "15 de noviembre de 2021."]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["11.001) Lote 001:", "11.002) Lote 002:", "11.003) Lote 003:"],
+            "dd": [
+              {
+                "dl": {
+                  "dt": ["11.001.1) Número de ofertas recibidas:", "11.001.2) Número de ofertas recibidas de PYMEs:"],
+                  "dd": ["1.", "1."]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["11.002.1) Número de ofertas recibidas:", "11.002.2) Número de ofertas recibidas de PYMEs:"],
+                  "dd": ["2.", "2."]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["11.003.1) Número de ofertas recibidas:", "11.003.2) Número de ofertas recibidas de PYMEs:"],
+                  "dd": ["1.", "1."]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["12.001) Lote 001:", "12.002) Lote 002:", "12.003) Lote 003:"],
+            "dd": [
+              {
+                "dl": {
+                  "dt": ["12.001.1) Nombre:", "12.001.2) Número de identificación fiscal:", "12.001.13)"],
+                  "dd": ["ACOSTA INGENIEROS SL.", "B64426794.", "El adjudicatario es una PYME."]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["12.002.1) Nombre:", "12.002.2) Número de identificación fiscal:", "12.002.13)"],
+                  "dd": ["SOMTECH TECHNOLOGIES SL.", "B98772643.", "El adjudicatario es una PYME."]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["12.003.1) Nombre:", "12.003.2) Número de identificación fiscal:", "12.003.13)"],
+                  "dd": ["PANDROL IBERICA SAU.", "A08008567.", "El adjudicatario es una PYME."]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["13.001) Lote 001:", "13.002) Lote 002:", "13.003) Lote 003:"],
+            "dd": [
+              {
+                "dl": {
+                  "dt": "13.001.1) Valor de la oferta seleccionada:",
+                  "dd": "35.000,00 euros."
+                }
+              },
+              {
+                "dl": {
+                  "dt": "13.002.1) Valor de la oferta seleccionada:",
+                  "dd": "35.000,00 euros."
+                }
+              },
+              {
+                "dl": {
+                  "dt": "13.003.1) Valor de la oferta seleccionada:",
+                  "dd": "35.000,00 euros."
+                }
+              }
+            ]
+          }
+        },
+        "21 de enero de 2022."
+      ]
+    },
+    "p": {
+      "_": "Madrid, 21 de enero de 2022.- La Presidenta, Maria Luisa  Domínguez González.",
+      "class": "parrafo_2"
+    }
+  }
+}

@@ -37,14 +37,21 @@ export interface Lote {
   descripcion: string;
 }
 
+const esLoteAnidado = (lote: string): boolean => {
+  return lote.split(':').length > 2;
+};
+
 // El texto del lote viene con el formato: NUM) Lote NUM: Descripción del lote
+// 'Lote 001: Lote 1: Descripción del lote.'
+// Hay veces que el Lote viene anidado por ejemplo en el formato: NUM) Lote NUM: Lote NUM: Descripcion del lote
 export const constuirLote = (texto: string): Lote => {
   const [id, descripcion] = texto.split(/(?<=Lote\s\d:)/gi);
   if (!id || !descripcion) {
     return;
   }
+
   return {
-    id: id.replace(':', '').trim(),
+    id: esLoteAnidado(id) ? id.split(':')[0] : id.replace(':', '').trim(),
     descripcion: descripcion.replace(/\.$/, '').trim(),
   };
 };

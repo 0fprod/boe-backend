@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
 import { contratoAnidadoMapeado } from '../../../test/mocks/ts/contrato-anidado-mapeado';
+import { contratoEspecialMapeado } from '../../../test/mocks/ts/contrato-lotes-anidados-mapeado';
 import { contratoPlanoMapeado } from '../../../test/mocks/ts/contrato-plano-mapeado';
 import { Anuncio } from '../api-models';
 import { construirContrato, Contrato } from '../models';
@@ -21,5 +22,11 @@ describe('Anuncio Mapper specs', () => {
     const boe = readFileSync('./test/mocks/json/anuncio-licitacion-plano.json', { encoding: 'utf-8' });
     const contrato: Contrato = mapAnuncioAContrato(JSON.parse(boe));
     expect(contrato).toStrictEqual(contratoPlanoMapeado);
+  });
+
+  it('Transforma un Anuncio especial en un Contrato', () => {
+    const boe = readFileSync('./test/mocks/json/anuncio-licitacion-lotes-anidados.json', { encoding: 'utf-8' });
+    const contrato: Contrato = mapAnuncioAContrato(JSON.parse(boe));
+    expect(contrato).toStrictEqual(contratoEspecialMapeado);
   });
 });
