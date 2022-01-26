@@ -1,3 +1,4 @@
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Test, TestingModule } from '@nestjs/testing';
 import { mockBoeApiService } from '../../test/mocks/services/boeapi.service.mock';
 import { MockRepository } from '../../test/mocks/services/repository.mock';
@@ -11,7 +12,7 @@ describe('BoeController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      controllers: [BoeController],
+      controllers: [BoeController, ConfigModule],
       providers: [
         BoeService,
         BoeApiService,
@@ -24,6 +25,7 @@ describe('BoeController', () => {
           provide: ContratoRepository,
           useClass: MockRepository,
         },
+        ConfigService,
       ],
     }).compile();
 
