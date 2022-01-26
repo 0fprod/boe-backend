@@ -38,6 +38,6 @@ export interface Meta {
 }
 
 export interface Sumario {
-  diario: Diario;
+  diario: Diario | Diario[];
   meta: Meta;
 }

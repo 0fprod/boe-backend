@@ -11,7 +11,15 @@ const FORMALIZACION_CONTRATOS = 'Anuncio de formalización de contratos';
 const esValida = (entrada: Sumario) => entrada && Object.keys(entrada).length > 0;
 const esFormalizacion = (titulo: string) => titulo.includes(FORMALIZACION_CONTRATOS);
 const envolverParametroEnArray = (parametro: any): any[] => (Array.isArray(parametro) ? parametro : [parametro]);
-const extraerSeccionAnuncios = (entrada: Sumario) => envolverParametroEnArray(entrada.diario.seccion).find(({ num }) => num === SECCION_5A);
+const extraerSeccionAnuncios = ({ diario }: Sumario) => {
+  if (Array.isArray(diario)) {
+    return diario
+      .map((diario) => envolverParametroEnArray(diario.seccion).find(({ num }) => num === SECCION_5A))
+      .filter((item) => !!item)[0];
+  }
+
+  return envolverParametroEnArray(diario.seccion).find(({ num }) => num === SECCION_5A);
+};
 const extaerItemsDeDepartamentos = (seccion?: Seccion) =>
   seccion
     ? envolverParametroEnArray(seccion.departamento)
