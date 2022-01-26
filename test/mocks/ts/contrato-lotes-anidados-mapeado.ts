@@ -1,6 +1,6 @@
 import { Contrato } from '../../../src/compartido/models';
 
-export const contratoEspecialMapeado: Contrato = {
+export const contratoConLotesAnidados: Contrato = {
   detalles: {
     beneficiarios: [
       {

@@ -1,0 +1,2995 @@
+{
+  "fecha_actualizacion": "20210108071709",
+  "metadatos": {
+    "identificador": "BOE-B-2021-595",
+    "titulo": "Anuncio de formalización de contratos de: Dirección del Instituto Nacional de Gestión Sanitaria (INGESA). Objeto: Selección de suministradores y productos para hacer frente al COVID-19, así como la fijación de las condiciones a que habrán de ajustarse los suministros basados en este Acuerdo Marco. Expediente: AM 2020/070.",
+    "diario": {
+      "_": "Boletín Oficial del Estado",
+      "codigo": "BOE"
+    },
+    "diario_numero": "7",
+    "seccion": "5",
+    "subseccion": "A",
+    "departamento": {
+      "_": "Ministerio de Sanidad",
+      "codigo": "4335"
+    },
+    "numero_anuncio": "A210000155",
+    "fecha_publicacion": "20210108",
+    "letra_imagen": "B",
+    "pagina_inicial": "815",
+    "pagina_final": "842",
+    "suplemento_letra_imagen": "",
+    "suplemento_pagina_inicial": "",
+    "suplemento_pagina_final": "",
+    "url_pdf": "/boe/dias/2021/01/08/pdfs/BOE-B-2021-595.pdf"
+  },
+  "analisis": {
+    "modalidad": {
+      "_": "Formalización contrato",
+      "codigo": "F"
+    },
+    "tipo": {
+      "_": "Suministros",
+      "codigo": "1"
+    },
+    "tramitacion": {
+      "codigo": ""
+    },
+    "procedimiento": {
+      "_": "Negociado sin publicidad",
+      "codigo": "3"
+    },
+    "fecha_presentacion_ofertas": "",
+    "fecha_apertura_ofertas": "",
+    "precio": {
+      "codigo": ""
+    },
+    "importe": "",
+    "ambito_geografico": "Nacional",
+    "materias": "",
+    "materias_cpv": "18000000 Prendas de vestir, calzado, artículos de viaje y accesorios\n33100000 Equipamiento y artículos médicos, farmacéuticos y de higiene personal",
+    "observaciones": "Varias adjudicaciones"
+  },
+  "texto": {
+    "dl": {
+      "dt": [
+        "1. Poder adjudicador:",
+        "2. Tipo de poder adjudicador y principal actividad ejercida:",
+        "4. Códigos CPV:",
+        "5. Lugar principal de entrega de los suministros:",
+        "6. Descripción de la licitación:",
+        "7. Tipo de procedimiento de adjudicación:",
+        "8. Información sobre un acuerdo marco o un sistema dinámico de adquisición:",
+        "9. Criterios de adjudicación:",
+        "10. Fecha de adjudicación:",
+        "11. Ofertas recibidas:",
+        "12. Adjudicatarios:",
+        "13. Valor de las ofertas:",
+        "16. Procedimientos de recurso:",
+        "17. Publicación anterior referente al presente procedimiento:",
+        "18. Fecha de envío del anuncio:"
+      ],
+      "dd": [
+        {
+          "dl": {
+            "dt": [
+              "1.1) Nombre:",
+              "1.2) Número de identificación fiscal:",
+              "1.3) Dirección:",
+              "1.4) Localidad:",
+              "1.5) Provincia:",
+              "1.6) Código postal:",
+              "1.7) País:",
+              "1.8) Código NUTS:",
+              "1.11) Correo electrónico:",
+              "1.12) Dirección principal:",
+              "1.13) Dirección del perfil de comprador:"
+            ],
+            "dd": [
+              "Dirección del Instituto Nacional de Gestión Sanitaria (INGESA).",
+              "Q2869002B.",
+              "Alcalá, 56.",
+              "Madrid.",
+              "Madrid.",
+              "28014.",
+              "España.",
+              "ES300.",
+              "bazuara@ingesa.sanidad.gob.es",
+              "http://www.ingesa.mscbs.es",
+              "https://contrataciondelestado.es/wps/poc?uri=deeplink:perfilContratante&idBp=BCFBo8vhaU8%3D"
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["2.1) Tipo:", "2.2) Actividad principal ejercida:"],
+            "dd": ["Administración General del Estado.", "Sanidad."]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "4.1) CPV principal:",
+              "4.2) CPV",
+              "4.3) CPV",
+              "4.4) CPV",
+              "4.5) CPV",
+              "4.6) CPV",
+              "4.7) CPV",
+              "4.8) CPV",
+              "4.9) CPV",
+              "4.10) CPV",
+              "4.11) CPV",
+              "4.12) CPV"
+            ],
+            "dd": [
+              "33140000 (Material médico fungible) y 18143000 (Indumentaria de protección).",
+              "Lote 01: 33140000 (Material médico fungible) y 18143000 (Indumentaria de protección).",
+              "Lote 02: 18143000 (Indumentaria de protección) y 33140000 (Material médico fungible).",
+              "Lote 03: 33140000 (Material médico fungible) y 18143000 (Indumentaria de protección).",
+              "Lote 04: 18143000 (Indumentaria de protección) y 33140000 (Material médico fungible).",
+              "Lote 05: 33140000 (Material médico fungible) y 18143000 (Indumentaria de protección).",
+              "Lote 06: 18143000 (Indumentaria de protección) y 33140000 (Material médico fungible).",
+              "Lote 07: 33140000 (Material médico fungible) y 18143000 (Indumentaria de protección).",
+              "Lote 08: 18143000 (Indumentaria de protección) y 33140000 (Material médico fungible).",
+              "Lote 09: 18143000 (Indumentaria de protección) y 33140000 (Material médico fungible).",
+              "Lote 10: 33140000 (Material médico fungible) y 18143000 (Indumentaria de protección).",
+              "Lote 11: 33140000 (Material médico fungible) y 18143000 (Indumentaria de protección)."
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "5.1) Código NUTS principal:",
+              "5.2) Código NUTS",
+              "5.3) Código NUTS",
+              "5.4) Código NUTS",
+              "5.5) Código NUTS",
+              "5.6) Código NUTS",
+              "5.7) Código NUTS",
+              "5.8) Código NUTS",
+              "5.9) Código NUTS",
+              "5.10) Código NUTS",
+              "5.11) Código NUTS",
+              "5.12) Código NUTS"
+            ],
+            "dd": [
+              "ES.",
+              "Lote 01: ES.",
+              "Lote 02: ES.",
+              "Lote 03: ES.",
+              "Lote 04: ES.",
+              "Lote 05: ES.",
+              "Lote 06: ES.",
+              "Lote 07: ES.",
+              "Lote 08: ES.",
+              "Lote 09: ES.",
+              "Lote 10: ES.",
+              "Lote 11: ES."
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["6.1) Descripción genérica:", "6.2)", "6.3)", "6.4)", "6.5)", "6.6)", "6.7)", "6.8)", "6.9)", "6.10)", "6.11)", "6.12)"],
+            "dd": [
+              "Selección de suministradores y productos para hacer frente al COVID-19, así como la fijación de las condiciones a que habrán de ajustarse los suministros basados en este Acuerdo Marco.",
+              "Lote 01: Bata quirúrgica no estéril, desechable, prestación estándar (normativa Productos Sanitarios).",
+              "Lote 02: Bata de protección contra agentes biológicos, desechable . Tipo PB [B]. Nivel 2 (normativa EPI).",
+              "Lote 03: Bata quirúrgica no estéril, desechable, prestación alta (normativa Productos Sanitarios).",
+              "Lote 04: Bata de protección contra agentes biológicos, desechable , tipo PB [B] Nivel 4 (normativa EPI).",
+              "Lote 05: Guantes de nitrilo.",
+              "Lote 06: Gafas de protección.",
+              "Lote 07: Mascarillas quirúrgicas tipo II y tipo II R.",
+              "Lote 08: Mascarillas de protección (eficacia de filtración equivalente a FFP2).",
+              "Lote 09: Mascarillas de protección (eficacia de filtración equivalente a FFP3).",
+              "Lote 10: Test molecular COVID-19.",
+              "Lote 11: Kit de extracción."
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["7.1) Tipo:", "7.2) Justificación:", "7.3) Explicación:"],
+            "dd": [
+              "Negociado sin publicidad acelerado (Adquisición de material necesario para hacer frente al COVID-19, que es de utilización común en el Sistema Nacional de Salud y que se requiere para el cumplimiento de los fines de las administraciones participantes).",
+              {
+                "dl": {
+                  "dt": "7.2.1)",
+                  "dd": "Situación de extrema urgencia."
+                }
+              },
+              "Emergencia Covid19."
+            ]
+          }
+        },
+        "El anuncio se refiere al establecimiento de un acuerdo marco.",
+        {
+          "dl": {
+            "dt": ["9.1)", "9.2)"],
+            "dd": ["Precio (Ponderación: 100%).", "Requisitos técnicos (Ponderación: 100%)."]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "10.05) Lote 05:",
+              "10.06) Lote 06:",
+              "10.07) Lote 07:",
+              "10.08) Lote 08:",
+              "10.09) Lote 09:",
+              "10.10) Lote 10:",
+              "10.11) Lote 11:"
+            ],
+            "dd": [
+              {
+                "dl": {
+                  "dt": ["10.05.1) Contrato 70.35:", "10.05.2) Contrato 70.36:"],
+                  "dd": ["30 de noviembre de 2020.", "30 de noviembre de 2020."]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["10.06.1) Contrato 70.37:", "10.06.2) Contrato 70.38:", "10.06.3) Contrato 70.39:"],
+                  "dd": ["30 de noviembre de 2020.", "30 de noviembre de 2020.", "30 de noviembre de 2020."]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "10.07.1) Contrato 70.35:",
+                    "10.07.2) Contrato 70.38:",
+                    "10.07.3) Contrato 70.39:",
+                    "10.07.4) Contrato 70.40:",
+                    "10.07.5) Contrato 70.41:",
+                    "10.07.6) Contrato 70.42:",
+                    "10.07.7) Contrato 70.43:",
+                    "10.07.8) Contrato 70.44:",
+                    "10.07.9) Contrato 70.45:",
+                    "10.07.10) Contrato 70.46:",
+                    "10.07.11) Contrato 70.47:",
+                    "10.07.12) Contrato 70.48:",
+                    "10.07.13) Contrato 70.49:",
+                    "10.07.14) Contrato 70.50:",
+                    "10.07.15) Contrato 70.51:",
+                    "10.07.16) Contrato 70.52:",
+                    "10.07.17) Contrato 70.53:",
+                    "10.07.18) Contrato 70.54:",
+                    "10.07.19) Contrato 70.55:",
+                    "10.07.20) Contrato 70.56:",
+                    "10.07.21) Contrato 70.57:",
+                    "10.07.22) Contrato 70.58:",
+                    "10.07.23) Contrato 70.59:",
+                    "10.07.24) Contrato 70.60:",
+                    "10.07.25) Contrato 70.61:",
+                    "10.07.26) Contrato 70.62:",
+                    "10.07.27) Contrato 70.63:",
+                    "10.07.28) Contrato 70.64:",
+                    "10.07.29) Contrato 70.65:",
+                    "10.07.30) Contrato 70.66:"
+                  ],
+                  "dd": [
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020."
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "10.08.1) Contrato 70.37:",
+                    "10.08.2) Contrato 70.38:",
+                    "10.08.3) Contrato 70.39:",
+                    "10.08.4) Contrato 70.40:",
+                    "10.08.5) Contrato 70.41:",
+                    "10.08.6) Contrato 70.42:",
+                    "10.08.7) Contrato 70.44:",
+                    "10.08.8) Contrato 70.49:",
+                    "10.08.9) Contrato 70.52:",
+                    "10.08.10) Contrato 70.58:",
+                    "10.08.11) Contrato 70.59:",
+                    "10.08.12) Contrato 70.60:",
+                    "10.08.13) Contrato 70.61:",
+                    "10.08.14) Contrato 70.65:",
+                    "10.08.15) Contrato 70.66:",
+                    "10.08.16) Contrato 70.67:",
+                    "10.08.17) Contrato 70.68:",
+                    "10.08.18) Contrato 70.69:",
+                    "10.08.19) Contrato 70.70:",
+                    "10.08.20) Contrato 70.71:",
+                    "10.08.21) Contrato 70.72:",
+                    "10.08.22) Contrato 70.73:",
+                    "10.08.23) Contrato 70.74:"
+                  ],
+                  "dd": [
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020."
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "10.09.1) Contrato 70.37:",
+                    "10.09.2) Contrato 70.38:",
+                    "10.09.3) Contrato 70.39:",
+                    "10.09.4) Contrato 70.44:",
+                    "10.09.5) Contrato 70.52:",
+                    "10.09.6) Contrato 70.53:",
+                    "10.09.7) Contrato 70.60:",
+                    "10.09.8) Contrato 70.65:",
+                    "10.09.9) Contrato 70.70:",
+                    "10.09.10) Contrato 70.74:",
+                    "10.09.11) Contrato 70.75:",
+                    "10.09.12) Contrato 70.76:"
+                  ],
+                  "dd": [
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020.",
+                    "30 de noviembre de 2020."
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["10.10.1) Contrato 70.77:", "10.10.2) Contrato 70.78:"],
+                  "dd": ["10 de noviembre de 2020.", "10 de noviembre de 2020."]
+                }
+              },
+              "10 de noviembre de 2020."
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "11.05) Lote 05:",
+              "11.06) Lote 06:",
+              "11.07) Lote 07:",
+              "11.08) Lote 08:",
+              "11.09) Lote 09:",
+              "11.10) Lote 10:",
+              "11.11) Lote 11:"
+            ],
+            "dd": [
+              {
+                "dl": {
+                  "dt": ["11.05.1) Contrato 70.35:", "11.05.2) Contrato 70.36:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": ["11.05.1.1) Número de ofertas recibidas:", "11.05.1.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["24.", "14."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.05.2.1) Número de ofertas recibidas:", "11.05.2.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["24.", "14."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["11.06.1) Contrato 70.37:", "11.06.2) Contrato 70.38:", "11.06.3) Contrato 70.39:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": ["11.06.1.1) Número de ofertas recibidas:", "11.06.1.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["45.", "26."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.06.2.1) Número de ofertas recibidas:", "11.06.2.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["45.", "26."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.06.3.1) Número de ofertas recibidas:", "11.06.3.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["45.", "26."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "11.07.1) Contrato 70.35:",
+                    "11.07.2) Contrato 70.38:",
+                    "11.07.3) Contrato 70.39:",
+                    "11.07.4) Contrato 70.40:",
+                    "11.07.5) Contrato 70.41:",
+                    "11.07.6) Contrato 70.42:",
+                    "11.07.7) Contrato 70.43:",
+                    "11.07.8) Contrato 70.44:",
+                    "11.07.9) Contrato 70.45:",
+                    "11.07.10) Contrato 70.46:",
+                    "11.07.11) Contrato 70.47:",
+                    "11.07.12) Contrato 70.48:",
+                    "11.07.13) Contrato 70.49:",
+                    "11.07.14) Contrato 70.50:",
+                    "11.07.15) Contrato 70.51:",
+                    "11.07.16) Contrato 70.52:",
+                    "11.07.17) Contrato 70.53:",
+                    "11.07.18) Contrato 70.54:",
+                    "11.07.19) Contrato 70.55:",
+                    "11.07.20) Contrato 70.56:",
+                    "11.07.21) Contrato 70.57:",
+                    "11.07.22) Contrato 70.58:",
+                    "11.07.23) Contrato 70.59:",
+                    "11.07.24) Contrato 70.60:",
+                    "11.07.25) Contrato 70.61:",
+                    "11.07.26) Contrato 70.62:",
+                    "11.07.27) Contrato 70.63:",
+                    "11.07.28) Contrato 70.64:",
+                    "11.07.29) Contrato 70.65:",
+                    "11.07.30) Contrato 70.66:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": ["11.07.1.1) Número de ofertas recibidas:", "11.07.1.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.2.1) Número de ofertas recibidas:", "11.07.2.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.3.1) Número de ofertas recibidas:", "11.07.3.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.4.1) Número de ofertas recibidas:", "11.07.4.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.5.1) Número de ofertas recibidas:", "11.07.5.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.6.1) Número de ofertas recibidas:", "11.07.6.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.7.1) Número de ofertas recibidas:", "11.07.7.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.8.1) Número de ofertas recibidas:", "11.07.8.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.9.1) Número de ofertas recibidas:", "11.07.9.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.10.1) Número de ofertas recibidas:", "11.07.10.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.11.1) Número de ofertas recibidas:", "11.07.11.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.12.1) Número de ofertas recibidas:", "11.07.12.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.13.1) Número de ofertas recibidas:", "11.07.13.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.14.1) Número de ofertas recibidas:", "11.07.14.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.15.1) Número de ofertas recibidas:", "11.07.15.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.16.1) Número de ofertas recibidas:", "11.07.16.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.17.1) Número de ofertas recibidas:", "11.07.17.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.18.1) Número de ofertas recibidas:", "11.07.18.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.19.1) Número de ofertas recibidas:", "11.07.19.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.20.1) Número de ofertas recibidas:", "11.07.20.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.21.1) Número de ofertas recibidas:", "11.07.21.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.22.1) Número de ofertas recibidas:", "11.07.22.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.23.1) Número de ofertas recibidas:", "11.07.23.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.24.1) Número de ofertas recibidas:", "11.07.24.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.25.1) Número de ofertas recibidas:", "11.07.25.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.26.1) Número de ofertas recibidas:", "11.07.26.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.27.1) Número de ofertas recibidas:", "11.07.27.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.28.1) Número de ofertas recibidas:", "11.07.28.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.29.1) Número de ofertas recibidas:", "11.07.29.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.07.30.1) Número de ofertas recibidas:", "11.07.30.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["76.", "50."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "11.08.1) Contrato 70.37:",
+                    "11.08.2) Contrato 70.38:",
+                    "11.08.3) Contrato 70.39:",
+                    "11.08.4) Contrato 70.40:",
+                    "11.08.5) Contrato 70.41:",
+                    "11.08.6) Contrato 70.42:",
+                    "11.08.7) Contrato 70.44:",
+                    "11.08.8) Contrato 70.49:",
+                    "11.08.9) Contrato 70.52:",
+                    "11.08.10) Contrato 70.58:",
+                    "11.08.11) Contrato 70.59:",
+                    "11.08.12) Contrato 70.60:",
+                    "11.08.13) Contrato 70.61:",
+                    "11.08.14) Contrato 70.65:",
+                    "11.08.15) Contrato 70.66:",
+                    "11.08.16) Contrato 70.67:",
+                    "11.08.17) Contrato 70.68:",
+                    "11.08.18) Contrato 70.69:",
+                    "11.08.19) Contrato 70.70:",
+                    "11.08.20) Contrato 70.71:",
+                    "11.08.21) Contrato 70.72:",
+                    "11.08.22) Contrato 70.73:",
+                    "11.08.23) Contrato 70.74:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": ["11.08.1.1) Número de ofertas recibidas:", "11.08.1.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.2.1) Número de ofertas recibidas:", "11.08.2.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.3.1) Número de ofertas recibidas:", "11.08.3.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.4.1) Número de ofertas recibidas:", "11.08.4.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.5.1) Número de ofertas recibidas:", "11.08.5.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.6.1) Número de ofertas recibidas:", "11.08.6.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.7.1) Número de ofertas recibidas:", "11.08.7.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.8.1) Número de ofertas recibidas:", "11.08.8.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.9.1) Número de ofertas recibidas:", "11.08.9.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.10.1) Número de ofertas recibidas:", "11.08.10.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.11.1) Número de ofertas recibidas:", "11.08.11.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.12.1) Número de ofertas recibidas:", "11.08.12.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.13.1) Número de ofertas recibidas:", "11.08.13.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.14.1) Número de ofertas recibidas:", "11.08.14.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.15.1) Número de ofertas recibidas:", "11.08.15.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.16.1) Número de ofertas recibidas:", "11.08.16.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.17.1) Número de ofertas recibidas:", "11.08.17.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.18.1) Número de ofertas recibidas:", "11.08.18.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.19.1) Número de ofertas recibidas:", "11.08.19.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.20.1) Número de ofertas recibidas:", "11.08.20.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.21.1) Número de ofertas recibidas:", "11.08.21.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.22.1) Número de ofertas recibidas:", "11.08.22.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.08.23.1) Número de ofertas recibidas:", "11.08.23.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["74.", "50."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "11.09.1) Contrato 70.37:",
+                    "11.09.2) Contrato 70.38:",
+                    "11.09.3) Contrato 70.39:",
+                    "11.09.4) Contrato 70.44:",
+                    "11.09.5) Contrato 70.52:",
+                    "11.09.6) Contrato 70.53:",
+                    "11.09.7) Contrato 70.60:",
+                    "11.09.8) Contrato 70.65:",
+                    "11.09.9) Contrato 70.70:",
+                    "11.09.10) Contrato 70.74:",
+                    "11.09.11) Contrato 70.75:",
+                    "11.09.12) Contrato 70.76:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": ["11.09.1.1) Número de ofertas recibidas:", "11.09.1.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.2.1) Número de ofertas recibidas:", "11.09.2.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.3.1) Número de ofertas recibidas:", "11.09.3.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.4.1) Número de ofertas recibidas:", "11.09.4.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.5.1) Número de ofertas recibidas:", "11.09.5.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.6.1) Número de ofertas recibidas:", "11.09.6.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.7.1) Número de ofertas recibidas:", "11.09.7.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.8.1) Número de ofertas recibidas:", "11.09.8.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.9.1) Número de ofertas recibidas:", "11.09.9.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.10.1) Número de ofertas recibidas:", "11.09.10.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.11.1) Número de ofertas recibidas:", "11.09.11.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.09.12.1) Número de ofertas recibidas:", "11.09.12.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["41.", "23."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["11.10.1) Contrato 70.77:", "11.10.2) Contrato 70.78:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": ["11.10.1.1) Número de ofertas recibidas:", "11.10.1.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["54.", "39."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["11.10.2.1) Número de ofertas recibidas:", "11.10.2.2) Número de ofertas recibidas de PYMEs:"],
+                        "dd": ["54.", "39."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["11.11.1) Número de ofertas recibidas:", "11.11.2) Número de ofertas recibidas de PYMEs:"],
+                  "dd": ["37.", "26."]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "12.05) Lote 05:",
+              "12.06) Lote 06:",
+              "12.07) Lote 07:",
+              "12.08) Lote 08:",
+              "12.09) Lote 09:",
+              "12.10) Lote 10:",
+              "12.11) Lote 11:"
+            ],
+            "dd": [
+              {
+                "dl": {
+                  "dt": ["12.05.1) Contrato 70.35:", "12.05.2) Contrato 70.36:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.05.1.1) Nombre:",
+                          "12.05.1.3) Dirección:",
+                          "12.05.1.4) Localidad:",
+                          "12.05.1.6) Código postal:",
+                          "12.05.1.7) País:"
+                        ],
+                        "dd": ["Delta-Sport Handelskontor GmbH.", "Wragekamp, 6.", "Hamburgo.", "22397.", "Alemania."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.05.2.1) Nombre:",
+                          "12.05.2.2) Número de identificación fiscal:",
+                          "12.05.2.3) Dirección:",
+                          "12.05.2.4) Localidad:",
+                          "12.05.2.6) Código postal:",
+                          "12.05.2.7) País:",
+                          "12.05.2.13)"
+                        ],
+                        "dd": [
+                          "NACATUR 2 ESPAÑA,S .L.",
+                          "B98011505.",
+                          "Magallanes, 19 -Polígono Industrial La Estrella-.",
+                          "Molina de Segura.",
+                          "30500.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["12.06.1) Contrato 70.37:", "12.06.2) Contrato 70.38:", "12.06.3) Contrato 70.39:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.06.1.1) Nombre:",
+                          "12.06.1.2) Número de identificación fiscal:",
+                          "12.06.1.3) Dirección:",
+                          "12.06.1.4) Localidad:",
+                          "12.06.1.6) Código postal:",
+                          "12.06.1.7) País:"
+                        ],
+                        "dd": ["3M ESPAÑA S.L.", "B28078020.", "Juan Ignacio Luca de Tena, 19.", "Madrid.", "28027.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.06.2.1) Nombre:",
+                          "12.06.2.3) Dirección:",
+                          "12.06.2.4) Localidad:",
+                          "12.06.2.6) Código postal:",
+                          "12.06.2.7) País:",
+                          "12.06.2.13)"
+                        ],
+                        "dd": ["GAMMA SOLUTIONS S.L.", "Acanto, 22.", "Madrid.", "28045.", "España.", "El adjudicatario es una PYME."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.06.3.1) Nombre:",
+                          "12.06.3.2) Número de identificación fiscal:",
+                          "12.06.3.3) Dirección:",
+                          "12.06.3.4) Localidad:",
+                          "12.06.3.6) Código postal:",
+                          "12.06.3.7) País:"
+                        ],
+                        "dd": ["ITURRI, S.A.", "A41050113.", "Avda. Roberto Osborne, 9.", "Sevilla.", "41007.", "España."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "12.07.1) Contrato 70.35:",
+                    "12.07.2) Contrato 70.38:",
+                    "12.07.3) Contrato 70.39:",
+                    "12.07.4) Contrato 70.40:",
+                    "12.07.5) Contrato 70.41:",
+                    "12.07.6) Contrato 70.42:",
+                    "12.07.7) Contrato 70.43:",
+                    "12.07.8) Contrato 70.44:",
+                    "12.07.9) Contrato 70.45:",
+                    "12.07.10) Contrato 70.46:",
+                    "12.07.11) Contrato 70.47:",
+                    "12.07.12) Contrato 70.48:",
+                    "12.07.13) Contrato 70.49:",
+                    "12.07.14) Contrato 70.50:",
+                    "12.07.15) Contrato 70.51:",
+                    "12.07.16) Contrato 70.52:",
+                    "12.07.17) Contrato 70.53:",
+                    "12.07.18) Contrato 70.54:",
+                    "12.07.19) Contrato 70.55:",
+                    "12.07.20) Contrato 70.56:",
+                    "12.07.21) Contrato 70.57:",
+                    "12.07.22) Contrato 70.58:",
+                    "12.07.23) Contrato 70.59:",
+                    "12.07.24) Contrato 70.60:",
+                    "12.07.25) Contrato 70.61:",
+                    "12.07.26) Contrato 70.62:",
+                    "12.07.27) Contrato 70.63:",
+                    "12.07.28) Contrato 70.64:",
+                    "12.07.29) Contrato 70.65:",
+                    "12.07.30) Contrato 70.66:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.1.1) Nombre:",
+                          "12.07.1.3) Dirección:",
+                          "12.07.1.4) Localidad:",
+                          "12.07.1.6) Código postal:",
+                          "12.07.1.7) País:"
+                        ],
+                        "dd": ["Delta-Sport Handelskontor GmbH.", "Wragekamp, 6.", "Hamburgo.", "22397.", "Alemania."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.2.1) Nombre:",
+                          "12.07.2.3) Dirección:",
+                          "12.07.2.4) Localidad:",
+                          "12.07.2.6) Código postal:",
+                          "12.07.2.7) País:",
+                          "12.07.2.13)"
+                        ],
+                        "dd": ["GAMMA SOLUTIONS S.L.", "Acanto, 22.", "Madrid.", "28045.", "España.", "El adjudicatario es una PYME."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.3.1) Nombre:",
+                          "12.07.3.2) Número de identificación fiscal:",
+                          "12.07.3.3) Dirección:",
+                          "12.07.3.4) Localidad:",
+                          "12.07.3.6) Código postal:",
+                          "12.07.3.7) País:"
+                        ],
+                        "dd": ["ITURRI, S.A.", "A41050113.", "Avda. Roberto Osborne, 9.", "Sevilla.", "41007.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.4.1) Nombre:",
+                          "12.07.4.2) Número de identificación fiscal:",
+                          "12.07.4.3) Dirección:",
+                          "12.07.4.4) Localidad:",
+                          "12.07.4.6) Código postal:",
+                          "12.07.4.7) País:",
+                          "12.07.4.13)"
+                        ],
+                        "dd": [
+                          "ACUÑA Y FOMBONA, S.A.",
+                          "A33620485.",
+                          "Marqués de Casa Valdés, 103.",
+                          "Gijón.",
+                          "33202.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.5.1) Nombre:",
+                          "12.07.5.2) Número de identificación fiscal:",
+                          "12.07.5.3) Dirección:",
+                          "12.07.5.4) Localidad:",
+                          "12.07.5.6) Código postal:",
+                          "12.07.5.7) País:"
+                        ],
+                        "dd": [
+                          "ALLIANCE HEALTHCARE ESPAÑA, S.A.",
+                          "A50004324.",
+                          "Polígono Industrial -Sector 4-.",
+                          "Villanueva de Gallego.",
+                          "50830.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.6.1) Nombre:",
+                          "12.07.6.3) Dirección:",
+                          "12.07.6.4) Localidad:",
+                          "12.07.6.6) Código postal:",
+                          "12.07.6.7) País:",
+                          "12.07.6.13)"
+                        ],
+                        "dd": [
+                          "AMEVISA, S.A.",
+                          "Ctra. Torrejón-Ajalvir, Km. 5,200.",
+                          "Ajalvir.",
+                          "28864.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.7.1) Nombre:",
+                          "12.07.7.2) Número de identificación fiscal:",
+                          "12.07.7.3) Dirección:",
+                          "12.07.7.4) Localidad:",
+                          "12.07.7.6) Código postal:",
+                          "12.07.7.7) País:",
+                          "12.07.7.13)"
+                        ],
+                        "dd": [
+                          "CELULOSAS VASCAS, S.L.",
+                          "B95631925.",
+                          "Parque Empresarial Boroa, Parcela 2A-1B.",
+                          "Amorebieta.",
+                          "48340.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.8.1) Nombre:",
+                          "12.07.8.2) Número de identificación fiscal:",
+                          "12.07.8.3) Dirección:",
+                          "12.07.8.4) Localidad:",
+                          "12.07.8.6) Código postal:",
+                          "12.07.8.7) País:"
+                        ],
+                        "dd": [
+                          "COOPERATIVA FARMACEUTICA LEONESA.",
+                          "F24000275.",
+                          "Polígono Camino Vilecha Oeste, s/n.",
+                          "León.",
+                          "24192.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.9.1) Nombre:",
+                          "12.07.9.3) Dirección:",
+                          "12.07.9.4) Localidad:",
+                          "12.07.9.6) Código postal:",
+                          "12.07.9.7) País:",
+                          "12.07.9.13)"
+                        ],
+                        "dd": [
+                          "DISEÑO Y APLICACIONES DEL NO TEJIDO, S.L.",
+                          "Polígono Industrial El Chaparral, Santa Ana.",
+                          "Alcalá La Real.",
+                          "23692.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.10.1) Nombre:",
+                          "12.07.10.2) Número de identificación fiscal:",
+                          "12.07.10.3) Dirección:",
+                          "12.07.10.4) Localidad:",
+                          "12.07.10.6) Código postal:",
+                          "12.07.10.7) País:",
+                          "12.07.10.13)"
+                        ],
+                        "dd": [
+                          "DPP INTERNACIONAL, S.A.",
+                          "A58132085.",
+                          "Del Pla, 19.",
+                          "Molins de Rei.",
+                          "08750.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.11.1) Nombre:",
+                          "12.07.11.3) Dirección:",
+                          "12.07.11.4) Localidad:",
+                          "12.07.11.6) Código postal:",
+                          "12.07.11.7) País:",
+                          "12.07.11.13)"
+                        ],
+                        "dd": [
+                          "Hangsen Spółka z o. o.",
+                          "Siemianowicka, 98.",
+                          "Bytom.",
+                          "41-902.",
+                          "Polonia.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.12.1) Nombre:",
+                          "12.07.12.2) Número de identificación fiscal:",
+                          "12.07.12.3) Dirección:",
+                          "12.07.12.4) Localidad:",
+                          "12.07.12.6) Código postal:",
+                          "12.07.12.7) País:",
+                          "12.07.12.13)"
+                        ],
+                        "dd": [
+                          "IBERHOSPITEX, S.A.",
+                          "A08630063.",
+                          "Avda. de Cataluña, 4.",
+                          "Lliça de Vall .",
+                          "08185.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.13.1) Nombre:",
+                          "12.07.13.2) Número de identificación fiscal:",
+                          "12.07.13.3) Dirección:",
+                          "12.07.13.4) Localidad:",
+                          "12.07.13.6) Código postal:",
+                          "12.07.13.7) País:",
+                          "12.07.13.13)"
+                        ],
+                        "dd": [
+                          "Kaelis on Board Services, S.L.",
+                          "B81665119.",
+                          "Avenida Isla Graciosa, 7 -piso 1-.",
+                          "San Sebastián de los Reyes .",
+                          "28703.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.14.1) Nombre:",
+                          "12.07.14.3) Dirección:",
+                          "12.07.14.4) Localidad:",
+                          "12.07.14.6) Código postal:",
+                          "12.07.14.7) País:"
+                        ],
+                        "dd": ["KRAPE SA.", "Eduardo Torroja, 31.", "Leganés.", "28914.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.15.1) Nombre:",
+                          "12.07.15.2) Número de identificación fiscal:",
+                          "12.07.15.3) Dirección:",
+                          "12.07.15.4) Localidad:",
+                          "12.07.15.6) Código postal:",
+                          "12.07.15.7) País:",
+                          "12.07.15.13)"
+                        ],
+                        "dd": [
+                          "Linear Chemicals S.L.U.",
+                          "B60485687.",
+                          "Joaquim Costa, 18 -2 planta-.",
+                          "Montgat .",
+                          "08390.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.16.1) Nombre:",
+                          "12.07.16.2) Número de identificación fiscal:",
+                          "12.07.16.3) Dirección:",
+                          "12.07.16.4) Localidad:",
+                          "12.07.16.6) Código postal:",
+                          "12.07.16.7) País:",
+                          "12.07.16.13)"
+                        ],
+                        "dd": [
+                          "MAPE ASESORES, S.A.",
+                          "A36326619.",
+                          "Parque Empresarial \"O Campiño\", Rúa das Mámoas - parcela 69B 70B-.",
+                          "Pontevedra.",
+                          "36158.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.17.1) Nombre:",
+                          "12.07.17.2) Número de identificación fiscal:",
+                          "12.07.17.3) Dirección:",
+                          "12.07.17.4) Localidad:",
+                          "12.07.17.6) Código postal:",
+                          "12.07.17.7) País:"
+                        ],
+                        "dd": [
+                          "MBA INCORPORADO S.L.",
+                          "B33680547.",
+                          "Avda. Jardín Botánico, 1,345  Edificio Silos del Intra.",
+                          "Gijón.",
+                          "33203.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.18.1) Nombre:",
+                          "12.07.18.2) Número de identificación fiscal:",
+                          "12.07.18.3) Dirección:",
+                          "12.07.18.4) Localidad:",
+                          "12.07.18.6) Código postal:",
+                          "12.07.18.7) País:",
+                          "12.07.18.13)"
+                        ],
+                        "dd": [
+                          "Medline International Iberia, S.L.U.",
+                          "B86030723.",
+                          "Avda. de Castilla, 2 -planta baja, local B- Edificio Munich.",
+                          "San Fernando de Henares .",
+                          "28830.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.19.1) Nombre:",
+                          "12.07.19.2) Número de identificación fiscal:",
+                          "12.07.19.3) Dirección:",
+                          "12.07.19.4) Localidad:",
+                          "12.07.19.6) Código postal:",
+                          "12.07.19.7) País:",
+                          "12.07.19.13)"
+                        ],
+                        "dd": [
+                          "NACIL MEDICA 4 GROUP S.L.",
+                          "B48434096.",
+                          "Larrondo Goiko, 3.",
+                          "Loiu.",
+                          "48180.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.20.1) Nombre:",
+                          "12.07.20.2) Número de identificación fiscal:",
+                          "12.07.20.3) Dirección:",
+                          "12.07.20.4) Localidad:",
+                          "12.07.20.6) Código postal:",
+                          "12.07.20.7) País:",
+                          "12.07.20.13)"
+                        ],
+                        "dd": [
+                          "OIARSO S.COOP.",
+                          "F20061412.",
+                          "Bº Zikuñaga, 57F -Polígono Ibarluze-.",
+                          "Hernani.",
+                          "20120.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.21.1) Nombre:",
+                          "12.07.21.2) Número de identificación fiscal:",
+                          "12.07.21.3) Dirección:",
+                          "12.07.21.4) Localidad:",
+                          "12.07.21.6) Código postal:",
+                          "12.07.21.7) País:"
+                        ],
+                        "dd": [
+                          "PALEX MEDICAL, S.A.",
+                          "A58710740.",
+                          "Jesús Serra Santamans, 5.",
+                          "Sant Cugat del Vallès .",
+                          "08174.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.22.1) Nombre:",
+                          "12.07.22.2) Número de identificación fiscal:",
+                          "12.07.22.3) Dirección:",
+                          "12.07.22.4) Localidad:",
+                          "12.07.22.6) Código postal:",
+                          "12.07.22.7) País:"
+                        ],
+                        "dd": ["PRIM, S.A.", "A28165587.", "Yolanda González, 15.", "Móstoles.", "28938.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.23.1) Nombre:",
+                          "12.07.23.3) Dirección:",
+                          "12.07.23.4) Localidad:",
+                          "12.07.23.6) Código postal:",
+                          "12.07.23.7) País:"
+                        ],
+                        "dd": ["Prolimax Higiene Industrial.", "Jardines, 7.", "Barcience.", "45525.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.24.1) Nombre:",
+                          "12.07.24.2) Número de identificación fiscal:",
+                          "12.07.24.3) Dirección:",
+                          "12.07.24.4) Localidad:",
+                          "12.07.24.6) Código postal:",
+                          "12.07.24.7) País:",
+                          "12.07.24.13)"
+                        ],
+                        "dd": [
+                          "SIBUCU 360 S.L.",
+                          "B70410956.",
+                          "Oslo, 1 -bajo derecha-.",
+                          "Santiago de Compostela.",
+                          "15707.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.25.1) Nombre:",
+                          "12.07.25.3) Dirección:",
+                          "12.07.25.4) Localidad:",
+                          "12.07.25.6) Código postal:",
+                          "12.07.25.7) País:"
+                        ],
+                        "dd": [
+                          "Smartmatic International Holding B.V.",
+                          "Gustav Mahierplein, 25C.",
+                          "Amsterdam.",
+                          "1082MS.",
+                          "Países Bajos."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.26.1) Nombre:",
+                          "12.07.26.2) Número de identificación fiscal:",
+                          "12.07.26.3) Dirección:",
+                          "12.07.26.4) Localidad:",
+                          "12.07.26.6) Código postal:",
+                          "12.07.26.7) País:",
+                          "12.07.26.13)"
+                        ],
+                        "dd": [
+                          "SUMINISTROS HOSPITALARIOS, S.A.",
+                          "A08876310.",
+                          "Tortosa, 199-201.",
+                          "Badalona .",
+                          "08918.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.27.1) Nombre:",
+                          "12.07.27.2) Número de identificación fiscal:",
+                          "12.07.27.3) Dirección:",
+                          "12.07.27.4) Localidad:",
+                          "12.07.27.6) Código postal:",
+                          "12.07.27.7) País:",
+                          "12.07.27.13)"
+                        ],
+                        "dd": [
+                          "TEXTIL PLANAS OLIVERAS, SA.",
+                          "A08564502.",
+                          "Avinyó, s/n - Polígono Industrial Els Dolors-.",
+                          "Manresa.",
+                          "08243.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.28.1) Nombre:",
+                          "12.07.28.2) Número de identificación fiscal:",
+                          "12.07.28.3) Dirección:",
+                          "12.07.28.4) Localidad:",
+                          "12.07.28.6) Código postal:",
+                          "12.07.28.7) País:",
+                          "12.07.28.13)"
+                        ],
+                        "dd": [
+                          "WOLFRATEX, S.L .",
+                          "B75239020.",
+                          "Barrio San Juan -Polígono Industrial Larramendi, 2-.",
+                          "Bergara.",
+                          "20570.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.29.1) Nombre:",
+                          "12.07.29.2) Número de identificación fiscal:",
+                          "12.07.29.3) Dirección:",
+                          "12.07.29.4) Localidad:",
+                          "12.07.29.6) Código postal:",
+                          "12.07.29.7) País:"
+                        ],
+                        "dd": ["Wottoline S.A.", "A78811577.", "Toronga, 23.", "Madrid.", "28043.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.07.30.1) Nombre:",
+                          "12.07.30.3) Dirección:",
+                          "12.07.30.4) Localidad:",
+                          "12.07.30.6) Código postal:",
+                          "12.07.30.7) País:",
+                          "12.07.30.13)"
+                        ],
+                        "dd": [
+                          "YQT Health Care B.V.",
+                          "'s-Gravelandseweg, 256.",
+                          "Schiedam.",
+                          "3125 BK.",
+                          "Países Bajos.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "12.08.1) Contrato 70.37:",
+                    "12.08.2) Contrato 70.38:",
+                    "12.08.3) Contrato 70.39:",
+                    "12.08.4) Contrato 70.40:",
+                    "12.08.5) Contrato 70.41:",
+                    "12.08.6) Contrato 70.42:",
+                    "12.08.7) Contrato 70.44:",
+                    "12.08.8) Contrato 70.49:",
+                    "12.08.9) Contrato 70.52:",
+                    "12.08.10) Contrato 70.58:",
+                    "12.08.11) Contrato 70.59:",
+                    "12.08.12) Contrato 70.60:",
+                    "12.08.13) Contrato 70.61:",
+                    "12.08.14) Contrato 70.65:",
+                    "12.08.15) Contrato 70.66:",
+                    "12.08.16) Contrato 70.67:",
+                    "12.08.17) Contrato 70.68:",
+                    "12.08.18) Contrato 70.69:",
+                    "12.08.19) Contrato 70.70:",
+                    "12.08.20) Contrato 70.71:",
+                    "12.08.21) Contrato 70.72:",
+                    "12.08.22) Contrato 70.73:",
+                    "12.08.23) Contrato 70.74:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.1.1) Nombre:",
+                          "12.08.1.2) Número de identificación fiscal:",
+                          "12.08.1.3) Dirección:",
+                          "12.08.1.4) Localidad:",
+                          "12.08.1.6) Código postal:",
+                          "12.08.1.7) País:"
+                        ],
+                        "dd": ["3M ESPAÑA S.L.", "B28078020.", "Juan Ignacio Luca de Tena, 19.", "Madrid.", "28027.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.2.1) Nombre:",
+                          "12.08.2.3) Dirección:",
+                          "12.08.2.4) Localidad:",
+                          "12.08.2.6) Código postal:",
+                          "12.08.2.7) País:",
+                          "12.08.2.13)"
+                        ],
+                        "dd": ["GAMMA SOLUTIONS S.L.", "Acanto, 22.", "Madrid.", "28045.", "España.", "El adjudicatario es una PYME."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.3.1) Nombre:",
+                          "12.08.3.2) Número de identificación fiscal:",
+                          "12.08.3.3) Dirección:",
+                          "12.08.3.4) Localidad:",
+                          "12.08.3.6) Código postal:",
+                          "12.08.3.7) País:"
+                        ],
+                        "dd": ["ITURRI, S.A.", "A41050113.", "Avda. Roberto Osborne, 9.", "Sevilla.", "41007.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.4.1) Nombre:",
+                          "12.08.4.2) Número de identificación fiscal:",
+                          "12.08.4.3) Dirección:",
+                          "12.08.4.4) Localidad:",
+                          "12.08.4.6) Código postal:",
+                          "12.08.4.7) País:",
+                          "12.08.4.13)"
+                        ],
+                        "dd": [
+                          "ACUÑA Y FOMBONA, S.A.",
+                          "A33620485.",
+                          "Marqués de Casa Valdés, 103.",
+                          "Gijón.",
+                          "33202.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.5.1) Nombre:",
+                          "12.08.5.2) Número de identificación fiscal:",
+                          "12.08.5.3) Dirección:",
+                          "12.08.5.4) Localidad:",
+                          "12.08.5.6) Código postal:",
+                          "12.08.5.7) País:"
+                        ],
+                        "dd": [
+                          "ALLIANCE HEALTHCARE ESPAÑA, S.A.",
+                          "A50004324.",
+                          "Polígono Industrial -Sector 4-.",
+                          "Villanueva de Gallego.",
+                          "50830.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.6.1) Nombre:",
+                          "12.08.6.3) Dirección:",
+                          "12.08.6.4) Localidad:",
+                          "12.08.6.6) Código postal:",
+                          "12.08.6.7) País:",
+                          "12.08.6.13)"
+                        ],
+                        "dd": [
+                          "AMEVISA, S.A.",
+                          "Ctra. Torrejón-Ajalvir, Km. 5,200.",
+                          "Ajalvir.",
+                          "28864.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.7.1) Nombre:",
+                          "12.08.7.2) Número de identificación fiscal:",
+                          "12.08.7.3) Dirección:",
+                          "12.08.7.4) Localidad:",
+                          "12.08.7.6) Código postal:",
+                          "12.08.7.7) País:"
+                        ],
+                        "dd": [
+                          "COOPERATIVA FARMACEUTICA LEONESA.",
+                          "F24000275.",
+                          "Polígono Camino Vilecha Oeste, s/n.",
+                          "León.",
+                          "24192.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.8.1) Nombre:",
+                          "12.08.8.2) Número de identificación fiscal:",
+                          "12.08.8.3) Dirección:",
+                          "12.08.8.4) Localidad:",
+                          "12.08.8.6) Código postal:",
+                          "12.08.8.7) País:",
+                          "12.08.8.13)"
+                        ],
+                        "dd": [
+                          "Kaelis on Board Services, S.L.",
+                          "B81665119.",
+                          "Avenida Isla Graciosa, 7 -piso 1-.",
+                          "San Sebastián de los Reyes .",
+                          "28703.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.9.1) Nombre:",
+                          "12.08.9.2) Número de identificación fiscal:",
+                          "12.08.9.3) Dirección:",
+                          "12.08.9.4) Localidad:",
+                          "12.08.9.6) Código postal:",
+                          "12.08.9.7) País:",
+                          "12.08.9.13)"
+                        ],
+                        "dd": [
+                          "MAPE ASESORES, S.A.",
+                          "A36326619.",
+                          "Parque Empresarial \"O Campiño\", Rúa das Mámoas - parcela 69B 70B-.",
+                          "Pontevedra.",
+                          "36158.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.10.1) Nombre:",
+                          "12.08.10.2) Número de identificación fiscal:",
+                          "12.08.10.3) Dirección:",
+                          "12.08.10.4) Localidad:",
+                          "12.08.10.6) Código postal:",
+                          "12.08.10.7) País:"
+                        ],
+                        "dd": ["PRIM, S.A.", "A28165587.", "Yolanda González, 15.", "Móstoles.", "28938.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.11.1) Nombre:",
+                          "12.08.11.3) Dirección:",
+                          "12.08.11.4) Localidad:",
+                          "12.08.11.6) Código postal:",
+                          "12.08.11.7) País:"
+                        ],
+                        "dd": ["Prolimax Higiene Industrial.", "Jardines, 7.", "Barcience.", "45525.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.12.1) Nombre:",
+                          "12.08.12.2) Número de identificación fiscal:",
+                          "12.08.12.3) Dirección:",
+                          "12.08.12.4) Localidad:",
+                          "12.08.12.6) Código postal:",
+                          "12.08.12.7) País:",
+                          "12.08.12.13)"
+                        ],
+                        "dd": [
+                          "SIBUCU 360 S.L.",
+                          "B70410956.",
+                          "Oslo, 1 -bajo derecha-.",
+                          "Santiago de Compostela.",
+                          "15707.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.13.1) Nombre:",
+                          "12.08.13.3) Dirección:",
+                          "12.08.13.4) Localidad:",
+                          "12.08.13.6) Código postal:",
+                          "12.08.13.7) País:"
+                        ],
+                        "dd": [
+                          "Smartmatic International Holding B.V.",
+                          "Gustav Mahierplein, 25C.",
+                          "Amsterdam.",
+                          "1082MS.",
+                          "Países Bajos."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.14.1) Nombre:",
+                          "12.08.14.2) Número de identificación fiscal:",
+                          "12.08.14.3) Dirección:",
+                          "12.08.14.4) Localidad:",
+                          "12.08.14.6) Código postal:",
+                          "12.08.14.7) País:"
+                        ],
+                        "dd": ["Wottoline S.A.", "A78811577.", "Toronga, 23.", "Madrid.", "28043.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.15.1) Nombre:",
+                          "12.08.15.3) Dirección:",
+                          "12.08.15.4) Localidad:",
+                          "12.08.15.6) Código postal:",
+                          "12.08.15.7) País:",
+                          "12.08.15.13)"
+                        ],
+                        "dd": [
+                          "YQT Health Care B.V.",
+                          "'s-Gravelandseweg, 256.",
+                          "Schiedam.",
+                          "3125 BK.",
+                          "Países Bajos.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.16.1) Nombre:",
+                          "12.08.16.2) Número de identificación fiscal:",
+                          "12.08.16.3) Dirección:",
+                          "12.08.16.4) Localidad:",
+                          "12.08.16.6) Código postal:",
+                          "12.08.16.7) País:",
+                          "12.08.16.13)"
+                        ],
+                        "dd": [
+                          "ACJ, S.A.U.",
+                          "A35119015.",
+                          "Avda. Rafael Cabrera, 14 - Entresuelo-.",
+                          "Las Palmas de Gran Canaria.",
+                          "35002.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.17.1) Nombre:",
+                          "12.08.17.2) Número de identificación fiscal:",
+                          "12.08.17.3) Dirección:",
+                          "12.08.17.4) Localidad:",
+                          "12.08.17.6) Código postal:",
+                          "12.08.17.7) País:",
+                          "12.08.17.13)"
+                        ],
+                        "dd": [
+                          "BACCI SOURCING AND CONSULTING S.L.",
+                          "B83487983.",
+                          "San Romualdo, 12-14  -1º G-.",
+                          "Madrid.",
+                          "28037.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.18.1) Nombre:",
+                          "12.08.18.2) Número de identificación fiscal:",
+                          "12.08.18.3) Dirección:",
+                          "12.08.18.4) Localidad:",
+                          "12.08.18.6) Código postal:",
+                          "12.08.18.7) País:",
+                          "12.08.18.13)"
+                        ],
+                        "dd": [
+                          "COVEX S.A.",
+                          "A28476034.",
+                          "Acero, 25.",
+                          "Colmenar Viejo.",
+                          "28770.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.19.1) Nombre:",
+                          "12.08.19.2) Número de identificación fiscal:",
+                          "12.08.19.3) Dirección:",
+                          "12.08.19.4) Localidad:",
+                          "12.08.19.6) Código postal:",
+                          "12.08.19.7) País:"
+                        ],
+                        "dd": ["DRÄGER SAFETY HISPANIA S.A.", "A83140012.", "Xaudaró, 5.", "Madrid.", "28034.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.20.1) Nombre:",
+                          "12.08.20.2) Número de identificación fiscal:",
+                          "12.08.20.3) Dirección:",
+                          "12.08.20.4) Localidad:",
+                          "12.08.20.6) Código postal:",
+                          "12.08.20.7) País:",
+                          "12.08.20.13)"
+                        ],
+                        "dd": [
+                          "FORMATO DIGITAL ACTIVIDADES PUBLICITARIAS, SL.",
+                          "B73751836.",
+                          "Avda. de Murcia, s/n.",
+                          "Jumilla.",
+                          "30520.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.21.1) Nombre:",
+                          "12.08.21.2) Número de identificación fiscal:",
+                          "12.08.21.3) Dirección:",
+                          "12.08.21.4) Localidad:",
+                          "12.08.21.6) Código postal:",
+                          "12.08.21.7) País:",
+                          "12.08.21.13)"
+                        ],
+                        "dd": [
+                          "MACO SPANIA SL.",
+                          "B82183849.",
+                          "Avda. de la Vega, 1 -Edificio 3, 3ª planta-.",
+                          "Alcobendas.",
+                          "28108.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.22.1) Nombre:",
+                          "12.08.22.2) Número de identificación fiscal:",
+                          "12.08.22.3) Dirección:",
+                          "12.08.22.4) Localidad:",
+                          "12.08.22.6) Código postal:",
+                          "12.08.22.7) País:",
+                          "12.08.22.13)"
+                        ],
+                        "dd": [
+                          "NUEVA SIBOL, SLU.",
+                          "B95409504.",
+                          "Polígono Industrial Torrelarragoiti  -vial A P5-.",
+                          "Zamudio.",
+                          "48170.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.08.23.1) Nombre:",
+                          "12.08.23.3) Dirección:",
+                          "12.08.23.4) Localidad:",
+                          "12.08.23.6) Código postal:",
+                          "12.08.23.7) País:"
+                        ],
+                        "dd": [
+                          "UTE FERROVIAL SERVICIOS, SAU - SOLUCIONES DE GESTIÓN Y APOYO A EMPRESAS, SL CONJUNTA Y SOLIDARIAMENTE.",
+                          "Príncipe de Vergara, 135.",
+                          "Madrid.",
+                          "28002.",
+                          "España."
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "12.09.1) Contrato 70.37:",
+                    "12.09.2) Contrato 70.38:",
+                    "12.09.3) Contrato 70.39:",
+                    "12.09.4) Contrato 70.44:",
+                    "12.09.5) Contrato 70.52:",
+                    "12.09.6) Contrato 70.53:",
+                    "12.09.7) Contrato 70.60:",
+                    "12.09.8) Contrato 70.65:",
+                    "12.09.9) Contrato 70.70:",
+                    "12.09.10) Contrato 70.74:",
+                    "12.09.11) Contrato 70.75:",
+                    "12.09.12) Contrato 70.76:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.1.1) Nombre:",
+                          "12.09.1.2) Número de identificación fiscal:",
+                          "12.09.1.3) Dirección:",
+                          "12.09.1.4) Localidad:",
+                          "12.09.1.6) Código postal:",
+                          "12.09.1.7) País:"
+                        ],
+                        "dd": ["3M ESPAÑA S.L.", "B28078020.", "Juan Ignacio Luca de Tena, 19.", "Madrid.", "28027.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.2.1) Nombre:",
+                          "12.09.2.3) Dirección:",
+                          "12.09.2.4) Localidad:",
+                          "12.09.2.6) Código postal:",
+                          "12.09.2.7) País:",
+                          "12.09.2.13)"
+                        ],
+                        "dd": ["GAMMA SOLUTIONS S.L.", "Acanto, 22.", "Madrid.", "28045.", "España.", "El adjudicatario es una PYME."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.3.1) Nombre:",
+                          "12.09.3.2) Número de identificación fiscal:",
+                          "12.09.3.3) Dirección:",
+                          "12.09.3.4) Localidad:",
+                          "12.09.3.6) Código postal:",
+                          "12.09.3.7) País:"
+                        ],
+                        "dd": ["ITURRI, S.A.", "A41050113.", "Avda. Roberto Osborne, 9.", "Sevilla.", "41007.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.4.1) Nombre:",
+                          "12.09.4.2) Número de identificación fiscal:",
+                          "12.09.4.3) Dirección:",
+                          "12.09.4.4) Localidad:",
+                          "12.09.4.6) Código postal:",
+                          "12.09.4.7) País:"
+                        ],
+                        "dd": [
+                          "COOPERATIVA FARMACEUTICA LEONESA.",
+                          "F24000275.",
+                          "Polígono Camino Vilecha Oeste, s/n.",
+                          "León.",
+                          "24192.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.5.1) Nombre:",
+                          "12.09.5.2) Número de identificación fiscal:",
+                          "12.09.5.3) Dirección:",
+                          "12.09.5.4) Localidad:",
+                          "12.09.5.6) Código postal:",
+                          "12.09.5.7) País:",
+                          "12.09.5.13)"
+                        ],
+                        "dd": [
+                          "MAPE ASESORES, S.A.",
+                          "A36326619.",
+                          "Parque Empresarial \"O Campiño\", Rúa das Mámoas - parcela 69B 70B-.",
+                          "Pontevedra.",
+                          "36158.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.6.1) Nombre:",
+                          "12.09.6.2) Número de identificación fiscal:",
+                          "12.09.6.3) Dirección:",
+                          "12.09.6.4) Localidad:",
+                          "12.09.6.6) Código postal:",
+                          "12.09.6.7) País:"
+                        ],
+                        "dd": [
+                          "MBA INCORPORADO S.L.",
+                          "B33680547.",
+                          "Avda. Jardín Botánico, 1,345  Edificio Silos del Intra.",
+                          "Gijón.",
+                          "33203.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.7.1) Nombre:",
+                          "12.09.7.2) Número de identificación fiscal:",
+                          "12.09.7.3) Dirección:",
+                          "12.09.7.4) Localidad:",
+                          "12.09.7.6) Código postal:",
+                          "12.09.7.7) País:",
+                          "12.09.7.13)"
+                        ],
+                        "dd": [
+                          "SIBUCU 360 S.L.",
+                          "B70410956.",
+                          "Oslo, 1 -bajo derecha-.",
+                          "Santiago de Compostela.",
+                          "15707.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.8.1) Nombre:",
+                          "12.09.8.2) Número de identificación fiscal:",
+                          "12.09.8.3) Dirección:",
+                          "12.09.8.4) Localidad:",
+                          "12.09.8.6) Código postal:",
+                          "12.09.8.7) País:"
+                        ],
+                        "dd": ["Wottoline S.A.", "A78811577.", "Toronga, 23.", "Madrid.", "28043.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.9.1) Nombre:",
+                          "12.09.9.2) Número de identificación fiscal:",
+                          "12.09.9.3) Dirección:",
+                          "12.09.9.4) Localidad:",
+                          "12.09.9.6) Código postal:",
+                          "12.09.9.7) País:"
+                        ],
+                        "dd": ["DRÄGER SAFETY HISPANIA S.A.", "A83140012.", "Xaudaró, 5.", "Madrid.", "28034.", "España."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.10.1) Nombre:",
+                          "12.09.10.3) Dirección:",
+                          "12.09.10.4) Localidad:",
+                          "12.09.10.6) Código postal:",
+                          "12.09.10.7) País:"
+                        ],
+                        "dd": [
+                          "UTE FERROVIAL SERVICIOS, S.A.U. - SOLUCIONES DE GESTIÓN Y APOYO A EMPRESAS, S.L. CONJUNTA Y SOLIDARIAMENTE.",
+                          "Príncipe de Vergara, 135.",
+                          "Madrid.",
+                          "28002.",
+                          "España."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.11.1) Nombre:",
+                          "12.09.11.2) Número de identificación fiscal:",
+                          "12.09.11.3) Dirección:",
+                          "12.09.11.4) Localidad:",
+                          "12.09.11.6) Código postal:",
+                          "12.09.11.7) País:",
+                          "12.09.11.13)"
+                        ],
+                        "dd": [
+                          "MEDICAL SIMULATOR, S.L.",
+                          "B81477259.",
+                          "Calle Segunda, 8.",
+                          "Madrid.",
+                          "28055.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": [
+                          "12.09.12.1) Nombre:",
+                          "12.09.12.2) Número de identificación fiscal:",
+                          "12.09.12.3) Dirección:",
+                          "12.09.12.4) Localidad:",
+                          "12.09.12.6) Código postal:",
+                          "12.09.12.7) País:",
+                          "12.09.12.13)"
+                        ],
+                        "dd": [
+                          "SOLFIX ENGINEERING SLU.",
+                          "B88454624.",
+                          "Francisco Medina y Mendoza, 10A - puerta 29-.",
+                          "Cabanillas del Campo.",
+                          "19171.",
+                          "España.",
+                          "El adjudicatario es una PYME."
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["12.10.1) Contrato 70.77:", "12.10.2) Contrato 70.78:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": ["12.10.1.1) Nombre:", "12.10.1.3) Dirección:", "12.10.1.4) Localidad:", "12.10.1.7) País:"],
+                        "dd": ["Bioneer Corporation.", "8-11, Munpyeongseoro, Daedeok-gu.", "Daejeon 34302.", "República de Corea."]
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": ["12.10.2.1) Nombre:", "12.10.2.3) Dirección:", "12.10.2.4) Localidad:", "12.10.2.7) País:", "12.10.2.13)"],
+                        "dd": ["Biotype GmbH.", "Moritzburger Weg 67.", "D-01109 Dresden.", "Alemania.", "El adjudicatario es una PYME."]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["12.11.1) Nombre:", "12.11.3) Dirección:", "12.11.4) Localidad:", "12.11.7) País:"],
+                  "dd": ["Bioneer Corporation.", "8-11, Munpyeongseoro, Daedeok-gu.", "Daejeon 34302.", "República de Corea."]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "13.05) Lote 05:",
+              "13.06) Lote 06:",
+              "13.07) Lote 07:",
+              "13.08) Lote 08:",
+              "13.09) Lote 09:",
+              "13.10) Lote 10:",
+              "13.11) Lote 11:"
+            ],
+            "dd": [
+              {
+                "dl": {
+                  "dt": ["13.05.1) Contrato 70.35:", "13.05.2) Contrato 70.36:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": "13.05.1.1) Valor de la oferta seleccionada:",
+                        "dd": "0,10 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.05.2.1) Valor de la oferta seleccionada:",
+                        "dd": "0,09 euros."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["13.06.1) Contrato 70.37:", "13.06.2) Contrato 70.38:", "13.06.3) Contrato 70.39:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": "13.06.1.1) Valor de la oferta seleccionada:",
+                        "dd": "5,50 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.06.2.1) Valor de la oferta seleccionada:",
+                        "dd": "2,33 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.06.3.1) Valor de la oferta seleccionada:",
+                        "dd": "2,97 euros."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "13.07.1) Contrato 70.35:",
+                    "13.07.2) Contrato 70.38:",
+                    "13.07.3) Contrato 70.39:",
+                    "13.07.4) Contrato 70.40:",
+                    "13.07.5) Contrato 70.41:",
+                    "13.07.6) Contrato 70.42:",
+                    "13.07.7) Contrato 70.43:",
+                    "13.07.8) Contrato 70.44:",
+                    "13.07.9) Contrato 70.45:",
+                    "13.07.10) Contrato 70.46:",
+                    "13.07.11) Contrato 70.47:",
+                    "13.07.12) Contrato 70.48:",
+                    "13.07.13) Contrato 70.49:",
+                    "13.07.14) Contrato 70.50:",
+                    "13.07.15) Contrato 70.51:",
+                    "13.07.16) Contrato 70.52:",
+                    "13.07.17) Contrato 70.53:",
+                    "13.07.18) Contrato 70.54:",
+                    "13.07.19) Contrato 70.55:",
+                    "13.07.20) Contrato 70.56:",
+                    "13.07.21) Contrato 70.57:",
+                    "13.07.22) Contrato 70.58:",
+                    "13.07.23) Contrato 70.59:",
+                    "13.07.24) Contrato 70.60:",
+                    "13.07.25) Contrato 70.61:",
+                    "13.07.26) Contrato 70.62:",
+                    "13.07.27) Contrato 70.63:",
+                    "13.07.28) Contrato 70.64:",
+                    "13.07.29) Contrato 70.65:",
+                    "13.07.30) Contrato 70.66:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": "13.07.1.1) Valor de la oferta seleccionada:",
+                        "dd": "0,11 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.2.1) Valor de la oferta seleccionada:",
+                        "dd": "0,09 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.3.1) Valor de la oferta seleccionada:",
+                        "dd": "0,16 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.4.1) Valor de la oferta seleccionada:",
+                        "dd": "0,20 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.5.1) Valor de la oferta seleccionada:",
+                        "dd": "0,10 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.6.1) Valor de la oferta seleccionada:",
+                        "dd": "0,12 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.7.1) Valor de la oferta seleccionada:",
+                        "dd": "0,16 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.8.1) Valor de la oferta seleccionada:",
+                        "dd": "0,15 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.9.1) Valor de la oferta seleccionada:",
+                        "dd": "0,25 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.10.1) Valor de la oferta seleccionada:",
+                        "dd": "0,13 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.11.1) Valor de la oferta seleccionada:",
+                        "dd": "0,33 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.12.1) Valor de la oferta seleccionada:",
+                        "dd": "0,07 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.13.1) Valor de la oferta seleccionada:",
+                        "dd": "0,05 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.14.1) Valor de la oferta seleccionada:",
+                        "dd": "0,06 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.15.1) Valor de la oferta seleccionada:",
+                        "dd": "0,45 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.16.1) Valor de la oferta seleccionada:",
+                        "dd": "0,09 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.17.1) Valor de la oferta seleccionada:",
+                        "dd": "0,23 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.18.1) Valor de la oferta seleccionada:",
+                        "dd": "0,13 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.19.1) Valor de la oferta seleccionada:",
+                        "dd": "0,05 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.20.1) Valor de la oferta seleccionada:",
+                        "dd": "0,15 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.21.1) Valor de la oferta seleccionada:",
+                        "dd": "0,44 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.22.1) Valor de la oferta seleccionada:",
+                        "dd": "0,24 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.23.1) Valor de la oferta seleccionada:",
+                        "dd": "0,03 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.24.1) Valor de la oferta seleccionada:",
+                        "dd": "0,13 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.25.1) Valor de la oferta seleccionada:",
+                        "dd": "0,17 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.26.1) Valor de la oferta seleccionada:",
+                        "dd": "0,09 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.27.1) Valor de la oferta seleccionada:",
+                        "dd": "0,08 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.28.1) Valor de la oferta seleccionada:",
+                        "dd": "0,15 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.29.1) Valor de la oferta seleccionada:",
+                        "dd": "0,06 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.07.30.1) Valor de la oferta seleccionada:",
+                        "dd": "0,09 euros."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "13.08.1) Contrato 70.37:",
+                    "13.08.2) Contrato 70.38:",
+                    "13.08.3) Contrato 70.39:",
+                    "13.08.4) Contrato 70.40:",
+                    "13.08.5) Contrato 70.41:",
+                    "13.08.6) Contrato 70.42:",
+                    "13.08.7) Contrato 70.44:",
+                    "13.08.8) Contrato 70.49:",
+                    "13.08.9) Contrato 70.52:",
+                    "13.08.10) Contrato 70.58:",
+                    "13.08.11) Contrato 70.59:",
+                    "13.08.12) Contrato 70.60:",
+                    "13.08.13) Contrato 70.61:",
+                    "13.08.14) Contrato 70.65:",
+                    "13.08.15) Contrato 70.66:",
+                    "13.08.16) Contrato 70.67:",
+                    "13.08.17) Contrato 70.68:",
+                    "13.08.18) Contrato 70.69:",
+                    "13.08.19) Contrato 70.70:",
+                    "13.08.20) Contrato 70.71:",
+                    "13.08.21) Contrato 70.72:",
+                    "13.08.22) Contrato 70.73:",
+                    "13.08.23) Contrato 70.74:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": "13.08.1.1) Valor de la oferta seleccionada:",
+                        "dd": "1,24 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.2.1) Valor de la oferta seleccionada:",
+                        "dd": "0,44 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.3.1) Valor de la oferta seleccionada:",
+                        "dd": "1,21 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.4.1) Valor de la oferta seleccionada:",
+                        "dd": "1,25 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.5.1) Valor de la oferta seleccionada:",
+                        "dd": "0,80 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.6.1) Valor de la oferta seleccionada:",
+                        "dd": "0,65 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.7.1) Valor de la oferta seleccionada:",
+                        "dd": "0,58 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.8.1) Valor de la oferta seleccionada:",
+                        "dd": "0,41 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.9.1) Valor de la oferta seleccionada:",
+                        "dd": "0,46 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.10.1) Valor de la oferta seleccionada:",
+                        "dd": "1,60 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.11.1) Valor de la oferta seleccionada:",
+                        "dd": "0,25 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.12.1) Valor de la oferta seleccionada:",
+                        "dd": "0,53 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.13.1) Valor de la oferta seleccionada:",
+                        "dd": "0,74 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.14.1) Valor de la oferta seleccionada:",
+                        "dd": "0,31 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.15.1) Valor de la oferta seleccionada:",
+                        "dd": "0,90 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.16.1) Valor de la oferta seleccionada:",
+                        "dd": "2,20 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.17.1) Valor de la oferta seleccionada:",
+                        "dd": "1,08 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.18.1) Valor de la oferta seleccionada:",
+                        "dd": "0,53 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.19.1) Valor de la oferta seleccionada:",
+                        "dd": "1,30 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.20.1) Valor de la oferta seleccionada:",
+                        "dd": "0,39 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.21.1) Valor de la oferta seleccionada:",
+                        "dd": "0,90 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.22.1) Valor de la oferta seleccionada:",
+                        "dd": "2,05 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.08.23.1) Valor de la oferta seleccionada:",
+                        "dd": "1,13 euros."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": [
+                    "13.09.1) Contrato 70.37:",
+                    "13.09.2) Contrato 70.38:",
+                    "13.09.3) Contrato 70.39:",
+                    "13.09.4) Contrato 70.44:",
+                    "13.09.5) Contrato 70.52:",
+                    "13.09.6) Contrato 70.53:",
+                    "13.09.7) Contrato 70.60:",
+                    "13.09.8) Contrato 70.65:",
+                    "13.09.9) Contrato 70.70:",
+                    "13.09.10) Contrato 70.74:",
+                    "13.09.11) Contrato 70.75:",
+                    "13.09.12) Contrato 70.76:"
+                  ],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": "13.09.1.1) Valor de la oferta seleccionada:",
+                        "dd": "2,15 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.2.1) Valor de la oferta seleccionada:",
+                        "dd": "1,86 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.3.1) Valor de la oferta seleccionada:",
+                        "dd": "1,42 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.4.1) Valor de la oferta seleccionada:",
+                        "dd": "1,04 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.5.1) Valor de la oferta seleccionada:",
+                        "dd": "1,40 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.6.1) Valor de la oferta seleccionada:",
+                        "dd": "1,17 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.7.1) Valor de la oferta seleccionada:",
+                        "dd": "0,99 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.8.1) Valor de la oferta seleccionada:",
+                        "dd": "2,09 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.9.1) Valor de la oferta seleccionada:",
+                        "dd": "2,80 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.10.1) Valor de la oferta seleccionada:",
+                        "dd": "2,09 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.11.1) Valor de la oferta seleccionada:",
+                        "dd": "2,05 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.09.12.1) Valor de la oferta seleccionada:",
+                        "dd": "0,78 euros."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["13.10.1) Contrato 70.77:", "13.10.2) Contrato 70.78:"],
+                  "dd": [
+                    {
+                      "dl": {
+                        "dt": "13.10.1.1) Valor de la oferta seleccionada:",
+                        "dd": "7,99 euros."
+                      }
+                    },
+                    {
+                      "dl": {
+                        "dt": "13.10.2.1) Valor de la oferta seleccionada:",
+                        "dd": "8,56 euros."
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "dl": {
+                  "dt": "13.11.1) Valor de la oferta seleccionada:",
+                  "dd": "4,50 euros."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": [
+              "16.1) Órgano competente para los procedimientos de recurso:",
+              "16.4) Servicio del que se puede obtener información sobre el procedimiento de recurso:"
+            ],
+            "dd": [
+              {
+                "dl": {
+                  "dt": ["16.1.1) Nombre:", "16.1.2) Dirección:", "16.1.3) Localidad:", "16.1.5) Código postal:", "16.1.6) País:"],
+                  "dd": ["Instituto Nacional de Gestión Sanitaria.", "Alcalá, 56.", "Madrid.", "28014.", "España."]
+                }
+              },
+              {
+                "dl": {
+                  "dt": ["16.4.1) Nombre:", "16.4.2) Dirección:", "16.4.3) Localidad:", "16.4.5) Código postal:", "16.4.6) País:"],
+                  "dd": ["Instituto Nacional de Gestión Sanitaria.", "Alcalá, 56.", "Madrid.", "28014.", "España."]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dl": {
+            "dt": ["17.1)", "17.2)"],
+            "dd": [
+              "ID: 2020-455943. Anuncio de Formalización publicado en BOE (18 de diciembre de 2020).",
+              "ID: 2020/S 249-620398. Anuncio de Formalización publicado en DOUE (22 de diciembre de 2020)."
+            ]
+          }
+        },
+        "4 de enero de 2021."
+      ]
+    },
+    "p": {
+      "_": "Madrid, 4 de enero de 2021.- Director del Instituto Nacional de Gestión Sanitaria, Alfonso María Jiménez Palacios.",
+      "class": "parrafo_2"
+    }
+  }
+}
