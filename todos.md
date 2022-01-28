@@ -4,3 +4,6 @@ Estos son los casos que quedan por revisar
   - Es otro parser totalmente diferente. Viene todo dentro de p en una lista con elementos d este estilo { "\_": "1.10) Fax: 963938801.", "class": "parrafo"}.
 
 Hay 9 elementos de este tipo
+
+Revisar estos BOE-B-2022-2236
+Vienen sin lote, va con otro texto
