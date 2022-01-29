@@ -1,4 +1,4 @@
-import { dividirEn, getColeccionDeFechas } from '.';
+import { dividirEn, getColeccionDeFechas, getUltimoElemento } from '.';
 import { Descripcion, ListaDeDefinicion } from '../compartido/api-models';
 import { Lote } from '../compartido/models';
 import {
@@ -207,5 +207,11 @@ describe('Utils specs', () => {
     ];
 
     expect(getColeccionDeFechas('202102', new Date(Date.UTC(2021, 1, 15)))).toStrictEqual(fechasDeFebrero);
+  });
+
+  it('Devuelve el último elemento de una lista de string', () => {
+    expect(getUltimoElemento([])).toBeFalsy();
+    expect(getUltimoElemento(['unico'])).toEqual('unico');
+    expect(getUltimoElemento(['primero', 'segundo'])).toEqual('segundo');
   });
 });

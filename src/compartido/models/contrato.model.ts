@@ -1,3 +1,5 @@
+import { getUltimoElemento } from '../../utils';
+
 export interface Institucion {
   nombre: string;
   nif: string;
@@ -41,13 +43,13 @@ export interface Lote {
 // Hay veces que el Lote viene anidado por ejemplo en el formato: NUM) Lote NUM: Lote NUM: Descripcion del lote
 export const constuirLote = (texto: string): Lote => {
   const [id, ...descripcion] = texto.split(/(?<=Lote\s\d+:)/gi);
-  if (!id || !descripcion.at(-1)) {
+  if (!id || !getUltimoElemento(descripcion)) {
     return;
   }
 
   return {
     id: id.replace(':', '').trim(),
-    descripcion: descripcion.at(-1).replace(/\.$/, '').trim(),
+    descripcion: getUltimoElemento(descripcion).replace(/\.$/, '').trim(),
   };
 };
 

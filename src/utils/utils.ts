@@ -175,3 +175,7 @@ export const getColeccionDeFechas = (fecha: string, fechaLimite?: Date): string[
 
   return fechas;
 };
+
+export const getUltimoElemento = (lista: string[]): string => {
+  return lista[lista.length - 1];
+};
