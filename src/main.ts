@@ -8,7 +8,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: 'https://boe-frontend.vercel.app',
+    origin: ['https://www.dondevamidinero.es', 'https://dondevamidinero.es', 'https://boe-frontend.vercel.app'],
     methods: 'GET',
   });
 
